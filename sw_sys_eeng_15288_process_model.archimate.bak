@@ -187,7 +187,7 @@ The purpose of the Quality Management process is to assure that products, servic
         </element>
       </folder>
     </folder>
-    <folder name="Artefacts" id="id-f5d00096ba4346778ec8785b282d42db">
+    <folder name="Typical Inputs and Outputs" id="id-f5d00096ba4346778ec8785b282d42db">
       <element xsi:type="archimate:BusinessObject" name="Alternative solution classes" id="id-2320a9c8af7c41978f7f5f65793c1cc5">
         <documentation>Identifies and describes the classes of solutions that may address the problem or opportunity.&#xD;
 &#xD;
@@ -391,12 +391,12 @@ The purpose of the Quality Management process is to assure that products, servic
       <element xsi:type="archimate:BusinessObject" name="Customer satisfaction inputs" id="id-41ca205ed1a8458795565c3387762ace">
         <documentation>Responses to customer satisfaction surveys or other instruments.</documentation>
       </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization strategic plan" id="id-24b7350e8b86445bac09e7617222f072"/>
+      <element xsi:type="archimate:BusinessObject" name="Oroganization tailering strategy/approach" id="id-1d360354ffc74ea0a00ff3c48a930a3f"/>
+      <element xsi:type="archimate:BusinessObject" name="Project Portofolio" id="id-4d59d1897edb48cea40673ed0344b504"/>
+      <element xsi:type="archimate:BusinessObject" name="Quality managment corrective actio" id="id-4fed58ab78da4b6eaccc86d428e95241"/>
+      <element xsi:type="archimate:BusinessObject" name="Quality Managment evaluation report" id="id-915418d44af24a3da36171d084f31eaa"/>
     </folder>
-    <element xsi:type="archimate:BusinessObject" name="Organization strategic plan" id="id-24b7350e8b86445bac09e7617222f072"/>
-    <element xsi:type="archimate:BusinessObject" name="Oroganization tailering strategy/approach" id="id-1d360354ffc74ea0a00ff3c48a930a3f"/>
-    <element xsi:type="archimate:BusinessObject" name="Project Portofolio" id="id-4d59d1897edb48cea40673ed0344b504"/>
-    <element xsi:type="archimate:BusinessObject" name="Quality Managment evaluation report" id="id-915418d44af24a3da36171d084f31eaa"/>
-    <element xsi:type="archimate:BusinessObject" name="Quality managment corrective actio" id="id-4fed58ab78da4b6eaccc86d428e95241"/>
   </folder>
   <folder name="Application" id="id-e7fb4584f99b4efd9f8775673db2c75b" type="application"/>
   <folder name="Technology &amp; Physical" id="id-bcafdf4320284b129bddabe142f813e0" type="technology"/>
@@ -683,8 +683,8 @@ The purpose of the Quality Management process is to assure that products, servic
           <bounds x="647" y="444" width="400" height="140"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="01_Business or Mission Analysis Process" id="id-cb5683ec35ef414aba04e98a38f9aba5">
-        <child xsi:type="archimate:DiagramObject" id="id-31d36dac3a80472a96588aad1e42a777" targetConnections="id-1c171a0c4930442eb985d2f577e4cf81 id-1a1c00c0f6cc4b39818b5eedd62c03e4 id-45bb0ba9e5d9487fa9c70b74f01587d5 id-45966024ce584151b34d41befd1e3e46 id-92cf66d9d0c74f30ae9b3a108c8f1bd9" archimateElement="id-3446520345e34771bbca29a5327a55c4">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="01_Business or Mission Analysis Process" id="id-cb5683ec35ef414aba04e98a38f9aba5" connectionRouterType="2" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-31d36dac3a80472a96588aad1e42a777" targetConnections="id-1c171a0c4930442eb985d2f577e4cf81 id-1a1c00c0f6cc4b39818b5eedd62c03e4 id-45bb0ba9e5d9487fa9c70b74f01587d5 id-45966024ce584151b34d41befd1e3e46 id-92cf66d9d0c74f30ae9b3a108c8f1bd9 id-5ee37fe468c84bcb8846e8b8b6ef3fee" archimateElement="id-3446520345e34771bbca29a5327a55c4">
           <bounds x="276" y="183" width="277" height="682"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-941140d3af6a4be0b2e3adedfbeab957" source="id-31d36dac3a80472a96588aad1e42a777" target="id-83fa33897777421685081c47d3177e00" archimateRelationship="id-7ea6c43797864feb842e712561bd8afb"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c10cfd486f8246f983ec5fc1e58c9903" source="id-31d36dac3a80472a96588aad1e42a777" target="id-b2dc740ae7bc4cc7bfb8652853bfa24a" archimateRelationship="id-6a602d236663471089286d0fa945d556"/>
@@ -751,6 +751,10 @@ Completed 20.06.24&#xD;
 Open:&#xD;
 Description of the Input and Output Elements&#xD;
 </content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9560495724bb400481559e7cc60a341d" textAlignment="1" archimateElement="id-7312fee6da5f4ab9b19655f7c887aa92">
+          <bounds x="215" y="-36" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5ee37fe468c84bcb8846e8b8b6ef3fee" source="id-9560495724bb400481559e7cc60a341d" target="id-31d36dac3a80472a96588aad1e42a777" archimateRelationship="id-f19f2895f58943f5847da70aed54ea3c"/>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="05_Design Definition Process" id="id-c21e816f286b423c9bdd1487092cd566" viewpoint="business_process_cooperation">
