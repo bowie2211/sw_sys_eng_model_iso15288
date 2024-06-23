@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="systems_sw_engineering_iso15288" id="id-f6a9987bd9234adcafcc836049921003" version="5.0.0">
-  <folder name="Strategy" id="id-255e144a412c4c5da0ce52a8d28234b0" type="strategy">
-    <element xsi:type="archimate:CourseOfAction" name="Course of Action" id="id-bfe3161beed94e8cb08f33a7437cb666"/>
-    <element xsi:type="archimate:ValueStream" name="Value Stream" id="id-4f48aadc72c4431bacd3d5708ea06a0d"/>
-    <element xsi:type="archimate:ValueStream" name="Value Stream" id="id-97cdd86bf1304cad9e7a961333a4a4a7"/>
-  </folder>
+  <folder name="Strategy" id="id-255e144a412c4c5da0ce52a8d28234b0" type="strategy"/>
   <folder name="Business" id="id-b105db120ddd445baa425439b6a66f9d" type="business">
     <folder name="Process Areas" id="id-67f1baad7c40456b8162b34045fac6b0">
       <folder name="Technical Management Processes" id="id-1901c826ce7043f5b1c100799dfa685c">
@@ -101,7 +97,13 @@ Prepare for implementation &#xD;
           <element xsi:type="archimate:BusinessProcess" name="Validation Process" id="id-62df66fd5c054577b97050c66dfeadaa">
             <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
 &#xD;
-The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.</documentation>
+The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.&#xD;
+&#xD;
+Actvities:&#xD;
+&#xD;
+Prepare for validation&#xD;
+Perform validation&#xD;
+Manage results of validation</documentation>
           </element>
           <element xsi:type="archimate:BusinessProcess" name="Verification Process" id="id-3ae10bd6637245acb01256bd7112875f">
             <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
@@ -118,17 +120,37 @@ The purpose of the Design Definition process is to provide sufficient detailed d
           <element xsi:type="archimate:BusinessProcess" name="Disposal Process" id="id-a738c755e8f246d18ffbb06df2763cd3">
             <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
 &#xD;
-The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical disposal needs.</documentation>
+The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical disposal needs.&#xD;
+&#xD;
+Acvtities&#xD;
+Prepare for disposal&#xD;
+Perfrom disposal&#xD;
+Finalize the disposal</documentation>
           </element>
           <element xsi:type="archimate:BusinessProcess" name="Maintenance Process" id="id-7cc650c704cc47ce8d0f9b56b34e3e3d">
-            <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
+            <documentation>As stated in ISO/IEC/IEEE 15288,&#xD;
 &#xD;
-The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical disposal needs.</documentation>
+[6.4.13] The purpose of the Maintenance process is to sustain the capability of the system to provide a service.&#xD;
+&#xD;
+Activities&#xD;
+&#xD;
+Prepare for maintenance and logistics&#xD;
+Perform maintenance&#xD;
+Perform logistics support&#xD;
+Manage results of maintenance and logistics&#xD;
+&#xD;
+</documentation>
           </element>
           <element xsi:type="archimate:BusinessProcess" name="Operation Process" id="id-3d6e3dd6de2a4e7188b5a5924e2f9722">
-            <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
+            <documentation>As stated in ISO/IEC/IEEE 15288,&#xD;
 &#xD;
-The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical disposal needs.</documentation>
+The purpose of the Operation process is to use the system to deliver its services.&#xD;
+&#xD;
+Activities:&#xD;
+Prepare for operation&#xD;
+Perform operation&#xD;
+Manage results of operation&#xD;
+support stakeholders</documentation>
           </element>
           <element xsi:type="archimate:BusinessProcess" name="Transition Process" id="id-42b4d868c90b4d6591e6105c63d0d568">
             <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
@@ -188,165 +210,27 @@ The purpose of the Quality Management process is to assure that products, servic
       </folder>
     </folder>
     <folder name="Typical Inputs and Outputs" id="id-f5d00096ba4346778ec8785b282d42db">
-      <element xsi:type="archimate:BusinessObject" name="Alternative solution classes" id="id-2320a9c8af7c41978f7f5f65793c1cc5">
-        <documentation>Identifies and describes the classes of solutions that may address the problem or opportunity.&#xD;
-&#xD;
-&#xD;
-</documentation>
+      <element xsi:type="archimate:BusinessObject" name="Operation procedure" id="id-d96ba93b1cee44988a4708daa49e432b">
+        <documentation>&#xD;
+Presents an ordered series of steps to perform operation.</documentation>
       </element>
-      <element xsi:type="archimate:BusinessObject" name="Concept of operations (ConOps)" id="id-9b4168c2e16b4abc816a96e0370f4629">
-        <documentation>At the organization level, addresses the leadership’s intended way of operating the organization (ISO/IEC/IEEE 29148, 2018).</documentation>
+      <element xsi:type="archimate:BusinessObject" name="Organization infrastructure" id="id-3743a6400ccf4252baed7d15288f7395">
+        <documentation>Resources, facilities, personnel, and/or services that support the organization.</documentation>
       </element>
-      <element xsi:type="archimate:BusinessObject" name="Constraints on solution" id="id-c364744869d146318db3ddfd92f6773c">
-        <documentation>Externally imposed limitation on the system, its design, or implementation or on the process used to develop or modify a system. (ISO/IEC/IEEE 29148, 2018).&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Life cycle concepts" id="id-1f715c50add34dd48f6e85b5abc5864f"/>
-      <element xsi:type="archimate:BusinessObject" name="Critical performance measurement data" id="id-3e857e3ea916419382d5f7b7e831f55b">
-        <documentation>Data provided for the identified system-of-interest measurement needs.</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Organization strategic plan" id="id-25dab47c068a403b85ee2c3b2ae3899d"/>
-      <element xsi:type="archimate:BusinessObject" name="Problem or opportunity statement" id="id-f981ac603ec949799e7818163925bdd0"/>
-      <element xsi:type="archimate:BusinessObject" name="Requirements imposed on enabling systems" id="id-53f9cebd8dc44bb0acfd1401a22300a8"/>
-      <element xsi:type="archimate:BusinessObject" name="Source documents" id="id-736a748d59664da09c8160528e8c758d"/>
-      <element xsi:type="archimate:BusinessObject" name="Stakeholder identification" id="id-d360311ec0d147c480a0ace2f1d2d3c3"/>
-      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements" id="id-13b2503160714349bb822b9a4f8eadc6"/>
-      <element xsi:type="archimate:BusinessObject" name=" Stakeholder needs and requirements definition strategy/approach" id="id-89e88de295a74ce993eeca86f6e229b0"/>
-      <element xsi:type="archimate:BusinessObject" name="System requirements definition records/artifacts" id="id-c5d71c45518f48d5a1f7dd8621506d58"/>
-      <element xsi:type="archimate:BusinessObject" name="System requirements definition report" id="id-1ef16a07f1194aec9d22b687b28f510c"/>
-      <element xsi:type="archimate:BusinessObject" name="System requirements definition strategy/approach" id="id-0bcc0b11db5841039c3edf6a558c2015"/>
-      <element xsi:type="archimate:BusinessObject" name="System viewpoints, views, and models" id="id-7f6dadbc51ae48448b08e403a2a0972f"/>
-      <element xsi:type="archimate:BusinessObject" name="System design description" id="id-de5c8be5094f488b95f216bb33e72c25"/>
-      <element xsi:type="archimate:BusinessObject" name="Traceability mapping" id="id-33b00e5b517349ba88c84eb043b52470"/>
-      <element xsi:type="archimate:BusinessObject" name="Validated stakeholder needs and requirements" id="id-834569fa8ed04ca48b8b9f1412b74baa"/>
-      <element xsi:type="archimate:BusinessObject" name="Verified system requirements" id="id-ab116540d777435a8fc22a6eb558c1b6"/>
-      <element xsi:type="archimate:BusinessObject" name="Validation criteria" id="id-0f2172891912408293160199ff660828"/>
-      <element xsi:type="archimate:BusinessObject" name="Critical performance measurement needs" id="id-0ff782b7b254452cb14d7eca2677c8df">
-        <documentation>Identified information needs of the decision makers with respect to system-of-interest expectations.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements definition records/artifacts" id="id-39fce091b2aa4961821491be12ac6005"/>
-      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements definition report" id="id-993d26d5ce5441af9169cd48989dbfcf"/>
-      <element xsi:type="archimate:BusinessObject" name="System analysis request" id="id-b925b3fb3f164d6187a5f480c31e30e3"/>
-      <element xsi:type="archimate:BusinessObject" name="Analysis Situation" id="id-2f93aafd10bb499f8a5b94935c81c89b">
-        <documentation>Analyses that arise from any stakeholder. Can originate from any life cycle process.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="System requirements" id="id-aa80a3f829964c2896c0b932a2812eb5"/>
-      <element xsi:type="archimate:BusinessObject" name="Verification criteria" id="id-5a11665598044f2db072db80bb15dcad"/>
-      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis strategy/approach" id="id-93099e1f67cc4d1e9ffda8c0c99834a6">
-        <documentation>Approaches, schedules, resources, and specific considerations required to perform business or mission analysis.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="System design rationale " id="id-3201652acf25417287545a20e785675d"/>
-      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis records/artifacts" id="id-84aaf64d06b44bb6b9c9490d1e75cb05">
-        <documentation>Permanent, readable form of data, information, or knowledge related to business or mission analysis.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis  report" id="id-702e0cce6a3d4fd2a224f25818171f11">
-        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the business or mission analysis activities.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Problem or opportuniy statement" id="id-73c577f09d6347a99de832467bc550b0"/>
-      <element xsi:type="archimate:BusinessObject" name="System architecture assessment report " id="id-c9846cb7a6a24287a67336c30ff899ee"/>
-      <element xsi:type="archimate:BusinessObject" name=" System architecture definition records/artifacts" id="id-ad5188e39c1c443ca2de9097ce669ff7"/>
-      <element xsi:type="archimate:BusinessObject" name="System architecture definition report" id="id-d396914334724741811895e87f110211"/>
-      <element xsi:type="archimate:BusinessObject" name=" System architecture definition strategy/approach" id="id-6b78c15ac3c54d348238abd3ef9474a2"/>
-      <element xsi:type="archimate:BusinessObject" name="System architecture description" id="id-d0befb6a8b744a07bfa748ff3e680888"/>
-      <element xsi:type="archimate:BusinessObject" name="System architecture rationale" id="id-3c75282c4f774ab8bab3b04d473e7974"/>
-      <element xsi:type="archimate:BusinessObject" name=" System interface definition" id="id-cc956002383842218b71cda5caf6f18d"/>
-      <element xsi:type="archimate:BusinessObject" name="System viewpoints, views, and models" id="id-f5b52cd6acd84dde99221399355bbfea"/>
-      <element xsi:type="archimate:BusinessObject" name="Validated system architecture and design" id="id-887577bdffb34d73aa761d71ac6fbddb"/>
-      <element xsi:type="archimate:BusinessObject" name="Verified system architecture and design" id="id-af0f523978154d90844af2b3e7259ebc"/>
-      <element xsi:type="archimate:BusinessObject" name="Design definition records/artifacts" id="id-868a51d79c66458d960be94b1035ac29"/>
-      <element xsi:type="archimate:BusinessObject" name=" Design definition report" id="id-64f786456d2b49b1b67224fcc713754d"/>
-      <element xsi:type="archimate:BusinessObject" name="Design definition strategy/approach" id="id-1b318c0a9fd74b6e93d0b6d3db53c128"/>
-      <element xsi:type="archimate:BusinessObject" name="System design assessment report" id="id-cb8a5e4034954e6f80a23dbc1cf506ef"/>
-      <element xsi:type="archimate:BusinessObject" name="System design characteristics" id="id-e7b13d7b81b140dbbe2f0c2d4da6de26"/>
-      <element xsi:type="archimate:BusinessObject" name=" System element description" id="id-f61ecd5007c94f20b0e74e1ae0a4a044"/>
-      <element xsi:type="archimate:BusinessObject" name="System analysis records/artifacts" id="id-9a55cabb16654218bc6a90017d3404b4"/>
-      <element xsi:type="archimate:BusinessObject" name="System analysis report" id="id-d4c820adfc22408a98967bd85e6c8000"/>
-      <element xsi:type="archimate:BusinessObject" name="System analysis strategy/approach" id="id-6f51a776df414049942644017c59a3f6"/>
-      <element xsi:type="archimate:BusinessObject" name=" Implementation records/artifacts" id="id-cac3fa558fa44cb89cced1a87eab724f"/>
-      <element xsi:type="archimate:BusinessObject" name=" Implementation report" id="id-4b026f471cf846519b6d9bc956ac9320"/>
-      <element xsi:type="archimate:BusinessObject" name=" Implementation strategy/approach" id="id-a09dae276e7d423d87c821b11f8c5252"/>
-      <element xsi:type="archimate:BusinessObject" name="System element" id="id-0253359305bd4c77bb6744cf21b4ea54"/>
-      <element xsi:type="archimate:BusinessObject" name="Training materials" id="id-2d90f35902564acbb4e98cb64f88ba2d"/>
       <element xsi:type="archimate:BusinessObject" name="Accepted system or system element" id="id-2725f688a62848f38c5ca6168b77d259">
         <documentation>System or system element (product or service) accepted by an acquirer from a supplier consistent with the delivery conditions of the supply agreement.</documentation>
       </element>
-      <element xsi:type="archimate:BusinessObject" name="Integrated system or system element" id="id-5a5ece49f6784b088ff73df8e0376d44"/>
-      <element xsi:type="archimate:BusinessObject" name=" Integration procedure " id="id-30b3681b1a1e4dbfb5a86858c6481bde"/>
-      <element xsi:type="archimate:BusinessObject" name=" Integration records/artifacts" id="id-e1fe3dc2d555412ba2cc596fad5c6496"/>
-      <element xsi:type="archimate:BusinessObject" name=" Integration report" id="id-5cb5755ab9ce478bb661b1793e09acff"/>
-      <element xsi:type="archimate:BusinessObject" name="Integration strategy/approach" id="id-c6cec0418b5e4769b6cb7133c072080a"/>
-      <element xsi:type="archimate:BusinessObject" name="Reused system or system element" id="id-4a92f012e31b4eeeba27f2410c9dfdfe"/>
-      <element xsi:type="archimate:BusinessObject" name=" Other verified artifacts" id="id-e14508f0e4124e0782dc464b4ed65f2b"/>
-      <element xsi:type="archimate:BusinessObject" name="Verification procedure" id="id-bc4c68e999634bc08dfcd69695df1e08"/>
-      <element xsi:type="archimate:BusinessObject" name="Verification records/artifacts" id="id-bc60b60e1b28448c9a14588045e3ad95"/>
-      <element xsi:type="archimate:BusinessObject" name=" Verification report " id="id-b937b41eb95748ad90262ce2d8442e44"/>
-      <element xsi:type="archimate:BusinessObject" name="Verification strategy/approach" id="id-42c073eb55d44be28726d797fa954b4c"/>
-      <element xsi:type="archimate:BusinessObject" name="Verified system" id="id-7bbb296d0f3843fa9787a9573506c668"/>
-      <element xsi:type="archimate:BusinessObject" name="Acquisition need" id="id-94cc1405cb2d438fbb64e34ac852b2c5">
-        <documentation>Identified need that cannot be met within the organization encountering the need or a need that can be met in a more economical way by a supplier.&#xD;
-&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Breakdown structures" id="id-1d2ec952b5a04f38a111636008bba23c">
-        <documentation>Hierarchical representations of project aspects into smaller components providing the necessary frameworks to accomplish the project objectives and create the required deliverables.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Life cycle models " id="id-b03f7dcffd964a4c88b609cc6466ea8f"/>
-      <element xsi:type="archimate:BusinessObject" name="Organization strategic plan " id="id-0ddafdafec734621bb9cb00f12dfe46f"/>
-      <element xsi:type="archimate:BusinessObject" name="  Project authorization" id="id-6160b83f0c514404b495ec7088fea940"/>
-      <element xsi:type="archimate:BusinessObject" name="Project authorization request " id="id-c3be2eea07a14fb7b7b9001b43a711c4"/>
-      <element xsi:type="archimate:BusinessObject" name="Project budget" id="id-622f11e9fe1d45a98c6607a140b403de"/>
-      <element xsi:type="archimate:BusinessObject" name="Project constraints" id="id-535be19768424cd5b2f2ae21dd063577"/>
-      <element xsi:type="archimate:BusinessObject" name=" Project human resource needs" id="id-72807c90cb414bfdbb22e1633ebb1fa3"/>
-      <element xsi:type="archimate:BusinessObject" name="Project infrastructure needs" id="id-12ba502972b04901892806c60d024af3"/>
-      <element xsi:type="archimate:BusinessObject" name="Project lessons learned" id="id-794eacf0696c436f93c3ea5a52ec479a"/>
-      <element xsi:type="archimate:BusinessObject" name=" Project objectives" id="id-100432dff91d4ff5aa6030141fee6ccb"/>
-      <element xsi:type="archimate:BusinessObject" name=" Project planning records/artifacts" id="id-49faab91e49b4e7091d0e4c00ea35b76"/>
-      <element xsi:type="archimate:BusinessObject" name="Project portfolio" id="id-7205cee1f17340158150eea23405b82a"/>
-      <element xsi:type="archimate:BusinessObject" name="Project schedule" id="id-45ba588dbf2d41c19572901b15249833"/>
-      <element xsi:type="archimate:BusinessObject" name=" Project strategies/approaches" id="id-6e705b094e9b460e8f04955b04627909"/>
-      <element xsi:type="archimate:BusinessObject" name=" Project tailoring strategy/approach" id="id-3b29ee2dd8e44653b73a95703593607f"/>
-      <element xsi:type="archimate:BusinessObject" name="Qualified personnel Controls" id="id-9c11d47b951544f7934ffec1074892a4"/>
-      <element xsi:type="archimate:BusinessObject" name="Supply response" id="id-ad2cf066e58747c483d92e774a506b10"/>
-      <element xsi:type="archimate:BusinessObject" name="Systems engineering management plan (SEMP)" id="id-0c1e2dd4cf4a4849a5f8d41a809787ca"/>
-      <element xsi:type="archimate:BusinessObject" name="Candidate Items for configuration management" id="id-3ae0672d20244494be12729c17f5acd6">
-        <documentation>Items for configuration control. Can originate from any life cycle process.</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Change request" id="id-a37b3ee6f3cd4d4fadf7799c6809f3f8">
-        <documentation>Identified anomaly, required, or recommended enhancement to a project, from the time an idea is recorded until the disposition by a designated change authority. (Adapted from ISO/IEC/IEEE 24765, 2017).&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Configuration baseline" id="id-5be7e85db9a14933add51edeeeafa32d">
-        <documentation>Configuration information formally designated at a specific time during the life of a product, product component, service, or service component. (Adapted from ISO/IEC/IEEE 24765, 2017).&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Configuration management report" id="id-38af16de7e8d495fad1c2457ac770263">
-        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the configuration management activities.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Configuration management system" id="id-cbba009d753e47d1b7a7c8fc74784981">
-        <documentation>System used to support and enable configuration management.</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Configuration managemnt strategy/approach" id="id-e3d8367b0a6d4edb9c9b1c89d33973b1">
-        <documentation>Approaches, schedules, resources, and specific considerations required to perform configuration management.</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Configuration managment records/artifacts" id="id-22a9a5060a5e48cfb88ac007b04651b0"/>
-      <element xsi:type="archimate:BusinessObject" name="Configuration verification and audit report" id="id-5c055b4173e44dd082da1766f349ef39">
-        <documentation>Provides results of configuration management verifications and audits to ensure adequate traceability, control, and visibility. It includes evaluation criteria.&#xD;
-</documentation>
-      </element>
-      <element xsi:type="archimate:BusinessObject" name="Variance/Deviation/waiver request" id="id-c0c36ba53d3a47b88905c8534c0807be"/>
       <element xsi:type="archimate:BusinessObject" name="Acquired system or system element" id="id-3ba17d83753d4914a0cf9098ff135952">
         <documentation>System or system element (product or service) delivered to the acquirer from a supplier consistent with the delivery conditions of the acquisition agreement.&#xD;
 </documentation>
       </element>
       <element xsi:type="archimate:BusinessObject" name="Acquisition agreement" id="id-ba963431190b46c2bb39677b60feff50">
         <documentation>Mutual acknowledgment of terms and conditions under which a working relationship is conducted between an acquirer and a supplier. (Adapted from ISO/IEC/IEEE 15288, 2023).&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Acquisition need" id="id-94cc1405cb2d438fbb64e34ac852b2c5">
+        <documentation>Identified need that cannot be met within the organization encountering the need or a need that can be met in a more economical way by a supplier.&#xD;
 &#xD;
 </documentation>
       </element>
@@ -370,12 +254,41 @@ The purpose of the Quality Management process is to assure that products, servic
         <documentation>Agreements from all applicable life cycle processes, including: acquisition agreement and supply agreement.&#xD;
 </documentation>
       </element>
+      <element xsi:type="archimate:BusinessObject" name="Alternative solution classes" id="id-2320a9c8af7c41978f7f5f65793c1cc5">
+        <documentation>Identifies and describes the classes of solutions that may address the problem or opportunity.&#xD;
+&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Analysis Situation" id="id-2f93aafd10bb499f8a5b94935c81c89b">
+        <documentation>Analyses that arise from any stakeholder. Can originate from any life cycle process.&#xD;
+</documentation>
+      </element>
       <element xsi:type="archimate:BusinessObject" name="Applicable laws and regulations" id="id-3298738c9fc546de86d2c0258b3bbb94">
         <documentation>International, national, or local laws or regulations.&#xD;
 </documentation>
       </element>
+      <element xsi:type="archimate:BusinessObject" name="Breakdown structures" id="id-1d2ec952b5a04f38a111636008bba23c">
+        <documentation>Hierarchical representations of project aspects into smaller components providing the necessary frameworks to accomplish the project objectives and create the required deliverables.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis records/artifacts" id="id-84aaf64d06b44bb6b9c9490d1e75cb05">
+        <documentation>Permanent, readable form of data, information, or knowledge related to business or mission analysis.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis  report" id="id-702e0cce6a3d4fd2a224f25818171f11">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the business or mission analysis activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Business or mission analysis strategy/approach" id="id-93099e1f67cc4d1e9ffda8c0c99834a6">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform business or mission analysis.&#xD;
+</documentation>
+      </element>
       <element xsi:type="archimate:BusinessObject" name="Business plan" id="id-b0a5b110350b4eb3a13cd0c162b89119">
         <documentation>The overall organization business plan, including the business objectives.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Candidate Items for configuration management" id="id-3ae0672d20244494be12729c17f5acd6">
+        <documentation>Items for configuration control. Can originate from any life cycle process.</documentation>
       </element>
       <element xsi:type="archimate:BusinessObject" name="Candidate items for information management" id="id-78a4392bca544ea2a8954eef4e34a1d7">
         <documentation>Items for information control. Can originate from any life cycle process.&#xD;
@@ -384,18 +297,856 @@ The purpose of the Quality Management process is to assure that products, servic
       <element xsi:type="archimate:BusinessObject" name="Candidate risks and opportunities" id="id-86598239d80d4fa8afae7a341ceee720">
         <documentation>Risks and opportunities that arise from any stakeholder. Can originate from any life cycle process.</documentation>
       </element>
+      <element xsi:type="archimate:BusinessObject" name="Change request" id="id-a37b3ee6f3cd4d4fadf7799c6809f3f8">
+        <documentation>Identified anomaly, required, or recommended enhancement to a project, from the time an idea is recorded until the disposition by a designated change authority. (Adapted from ISO/IEC/IEEE 24765, 2017).&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Concept of operations (ConOps)" id="id-9b4168c2e16b4abc816a96e0370f4629">
+        <documentation>At the organization level, addresses the leadership’s intended way of operating the organization (ISO/IEC/IEEE 29148, 2018).</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Configuration baseline" id="id-5be7e85db9a14933add51edeeeafa32d">
+        <documentation>Configuration information formally designated at a specific time during the life of a product, product component, service, or service component. (Adapted from ISO/IEC/IEEE 24765, 2017).&#xD;
+</documentation>
+      </element>
       <element xsi:type="archimate:BusinessObject" name="Configuration management records/artifacts" id="id-b46814b90812492f85d76c3011de99cf">
         <documentation>Permanent, readable form of data, information, or knowledge related to configuration management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Configuration management report" id="id-38af16de7e8d495fad1c2457ac770263">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the configuration management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Configuration management system" id="id-cbba009d753e47d1b7a7c8fc74784981">
+        <documentation>System used to support and enable configuration management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Configuration managemnt strategy/approach" id="id-e3d8367b0a6d4edb9c9b1c89d33973b1">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform configuration management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Configuration managment records/artifacts" id="id-22a9a5060a5e48cfb88ac007b04651b0"/>
+      <element xsi:type="archimate:BusinessObject" name="Configuration verification and audit report" id="id-5c055b4173e44dd082da1766f349ef39">
+        <documentation>Provides results of configuration management verifications and audits to ensure adequate traceability, control, and visibility. It includes evaluation criteria.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Constraints on solution" id="id-c364744869d146318db3ddfd92f6773c">
+        <documentation>Externally imposed limitation on the system, its design, or implementation or on the process used to develop or modify a system. (ISO/IEC/IEEE 29148, 2018).&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Critical performance measurement data" id="id-3e857e3ea916419382d5f7b7e831f55b">
+        <documentation>Data provided for the identified system-of-interest measurement needs.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Critical performance measurement needs" id="id-0ff782b7b254452cb14d7eca2677c8df">
+        <documentation>Identified information needs of the decision makers with respect to system-of-interest expectations.&#xD;
 </documentation>
       </element>
       <element xsi:type="archimate:BusinessObject" name="Customer satisfaction inputs" id="id-41ca205ed1a8458795565c3387762ace">
         <documentation>Responses to customer satisfaction surveys or other instruments.</documentation>
       </element>
-      <element xsi:type="archimate:BusinessObject" name="Organization strategic plan" id="id-24b7350e8b86445bac09e7617222f072"/>
-      <element xsi:type="archimate:BusinessObject" name="Oroganization tailering strategy/approach" id="id-1d360354ffc74ea0a00ff3c48a930a3f"/>
+      <element xsi:type="archimate:BusinessObject" name="Decision management strategy/approach" id="id-1307704b656146d6a43361f251a8df87">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform decision management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Decision register" id="id-234f2afb68a844d6873e4834a0fb056c">
+        <documentation>A repository that supports the availability for use and communication of all relevant decision information in a timely, complete, valid, and, if required, confidential manner.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Decision situations" id="id-0e427a724d354b8a838351b56d8ddc4a">
+        <documentation>Decisions that arise from any stakeholder. Can originate from any life cycle process.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Design definition records/artifacts" id="id-868a51d79c66458d960be94b1035ac29">
+        <documentation>Permanent, readable form of data, information, or knowledge related to design definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Design definition report" id="id-64f786456d2b49b1b67224fcc713754d">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the design definition activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Design definition strategy/approach" id="id-1b318c0a9fd74b6e93d0b6d3db53c128">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform design definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Disposal procedure" id="id-cfc873a0f6344185b01ad59523216493">
+        <documentation>Presents an ordered series of steps to perform disposal.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Disposal records/artifacts" id="id-5054239f166046d3bf27777d80c1e2a0">
+        <documentation>Permanent, readable form of data, information, or knowledge related to disposal.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Disposal report" id="id-98d36d72decb4ccd8824b157e56b89f5">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the disposal activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Disposal strategy/approach" id="id-fb261bcdfea0403b9be1b001c9f5024d">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform disposal.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Disposed system" id="id-8cc6660c6cfb4422997784e787cf255e">
+        <documentation>System (product or service) that has been deactivated, disassembled, and removed from operations and been properly disposed.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Enabling systems" id="id-fd2accbdd6444e72945937d2eb5dbf40">
+        <documentation>External systems that facilitate the life cycle activities of the SoI but are not a direct element of the operational environment.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Human resource management records/artifacts" id="id-b92111ab22954f389f66a540cf851352">
+        <documentation>Permanent, readable form of data, information, or knowledge related to human resource management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Human resource management report" id="id-16031e49abb249609f13156d7d6312a7">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the human resource management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Human resource management strategy/approach" id="id-78a45ba4abd6438a9e9a4b29c9ec7927">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform human resource management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Implementation records/artifacts" id="id-63815a3602a64f748e703aa14899a37e">
+        <documentation>Permanent, readable form of data, information, or knowledge related to implementation.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Implementation records/artifacts" id="id-cac3fa558fa44cb89cced1a87eab724f"/>
+      <element xsi:type="archimate:BusinessObject" name="Implementation report" id="id-3de7cd2ce0fd480abf04b23360335a9a">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the implementation activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Implementation report" id="id-4b026f471cf846519b6d9bc956ac9320"/>
+      <element xsi:type="archimate:BusinessObject" name="Implementation strategy/approach" id="id-be83016dd8f0413c8156016ffaafcb23">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform implementation.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Implementation strategy/approach" id="id-a09dae276e7d423d87c821b11f8c5252"/>
+      <element xsi:type="archimate:BusinessObject" name="Information management records/artifacts" id="id-65d68f4d1ad04a1fb6509bed0f51f721">
+        <documentation>Permanent, readable form of data, information, or knowledge related to information management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Information management report" id="id-a95cda47e3a44fee9bbfc6666e8092b8">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the information management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Information management strategy/approach" id="id-c61de39abd604ad1833a632aac6fc030">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform information management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Information register" id="id-31033d50c3d34ac2b3d3d7ba5ffa64d5">
+        <documentation>A repository that supports the availability for use and communication of all relevant project information artifacts in a timely, complete, valid, and, if required, restricted manner.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Infrastructure management records/artifacts" id="id-8895806247d2424ea151b98d2d4cb812">
+        <documentation>Permanent, readable form of data, information, or knowledge related to infrastructure management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Infrastructure management report" id="id-97226da0c82b4a7b9489a4eba0c7fd54">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the infrastructure management activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Infrastructure management strategy/approach" id="id-b5a27d6dc2b842c790a2f982f97c19da">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform infrastructure management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Installation procedure" id="id-0eb98ef80f9e488394ff0fdf96d8451d">
+        <documentation>Presents an ordered series of steps to perform transition.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Installed system" id="id-d873ba656fa847c6a5a81a7f298e0a66">
+        <documentation>System (product or service) that has been installed in its operational environment.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Integrated system or system element" id="id-5a5ece49f6784b088ff73df8e0376d44">
+        <documentation>System or system element (product or service) that has been aggregated from system elements.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Integration procedure " id="id-30b3681b1a1e4dbfb5a86858c6481bde">
+        <documentation>Presents an ordered series of steps to perform integration.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Integration records/artifacts" id="id-e1fe3dc2d555412ba2cc596fad5c6496">
+        <documentation>Permanent, readable form of data, information, or knowledge related to integration.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Integration report" id="id-5cb5755ab9ce478bb661b1793e09acff">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the integration activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Integration strategy/approach" id="id-c6cec0418b5e4769b6cb7133c072080a">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform integration.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Knowledge management records/artifacts" id="id-dcc238ce62f7435697bb9ee88258e61e">
+        <documentation>Permanent, readable form of data, information, or knowledge related to knowledge management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Knowledge management report" id="id-fcfb32eb47ee4599bc3cd6349b76c89c">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the knowledge management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Knowledge management strategy/approach" id="id-9ad12b8cf1b648dcaafde58d2d935d83">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform knowledge management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Knowledge management system" id="id-33ba894e87794e4da5c9706bd0ad11d4">
+        <documentation>System used to support and enable knowledge management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Life cycle concepts" id="id-1f715c50add34dd48f6e85b5abc5864f">
+        <documentation>Articulation and refinement of the various life cycle concepts consistent with the stakeholder needs. Typical concepts include: acquisition concept; deployment concept; operational concept (OpsCon); support concept; retirement conce</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Life cycle model management records/artifacts" id="id-3f88c331955747f9a82ad23ff4823692">
+        <documentation>&#xD;
+&#xD;
+&#xD;
+Permanent, readable form of data, information, or knowledge related to life cycle model management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Life cycle model management report" id="id-e7476091c189486a9ed270dab3dcbb58">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the life cycle model management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Life cycle model management strategy/approach" id="id-b79bfd2993c646f589c1b62504e1109d">
+        <documentation>Approaches, schedules, resources, and specific considerations required to perform life cycle model management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Life cycle models " id="id-b03f7dcffd964a4c88b609cc6466ea8f">
+        <documentation>Framework of processes and activities concerned with the life cycle that can be organized into stages, acting as a common reference for communication and understanding. (ISO/IEC/IEEE 15288, 2023)</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Maintained and sustained system" id="id-55b41f0ab7d5436a846d2225fb64addf">
+        <documentation>System (product or service) that has been maintained for use in its operational environment.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Maintenance and logistics procedure" id="id-60137e839fa942529c30d0b3f8f03b63">
+        <documentation>&#xD;
+Presents an ordered series of steps to perform maintenance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Maintenance and logistics records/artifacts" id="id-02c602184778430fb3209c98eace2d03">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to maintenance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Maintenance and logistics report" id="id-29923888b87142128ac3305619519112">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the maintenance activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Maintenance and logistics strategy/approach" id="id-bd636961b6924f56905cf7ef86b3d91f">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform maintenance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement data" id="id-f218e2da4eec449d80a30fbb3a717d44">
+        <documentation>&#xD;
+Measurement data from all applicable life cycle processes, including: critical performance measurement data, organizational measurement data, and project measurement data.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement needs" id="id-ae2b6ad911d341aebb56a139588a913e">
+        <documentation>&#xD;
+Measurement needs from all applicable life cycle processes, including: critical performance measurement needs, organizational measurement needs, and project measurement needs.&#xD;
+&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement records/artifacts" id="id-5d507ae55b674c8dafc42d2eae81d495">
+        <documentation>Permanent, readable form of data, information, or knowledge related to measurement.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement register" id="id-2fdaf6b8776f40bf9deb2989735e4f8c">
+        <documentation>&#xD;
+A repository that supports the availability for use and communication of all relevant measures in a timely, complete, valid, and, if required, confidential manner.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement report" id="id-69017c275fd342abb566ce5eaf22325e">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the measurement activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Measurement strategy/approach" id="id-4a13ebf2f8af49b780736701d72e8d23">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform measurement.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Operational system" id="id-10e2e0c2bb694e7e89736cfb3a1dfd46">
+        <documentation>&#xD;
+System (product or service) being used in its operational environment.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Operation records/artifacts" id="id-42f142d16f9d4cb3939a0f14be62ef13">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to operation.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Operation report" id="id-20eb54aa48c24a558801c56ff9d271de">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the operation activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Operation strategy/approach" id="id-dc64f214789e4470a7adcc47d574667c">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform operation.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization infrastructure needs" id="id-857a6df88cff460f9468418f701f33a0">
+        <documentation>&#xD;
+Identified organizational infrastructure needs.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization strategic plan" id="id-25dab47c068a403b85ee2c3b2ae3899d">
+        <documentation>&#xD;
+The overall organization strategy, including the business mission or vision and strategic goals and objectives.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization tailoring strategy/approach" id="id-1d360354ffc74ea0a00ff3c48a930a3f">
+        <documentation>Organization’s specific strategy and approach to tailoring required to incorporate new or updated external standards.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Other verified artifacts" id="id-e14508f0e4124e0782dc464b4ed65f2b">
+        <documentation>Artifacts that are verified&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Problem or opportunity statement" id="id-f981ac603ec949799e7818163925bdd0">
+        <documentation>Description of the problem or opportunity. Should be derived from the organization strategy and provide enough detail to understand the gap or new capability that is being considered&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Problem or opportuniy statement" id="id-73c577f09d6347a99de832467bc550b0"/>
+      <element xsi:type="archimate:BusinessObject" name="Project authorization" id="id-6160b83f0c514404b495ec7088fea940">
+        <documentation>&#xD;
+Authorization from the organization to proceed per the agreed-to project plan.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project authorization request" id="id-c3be2eea07a14fb7b7b9001b43a711c4">
+        <documentation>&#xD;
+Request from the project to the organization to authorize the project.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project budget" id="id-622f11e9fe1d45a98c6607a140b403de">
+        <documentation>&#xD;
+Estimate of the costs associated with a particular project. Includes labor, infrastructure, acquisition, and enabling system costs along with reserves for risk management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project constraints" id="id-535be19768424cd5b2f2ae21dd063577">
+        <documentation>&#xD;
+Externally imposed limitation on the project developing or modifying a system. (ISO/IEC/IEEE 29148, 2018)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project human resource needs" id="id-72807c90cb414bfdbb22e1633ebb1fa3">
+        <documentation>&#xD;
+Identified human resource needs of the project.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project infrastructure needs" id="id-12ba502972b04901892806c60d024af3">
+        <documentation>&#xD;
+Identified infrastructure needs of the project.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project lessons learned" id="id-794eacf0696c436f93c3ea5a52ec479a">
+        <documentation>&#xD;
+Project-related lessons learned. Results from an evaluation or observation of an implemented corrective action that contributed to improved performance or increased capability. A lesson learned also results from an evaluation or observation of a positive finding that did not necessarily require corrective action other than sustainment.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project objectives" id="id-100432dff91d4ff5aa6030141fee6ccb">
+        <documentation>&#xD;
+The objectives or goals for the project.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project planning records/artifacts" id="id-49faab91e49b4e7091d0e4c00ea35b76">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to project planning.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project portfolio" id="id-7205cee1f17340158150eea23405b82a">
+        <documentation>&#xD;
+Collection of projects that addresses the strategic objectives of the organization. (ISO/IEC/IEEE 12207, 2017)</documentation>
+      </element>
       <element xsi:type="archimate:BusinessObject" name="Project Portofolio" id="id-4d59d1897edb48cea40673ed0344b504"/>
-      <element xsi:type="archimate:BusinessObject" name="Quality managment corrective actio" id="id-4fed58ab78da4b6eaccc86d428e95241"/>
-      <element xsi:type="archimate:BusinessObject" name="Quality Managment evaluation report" id="id-915418d44af24a3da36171d084f31eaa"/>
+      <element xsi:type="archimate:BusinessObject" name="Project schedule" id="id-45ba588dbf2d41c19572901b15249833">
+        <documentation>&#xD;
+A linked list of a project’s milestones, activities, and deliverables with intended start and finish dates May include a top-level milestone schedule and multiple levels (also called tiers) of schedules of increasing detail and task descriptions with completion criteria and work authorizations.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name=" Project strategies/approaches" id="id-6e705b094e9b460e8f04955b04627909"/>
+      <element xsi:type="archimate:BusinessObject" name="Project tailoring strategy/approach" id="id-3b29ee2dd8e44653b73a95703593607f">
+        <documentation>&#xD;
+Project’s specific strategy and approach to tailoring required to incorporate new or updated life cycle models.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Qualified personnel" id="id-9c11d47b951544f7934ffec1074892a4">
+        <documentation>&#xD;
+Individuals equipped to perform duties on behalf of the organization, including officers, employees, and contractors. (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management corrective action" id="id-4fed58ab78da4b6eaccc86d428e95241">
+        <documentation>&#xD;
+Action to eliminate the cause or reduce the likelihood of recurrence of a detected organizational nonconformity or other undesirable situation. (Adapted from ISO/IEC 19770–1, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management evaluation report" id="id-915418d44af24a3da36171d084f31eaa">
+        <documentation>&#xD;
+Provides results of quality management evaluations. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Requirements imposed on enabling systems" id="id-53f9cebd8dc44bb0acfd1401a22300a8">
+        <documentation>&#xD;
+Identified requirements for enabling systems of the system-of-interest.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Reused system or system element" id="id-4a92f012e31b4eeeba27f2410c9dfdfe">
+        <documentation>&#xD;
+System or system element (product or service) reused by an organization consistent with its system element requirements.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Source documents" id="id-736a748d59664da09c8160528e8c758d">
+        <documentation>&#xD;
+External documents relevant to the particular stage of the system of interest.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Stakeholder identification" id="id-d360311ec0d147c480a0ace2f1d2d3c3">
+        <documentation>&#xD;
+List of individuals or organizations having a right, share, claim, or interest in a system or in its possession of characteristics that meet their needs and expectations. (Adapted from ISO/IEC/IEEE 15288, 2023)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements" id="id-13b2503160714349bb822b9a4f8eadc6">
+        <documentation>&#xD;
+Structured collection of the requirements [characteristics, context, concepts, constraints and priorities] of the stakeholder and the relationship to the external environment. (ISO/IEC/IEEE 29148, 2018)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements definition records/artifacts" id="id-39fce091b2aa4961821491be12ac6005">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to stakeholder needs and requirements definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements definition report" id="id-993d26d5ce5441af9169cd48989dbfcf">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the stakeholder needs and requirements definition activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Stakeholder needs and requirements definition strategy/approach" id="id-89e88de295a74ce993eeca86f6e229b0">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform stakeholder needs and requirements definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply response" id="id-ad2cf066e58747c483d92e774a506b10">
+        <documentation>&#xD;
+Prepared by a potential supplier to support the offer of a contract bid, including cost, schedule, risk statements, methodology to satisfy the request for supply, experiences and capabilities, any recommendations to tailor the request for supply or contract, and the signature of the supplier’s approving authority. Informally, may be prepared within an organization. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System analysis records/artifacts" id="id-9a55cabb16654218bc6a90017d3404b4">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to system analysis.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System analysis report" id="id-d4c820adfc22408a98967bd85e6c8000">
+        <documentation>An account prepared for interested parties in order to communicate the status, results, and outcomes of the system analysis activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System analysis request" id="id-b925b3fb3f164d6187a5f480c31e30e3">
+        <documentation>A request to conduct a system analysis.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System analysis strategy/approach" id="id-6f51a776df414049942644017c59a3f6">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform system analysis.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture assessment report" id="id-c9846cb7a6a24287a67336c30ff899ee">
+        <documentation>&#xD;
+Provides results of system architecture assessments. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture definition records/artifacts" id="id-ad5188e39c1c443ca2de9097ce669ff7">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to system architecture definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture definition report" id="id-d396914334724741811895e87f110211">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the system architecture definition activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture definition strategy/approach" id="id-6b78c15ac3c54d348238abd3ef9474a2">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform system architecture definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture description" id="id-d0befb6a8b744a07bfa748ff3e680888">
+        <documentation>&#xD;
+The fundamental conception of a system-of-interest in terms of its purpose, system qualities (such as feasibility, performance, safety, and interoperability), constraints, and design decisions and rationale. Identification of the architecture’s stakeholders and the stakeholders’ architecture-related concerns. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System architecture rationale" id="id-3c75282c4f774ab8bab3b04d473e7974">
+        <documentation>&#xD;
+Rationale for architecture selection, technological/technical system element selection, and allocation between system requirements and architectural entities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System design assessment report" id="id-cb8a5e4034954e6f80a23dbc1cf506ef">
+        <documentation>Provides results of system design assessments. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System design characteristics" id="id-e7b13d7b81b140dbbe2f0c2d4da6de26">
+        <documentation>&#xD;
+Design attributes or distinguishing features that pertain to a measurable description of a product or service. (ISO/IEC/IEEE 15288, 2023)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System design description" id="id-de5c8be5094f488b95f216bb33e72c25">
+        <documentation>&#xD;
+Describes the design of a system or element. (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System design rationale" id="id-3201652acf25417287545a20e785675d">
+        <documentation>&#xD;
+Rationale for design selection, system element selection, and allocation between system requirements and system elements. Includes rationale of major selected implementation options and enablers.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System element" id="id-0253359305bd4c77bb6744cf21b4ea54">
+        <documentation>&#xD;
+System element (product or service) implemented consistent with its system element requirements.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System element description" id="id-f61ecd5007c94f20b0e74e1ae0a4a044">
+        <documentation>&#xD;
+Applies the system architecture description to the low-level system configuration items and elements. It is at a level of detail to permit design, implementation, and test. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System interface definition" id="id-cc956002383842218b71cda5caf6f18d">
+        <documentation>&#xD;
+Description of the interfaces between systems and system elements. (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System requirements" id="id-aa80a3f829964c2896c0b932a2812eb5">
+        <documentation>&#xD;
+Structured collection of the requirements [functions, performance, design constraints, and other attributes] for the system and its operational environments and external interfaces. (ISO/IEC/IEEE 29148, 2018)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System requirements definition records/artifacts" id="id-c5d71c45518f48d5a1f7dd8621506d58">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to system requirements definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System requirements definition report" id="id-1ef16a07f1194aec9d22b687b28f510c">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the system requirements definition activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System requirements definition strategy/approach" id="id-0bcc0b11db5841039c3edf6a558c2015">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform system requirements definition.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Systems engineering management plan (SEMP)" id="id-0c1e2dd4cf4a4849a5f8d41a809787ca"/>
+      <element xsi:type="archimate:BusinessObject" name="System viewpoints, views, and models" id="id-7f6dadbc51ae48448b08e403a2a0972f">
+        <documentation>&#xD;
+Definitions of viewpoints to document the procedures for creating, interpreting, analyzing, and evaluating architectural data. One or more views of the system. Each architectural view is a representation of the complete system from the perspective of one or more system concerns, for its stakeholders. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="System viewpoints, views, and models" id="id-f5b52cd6acd84dde99221399355bbfea"/>
+      <element xsi:type="archimate:BusinessObject" name="Traceability mapping" id="id-33b00e5b517349ba88c84eb043b52470">
+        <documentation>&#xD;
+Records the relationship between two or more artifacts of the development process (e.g., requirements, functions, system elements, verifications, and validations, tasks). (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Training materials" id="id-2d90f35902564acbb4e98cb64f88ba2d">
+        <documentation>&#xD;
+Materials for the provision of formal and informal learning activities. (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validated stakeholder needs and requirements" id="id-834569fa8ed04ca48b8b9f1412b74baa">
+        <documentation>&#xD;
+Set of stakeholder needs and requirements that have been validated.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validated system architecture and design" id="id-887577bdffb34d73aa761d71ac6fbddb">
+        <documentation>&#xD;
+System architecture and design that has been validated.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validation criteria" id="id-0f2172891912408293160199ff660828">
+        <documentation>&#xD;
+The validation criteria (the measures to be assessed), who will perform validation activities, and the validation environments of the system-of-interest.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Variance/deviation/waiver request" id="id-c0c36ba53d3a47b88905c8534c0807be">
+        <documentation>&#xD;
+Request, temporary or permanent, to accept a configuration item or other designated item which, during production or after having been submitted for inspection, is found to depart from specified requirements, but is nevertheless considered suitable for use as is or after rework by an approved method. (Adapted from ISO/IEC/IEEE 24765, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verification criteria" id="id-5a11665598044f2db072db80bb15dcad">
+        <documentation>&#xD;
+The verification criteria (the measures to be assessed), who will perform verification activities, and the verification environments of the system-of-interest.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verification procedure" id="id-bc4c68e999634bc08dfcd69695df1e08">
+        <documentation>&#xD;
+Presents an ordered series of steps to perform verification.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verification records/artifacts" id="id-bc60b60e1b28448c9a14588045e3ad95">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to verification.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verification report" id="id-b937b41eb95748ad90262ce2d8442e44">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the verification activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verification strategy/approach" id="id-42c073eb55d44be28726d797fa954b4c">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform verification.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verified system" id="id-7bbb296d0f3843fa9787a9573506c668">
+        <documentation>&#xD;
+System (product or service) that has been verified.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verified system architecture and design" id="id-af0f523978154d90844af2b3e7259ebc">
+        <documentation>&#xD;
+System architecture and design that has been verified.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Verified system requirements" id="id-ab116540d777435a8fc22a6eb558c1b6">
+        <documentation>Set of system requirements that have been verified.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization lessons learned" id="id-df600d44506142ed9852a9d3238f5b5e">
+        <documentation>&#xD;
+Organizational-related lessons learned. Results from an evaluation or observation of an implemented corrective action that contributed to improved performance or increased capability. A lesson learned also results from an evaluation or observation of a positive finding that did not necessarily require corrective action other than sustainment.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization policies" id="id-09423f9f72b34108b89b821591c06a3e">
+        <documentation>&#xD;
+High-level direction at the organizational level consistent with the organization’s strategies. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization portfolio direction and constraints" id="id-b45d59277464441f9f56b974071e1cce">
+        <documentation>&#xD;
+Organization direction and constraints related to the project portfolio.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization procedures" id="id-b487a75c640244a2bc62170c491e6468">
+        <documentation>&#xD;
+Presents an ordered series of steps to perform a process, activity, or task for an organization. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization processes" id="id-b4bd4ccf737b4933a5f68ee1bfa5a52d">
+        <documentation>&#xD;
+Set of interrelated or interacting activities that transform inputs into outputs for an organization. (Adapted from ISO/IEC/IEEE 15288, 2023)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization reports" id="id-fa929da541f64a23a52b300f88176373">
+        <documentation>&#xD;
+Reports from all applicable organization life cycle processes, including: life cycle model management report, infrastructure management report, portfolio management report, human resource management report, quality management report, and knowledge management report.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organization strategies/approaches" id="id-8023689c6ec34d45bb479e5d10791e58">
+        <documentation>&#xD;
+Strategies/approaches for all applicable organization life processes, including: life cycle model management strategy/approach, infrastructure management strategy/approach, portfolio management strategy/approach, human resource management strategy/approach, quality management strategy/approach, and knowledge management strategy/approach.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organizational measurement data" id="id-ed884a159cc3431d831680bf357572e8">
+        <documentation>&#xD;
+Data provided for the identified organizational measurement needs.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Organizational measurement needs" id="id-f3aaf3347f3045bdb471b19a97e1ef6d">
+        <documentation>Identified information needs of the decision makers with respect to organizational expectations.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Other validated artifacts" id="id-d29a13e0e0fb4aeea86575c35dc6d411">
+        <documentation>&#xD;
+Artifacts that are validated</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Portfolio management records/artifacts" id="id-32616aa7d1d1458cbf7d551227b949fc">
+        <documentation>&#xD;
+&#xD;
+Permanent, readable form of data, information, or knowledge related to portfolio management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Portfolio management report" id="id-216e2dce74054334b01de870c3ec2684">
+        <documentation>&#xD;
+&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the portfolio management activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Portfolio management strategy/approach" id="id-34017589584249dc8937e890b8f447a7">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform portfolio management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Problem or opportunity statement" id="id-6e6c602aa28e4c53a59b040cc3388c10">
+        <documentation>&#xD;
+Description of the problem or opportunity. Should be derived from the organization strategy and provide enough detail to understand the gap or new capability that is being considered&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project assessment and control records/artifacts" id="id-a09de1a058fb47c7a0ff78ea03f1eb00">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to project assessment and control.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project assessment and control strategy/approach" id="id-9acc5aa107e54631aa81ee9c33bc707e">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform project assessment and control.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project control request" id="id-10dc72c3ec4d4d8a8002528bbf404dbd">
+        <documentation>&#xD;
+Project directives based on action required due to deviations from the project plan. If assessments are associated with a decision gate, a decision to proceed or not to proceed, is taken.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project decision gate/review result" id="id-be3e5014ad0448e0bdc32582044f83a1">
+        <documentation>&#xD;
+Decision gate and review artifacts that are expected through conduct of the decision gate or technical review and that can be considered elements of exit criteria. (Adapted from ISO/IEC/IEEE 24748–8, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project direction" id="id-4169c6fa6c2d48afb227650a0505abd6">
+        <documentation>&#xD;
+Organizational direction to the project. Includes sustainment of projects meeting objectives and redirection or termination of projects not meeting objectives.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project infrastructure" id="id-dfc463047e1a4ec5b41fb9e7389b0640">
+        <documentation>&#xD;
+Resources, facilities, personnel, and/or services that support the project.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project measurement data" id="id-82bf0c20cec0410b804e432c877c1873">
+        <documentation>&#xD;
+Data provided for the identified project measurement needs.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project measurement needs" id="id-ddbd3915154e42ffb84069ff54b70cea">
+        <documentation>&#xD;
+Identified information needs of the decision makers with respect to project expectations.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project procedures" id="id-5cbdb4dc3b7943fa8a1011445c1f3504">
+        <documentation>&#xD;
+Procedures from all applicable life cycle processes, including: integration procedure, verification procedure, installation procedure, validation procedure, operation procedure, maintenance and logistics procedure, and disposal procedure.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project reports" id="id-c01a1f1b35c24c788368f5668dfe2347">
+        <documentation>&#xD;
+Reports from all applicable project life cycle processes, including: acquisition report, supply report, decision management report, risk management report, configuration management report, configuration verification and audit report, information management report, measurement report, quality assurance report, quality assurance evaluation report, business or mission analysis report, stakeholder needs and requirements definition report, system requirements definition report, system architecture definition report, system architecture assessment report, design definition report, system design assessment report, system analysis report, implementation report, integration report, verification report, transition report, validation report, operation report, maintenance and logistics report, and disposal report.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project status report/dashboard" id="id-fb1e454c2e894a378ed97b37eb70ac3f">
+        <documentation>&#xD;
+Provides results of monitoring the execution of the defined plan or processes for internal or external distribution. It includes a summary of decisions, monitoring results, action items, process or performance data, and recorded process improvements. It assesses the degree of adherence to the plans. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Project strategies/approaches" id="id-39a00976014e4411ae103a4da848a66c">
+        <documentation>&#xD;
+Strategies/approaches for all applicable project life processes, including: acquisition strategy/approach, supply strategy &amp; approach, project assessment and control strategy/approach, decision management strategy/approach, risk management strategy/approach, configuration management strategy/approach, information management strategy/approach, measurement strategy/approach, quality assurance strategy/approach, business or mission analysis strategy/approach, stakeholder needs and requirements definition strategy/approach, system requirements definition strategy/approach, system architecture definition strategy/approach, design definition strategy/approach, system analysis strategy/approach, implementation strategy/approach, integration strategy/approach, verification strategy/approach, transition strategy/approach, validation strategy/approach, operation strategy/approach, maintenance and logistics strategy/approach, and disposal strategy/approach.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance corrective action" id="id-2adbd712dbdd4e41ae519ad04ae3c1f1">
+        <documentation>&#xD;
+Action to eliminate the cause or reduce the likelihood of recurrence of a detected project nonconformity or other undesirable situation. (Adapted from ISO/IEC 19770–1, 2017)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance evaluation report" id="id-5b4f07e6383540dbbfb03dec1d8cde21">
+        <documentation>&#xD;
+Provides results of quality assurance evaluations. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance records/artifacts" id="id-439ae8d3421749379d357f53d5fb6105">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to quality assurance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance report" id="id-c271789d9e8a480aa5b04053e0c88c69">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the quality assurance activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance strategy/approach" id="id-f0b21ed7f0a94213b1f672fec6daca5d">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform quality assurance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality assurance system" id="id-272121b5009a4a4e9d9b74fd4cc3c789">
+        <documentation>&#xD;
+System used to support and enable quality assurance.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management criteria and methods" id="id-836872682dcd4f36bc59b8e8b02e7a56">
+        <documentation>&#xD;
+Rules on which a judgment or decision can be based, or by which an organization can be evaluated. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management records/artifacts" id="id-a738dbebbe164d4fa6e99c6468816883">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to quality management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management report" id="id-08d68149321e4644a4a0c56705bd5cf4">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the quality management activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management strategy/approach" id="id-10aa54c21d334e189db100dabdafafc1">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform quality management</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Quality management system" id="id-3cd4c1de419c4ff0a23719e70daa8966">
+        <documentation>&#xD;
+System used to support and enable quality management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Records/artifacts" id="id-654ab0aed7a647afb9016063e8fd9ad4">
+        <documentation>&#xD;
+Records from all applicable life cycle processes, including: acquisition records/artifacts, supply records/artifacts, life cycle model management records/artifacts, infrastructure management records/artifacts, portfolio management records/artifacts, human resource management records/artifacts, quality management records/artifacts, knowledge management records/artifacts, project planning records/artifacts, project assessment and control records/artifacts, decision management records/artifacts, risk management records/artifacts, configuration management records/artifacts, information management records/artifacts, measurement records/artifacts, quality assurance records/artifacts, business or mission analysis records/artifacts, stakeholder needs and requirements definition records/artifacts, system requirements definition records/artifacts, system architecture definition records/artifacts, design definition records/artifacts, system analysis records/artifacts, implementation records/artifacts, integration records/artifacts, verification records/artifacts, transition records/artifacts, validation records/artifacts, operation records/artifacts, maintenance and logistics records/artifacts, disposal records/artifacts, tailoring records/artifacts.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Request for supply" id="id-ec31359a19064b88a09bef505f2c7afc">
+        <documentation>&#xD;
+Acquirer’s request for information and commitments needed from the supplier that are required to be included in the potential supplier’s proposal. It announces the acquirer’s intention to potential bidders to acquire a specified system or system element (product or service). (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Risk management records/artifacts" id="id-c64ff46ca314402695f7f53fd1faa030">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to risk management.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Risk management report" id="id-00fbee220f364657ba6bf0723b651c86">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the risk management activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Risk management strategy/approach" id="id-c8249c531538429fb4fa5f17efe0e93b">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform risk management.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Risk register" id="id-16a8b352d7f74ff18f1bbc8ce4dcaa5d">
+        <documentation>&#xD;
+A repository that supports the availability for use and communication of all relevant risk information in a timely, complete, valid, and, if required, confidential manner.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Standards" id="id-87c22e2f579c4e03af8331269f433b8b">
+        <documentation>&#xD;
+This handbook and relevant industry, country, military, acquirer, and other specifications and standards. Includes new knowledge from industry sponsored knowledge networks.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supplied system or system element" id="id-e9309e6b354f4829861ac5ed671eac6e">
+        <documentation>&#xD;
+System or system element (product or service) delivered from a supplier to an acquirer consistent with the delivery conditions of the supply agreement.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply agreement" id="id-4f909fb05d674de980c88c72623be292">
+        <documentation>&#xD;
+Mutual acknowledgment of terms and conditions under which a working relationship is conducted between a supplier and an acquirer. (Adapted from ISO/IEC/IEEE 15288, 2023)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply payment" id="id-2c100772e611476fb786d2443865546f">
+        <documentation>&#xD;
+Payments or other compensations for the supplied system.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply records/artifacts" id="id-a6fa87cf0aff4bb7a384c91a4a157a97">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to supply.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply report" id="id-1ac826487e80427ea97df0dda693e9bc">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the supply activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Supply strategy/ approach" id="id-fd1a768ac03f451e85cd5f7de1d1d605">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform supply.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Systems engineering management plan (SEMP)" id="id-70173dca6b3e44f2b2f7e132c6958b41">
+        <documentation>&#xD;
+Presents how the project processes and activities are executed to assure the project’s successful completion, and the quality of the deliverable product or service. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Systems engineering management plan (SEMP)" id="id-1b3d416b10b6414e9d8191a40933a9b0">
+        <documentation>&#xD;
+Presents how the project processes and activities are executed to assure the project’s successful completion, and the quality of the deliverable product or service. (Adapted from ISO/IEC/IEEE 15289, 2019)&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Tailoring records/artifacts" id="id-61bf59e37c7d40d3aa5e2949a6c84d42">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to tailoring.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Trained personnel" id="id-dd0db487b7c2432e88c1f425ec0c1a0c">
+        <documentation>&#xD;
+Trained individuals or organizations that perform the operation, maintenance, or other functions of or for a system.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Transition records/artifacts" id="id-cdfc0593242c4cf69f0fb88e251bd2d8">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to transition.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Transition report" id="id-5487173f102148a08c5601ee89438dc3">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the transition activities.&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Transition strategy/approach" id="id-c618079d714148bca1305a27371999c6">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform transition.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validated system" id="id-c876c44edfea47e3990a6d6cd566c590">
+        <documentation>&#xD;
+System (product or service) that has been validated.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validation procedure" id="id-587607fc76de4d7391d057a206e43754">
+        <documentation>&#xD;
+Presents an ordered series of steps to perform validation.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validation records/artifacts" id="id-5d5dac208533406aa72289935eb2b710">
+        <documentation>&#xD;
+Permanent, readable form of data, information, or knowledge related to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validation report" id="id-4d32ca490c8a415cac776205fca1b0c9">
+        <documentation>&#xD;
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the validation activities.</documentation>
+      </element>
+      <element xsi:type="archimate:BusinessObject" name="Validation strategy/approach" id="id-ba8bde1aec4b4412bcf9531350ee89ce">
+        <documentation>&#xD;
+Approaches, schedules, resources, and specific considerations required to perform validation.</documentation>
+      </element>
     </folder>
   </folder>
   <folder name="Application" id="id-e7fb4584f99b4efd9f8775673db2c75b" type="application"/>
@@ -574,7 +1325,6 @@ The purpose of the Quality Management process is to assure that products, servic
     <element xsi:type="archimate:AssociationRelationship" id="id-42318b363c0540198dd44a09f941bf62" source="id-3ae10bd6637245acb01256bd7112875f" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-f9c80d91cce745efa1472dbb9921c9cf" source="id-3ae10bd6637245acb01256bd7112875f" target="id-b937b41eb95748ad90262ce2d8442e44" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-a2d6eedb69de4a00b811da5cee7113d3" source="id-3ae10bd6637245acb01256bd7112875f" target="id-bc60b60e1b28448c9a14588045e3ad95" directed="true"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-632a93241cab4e539784e7c13e6a36a3" source="id-0ddafdafec734621bb9cb00f12dfe46f" target="id-8f4c234eeccd466cbff6c596b27d6f09" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-05a7949a576c41c9acb479344d89cbc9" source="id-736a748d59664da09c8160528e8c758d" target="id-8f4c234eeccd466cbff6c596b27d6f09" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-b4f92d7361ea4d82ad5eaa8e49bcfe70" source="id-b03f7dcffd964a4c88b609cc6466ea8f" target="id-8f4c234eeccd466cbff6c596b27d6f09" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-6a04ffcb84e44577b6a17a49ca479fa3" source="id-ad2cf066e58747c483d92e774a506b10" target="id-8f4c234eeccd466cbff6c596b27d6f09" directed="true"/>
@@ -639,11 +1389,103 @@ The purpose of the Quality Management process is to assure that products, servic
     <element xsi:type="archimate:AggregationRelationship" id="id-388c1baf111446acad45adc0ae4c6294" source="id-6241940b5a9f4121b2c56bd3d6b5f983" target="id-80f55a560b2f4dbdbcb63550889ec200"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-a50f6f3335c5401286e335b23b4ade55" source="id-6241940b5a9f4121b2c56bd3d6b5f983" target="id-0479b2608c3c44a698f2a58780f67314"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-ff3442f28dc24649a1888885aaa36f01" source="id-6241940b5a9f4121b2c56bd3d6b5f983" target="id-d9d5ae63f9ef49adb3b6fcc8b1864c74"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-bc3aff7f2a61463c840b2962ab9b013d" source="id-24b7350e8b86445bac09e7617222f072" target="id-da146668b5034f2985b357797db4c7cb" directed="true"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-6cda0138abf44c7cb87ac03c45b39f58" source="id-1d360354ffc74ea0a00ff3c48a930a3f" target="id-da146668b5034f2985b357797db4c7cb"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-308fab3136094f6fba6806cf8e53bdcb" source="id-4d59d1897edb48cea40673ed0344b504" target="id-da146668b5034f2985b357797db4c7cb"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-a2c99aa72fd44bd89474b1b93a4b4a7c" source="id-915418d44af24a3da36171d084f31eaa" target="id-da146668b5034f2985b357797db4c7cb"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-dc22ab60ae6c4bd896826cfe9cb896a7" source="id-4fed58ab78da4b6eaccc86d428e95241" target="id-da146668b5034f2985b357797db4c7cb"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-ddc1544ded01418886b288ac6ebf0a6c" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-3c75282c4f774ab8bab3b04d473e7974"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7b494ee51399407cadab189db99d198a" source="id-1f715c50add34dd48f6e85b5abc5864f" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-f85751087d7446998e4338c619f2809d" source="id-5a11665598044f2db072db80bb15dcad" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-94b7cfc11c13409aa440e04400d001a6" source="id-13b2503160714349bb822b9a4f8eadc6" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-9de98b9ca4294b97973fdae9fda76a98" source="id-d0befb6a8b744a07bfa748ff3e680888" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5e8427cfc9c54a7ab42be91d9addbb4b" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-ba8bde1aec4b4412bcf9531350ee89ce" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5ec6ac985706443386d3b97682bab289" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-0f2172891912408293160199ff660828" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-775aa598e17b4ba2aca35db416e7929b" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-834569fa8ed04ca48b8b9f1412b74baa" directed="true"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-efb0f30b2ad84c34b1b08e65ec96c3ef" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-887577bdffb34d73aa761d71ac6fbddb"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5879756ba7fb4d18a63fcc3c4b8b14a2" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-887577bdffb34d73aa761d71ac6fbddb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-dcb20277ee9f4c6b82294a4f89c6c034" source="id-3c75282c4f774ab8bab3b04d473e7974" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-bea3122cf82d4eaab8653505eba721fc" source="id-de5c8be5094f488b95f216bb33e72c25" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-24cc3a0e60e241cf84e203a6807caf21" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-c876c44edfea47e3990a6d6cd566c590" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7eda8dc83ca44964af33d734b223f7bd" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-d29a13e0e0fb4aeea86575c35dc6d411" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-6e012aa250b149caa252b24af42111f5" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-c364744869d146318db3ddfd92f6773c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c583a38c576b4764ac9606ff5c5b7dac" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-53f9cebd8dc44bb0acfd1401a22300a8" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b2dfea5f7623437d80984e3c0a322534" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-04918d18e4d74e4a9a0a4e98a0293c14" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-4d32ca490c8a415cac776205fca1b0c9" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-28ef25090b1b4e64a2c3a5b39da8a940" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-5d5dac208533406aa72289935eb2b710" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-fa90755dddad47b582f732b729784f6e" source="id-3201652acf25417287545a20e785675d" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-6ac02431fd814fa7aeeb16b1f0e3f614" source="id-cc956002383842218b71cda5caf6f18d" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c33ccb38c2024f8f97745109e808be1e" source="id-7bbb296d0f3843fa9787a9573506c668" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-95bdc415e74747379519317c11a990b1" source="id-b937b41eb95748ad90262ce2d8442e44" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-27e112c6ba3c4220a62aa48fd1b35905" source="id-d873ba656fa847c6a5a81a7f298e0a66" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-8241b7d5cbe24504bd3c8a4e69fdd01d" source="id-5487173f102148a08c5601ee89438dc3" target="id-62df66fd5c054577b97050c66dfeadaa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-124fccfb9a184634881bfd634159ff2c" source="id-1f715c50add34dd48f6e85b5abc5864f" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b85cb041055240deb6f4798364dfb74a" source="id-cc956002383842218b71cda5caf6f18d" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2e501c55c3214edc81ce5a6d88386981" source="id-7bbb296d0f3843fa9787a9573506c668" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-8cb8d8e1f02c4fc3bfef305740917646" source="id-b937b41eb95748ad90262ce2d8442e44" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-91836aac317647078b6a44d89772df61" source="id-c876c44edfea47e3990a6d6cd566c590" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7451248ce8bb47598b6e609eb5a765d2" source="id-4d32ca490c8a415cac776205fca1b0c9" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1b436f641dfc4261b1847c18d8035e5b" source="id-2d90f35902564acbb4e98cb64f88ba2d" target="id-42b4d868c90b4d6591e6105c63d0d568" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-69bca12b8ddf4e41baf00c84c5ee6b18" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-c618079d714148bca1305a27371999c6" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-92849544fdcc4d26b9b60a9489c3cee1" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-0eb98ef80f9e488394ff0fdf96d8451d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c1c2c133bae844ef862061a48e43b8ec" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-d873ba656fa847c6a5a81a7f298e0a66" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-955b4d57c2f349908aaeda8d84c0fcc8" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-dd0db487b7c2432e88c1f425ec0c1a0c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-e86bda7f940d44ae9ae3326487dc07b1" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-c364744869d146318db3ddfd92f6773c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b780ef776158438b9ca1024e002227b2" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-53f9cebd8dc44bb0acfd1401a22300a8" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-438525c9dd844f089641873d02a14b9c" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-74d5da019c9240fa9cc32e16b6aee188" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-cdfc0593242c4cf69f0fb88e251bd2d8" directed="true"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-133e6ecf329e4417b037ae85e97b881c" source="id-a2a787a1e17a4f9ba6f4fae4aeb19974" target="id-4b9d4b4eb36142feb75136212d446cff"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-02a8a8ecd5f645efb4661cfa7ab2b84a" source="id-e2b5514849f24664a80d9a5f94d6f23c" target="id-a2a787a1e17a4f9ba6f4fae4aeb19974"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-9eeae93ec38a4025b3dd06c61783b240" source="id-4b9d4b4eb36142feb75136212d446cff" target="id-3ae10bd6637245acb01256bd7112875f"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-2953f83b34714bfbba1b5bc502fe5e36" source="id-3ae10bd6637245acb01256bd7112875f" target="id-62df66fd5c054577b97050c66dfeadaa"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-0e010ff245344c25b239013b50140c35" source="id-62df66fd5c054577b97050c66dfeadaa" target="id-42b4d868c90b4d6591e6105c63d0d568"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-d51b1d10f2d54a24a6417b7b5f0505e9" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-ba945f9a9fc94a0680cd9926f2f83c68" source="id-42b4d868c90b4d6591e6105c63d0d568" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-2921a5480ffd459f904a4fa5dd68e710" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-a738c755e8f246d18ffbb06df2763cd3"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-d5ba95884623454d81a1c6298c5ea896" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-cce86cd2626b49068d5663d2fbad09bf" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-d79e2a2c4a6549ef8cdde7352eca2ddc" source="id-1f715c50add34dd48f6e85b5abc5864f" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-eb18eb71df48478d986df91cdf723568" source="id-d873ba656fa847c6a5a81a7f298e0a66" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-f6a799d4315b4da890946d38c93d486b" source="id-dd0db487b7c2432e88c1f425ec0c1a0c" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-900829a2267e40b78a619e43dcdc095b" source="id-5487173f102148a08c5601ee89438dc3" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-49f7af0a11e34d688e0658e8ff23831a" source="id-29923888b87142128ac3305619519112" target="id-3d6e3dd6de2a4e7188b5a5924e2f9722" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c87f874724b8416a9b23f85e43551b20" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-dc64f214789e4470a7adcc47d574667c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-ebdfe5d253fe43fcb9126054fe56e840" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-d96ba93b1cee44988a4708daa49e432b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-56873a4c0fe04cd6a539bb1912342029" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-10e2e0c2bb694e7e89736cfb3a1dfd46" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-cdc8f752cd3e4f22b0abd3fddcff11a8" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-c364744869d146318db3ddfd92f6773c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-489084b2487d42c59329cee8dfddb9ae" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-53f9cebd8dc44bb0acfd1401a22300a8" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4bf7e00b8edd4bf39b7459df9adb1a5e" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5278eae70f5f4521ae4acf3a93ca1da8" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-20eb54aa48c24a558801c56ff9d271de" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-90bc00043e674ae892163d0f52dbe736" source="id-3d6e3dd6de2a4e7188b5a5924e2f9722" target="id-42f142d16f9d4cb3939a0f14be62ef13" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-9017de32700a420f8ff44c8d8d505151" source="id-b03f7dcffd964a4c88b609cc6466ea8f" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b9a50303543e4d11a9cb98545e81c986" source="id-10e2e0c2bb694e7e89736cfb3a1dfd46" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-59b2ecd5dd164b97841c15a07267c2fb" source="id-dd0db487b7c2432e88c1f425ec0c1a0c" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-0ff8a4526ce244c9a2cc544167b81989" source="id-20eb54aa48c24a558801c56ff9d271de" target="id-7cc650c704cc47ce8d0f9b56b34e3e3d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1bec1a72d477486a8332269fe4b49c08" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-bd636961b6924f56905cf7ef86b3d91f" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-18a21b3979d74223a768f54453bfdd45" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-60137e839fa942529c30d0b3f8f03b63" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4c85d6b0a1c745e2bd8cea05ca67699c" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-55b41f0ab7d5436a846d2225fb64addf" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-77e9f9fe110c4e5cbd2576633e77b433" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-c364744869d146318db3ddfd92f6773c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7362867fd28c45c9b95720d7be0a6849" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-53f9cebd8dc44bb0acfd1401a22300a8" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-04eda75d02474264a4b562d95c7b1d0d" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4a6aa8d6966b4a01ba475fc038d371f5" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-29923888b87142128ac3305619519112" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-9dfe61b74d624a889754809b38f5ed93" source="id-7cc650c704cc47ce8d0f9b56b34e3e3d" target="id-02c602184778430fb3209c98eace2d03" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-9540f62d7d1d4d239dde09c6d9b1229b" source="id-b03f7dcffd964a4c88b609cc6466ea8f" target="id-a738c755e8f246d18ffbb06df2763cd3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-433b15a1e11e46c58f01c537114d0c35" source="id-10e2e0c2bb694e7e89736cfb3a1dfd46" target="id-a738c755e8f246d18ffbb06df2763cd3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-eeef1d9948984a809a0cb4657668092e" source="id-55b41f0ab7d5436a846d2225fb64addf" target="id-a738c755e8f246d18ffbb06df2763cd3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-435fdb5e1e6e49cfa19aa82832563a27" source="id-dd0db487b7c2432e88c1f425ec0c1a0c" target="id-a738c755e8f246d18ffbb06df2763cd3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4af8de1471e840949a709e143801a46e" source="id-20eb54aa48c24a558801c56ff9d271de" target="id-a738c755e8f246d18ffbb06df2763cd3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-29a4ae6dd45c4a2b9b950fae2dbc976b" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-78a45ba4abd6438a9e9a4b29c9ec7927" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2dd40d0e56774c4aa126d6a128422df6" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-cfc873a0f6344185b01ad59523216493" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-fd992705bfce426283dd3299cc9e5afa" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-8cc6660c6cfb4422997784e787cf255e" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-f19757fde079457e94acb8e27a5bdd50" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-c364744869d146318db3ddfd92f6773c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-220da8777c8a4a5aa91cc7a6572b74d3" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-53f9cebd8dc44bb0acfd1401a22300a8" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-e4455427c58f4d80adce5f5e824db82e" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-33b00e5b517349ba88c84eb043b52470" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-a29a844d1dd242f2ab9f48ec89a84f9b" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-98d36d72decb4ccd8824b157e56b89f5" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-716ef6d8e0814183b9b0a95212b9e5e9" source="id-a738c755e8f246d18ffbb06df2763cd3" target="id-5054239f166046d3bf27777d80c1e2a0" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-765ea459fc5b4855b50f7fd511304fad" source="id-25dab47c068a403b85ee2c3b2ae3899d" target="id-3620bdd7a4da4af69d0593016e25fb36" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7038bbef01ba4d838ffc241cc6bf70e1" source="id-94cc1405cb2d438fbb64e34ac852b2c5" target="id-3620bdd7a4da4af69d0593016e25fb36" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-3d2b9ededd6e47008442b0401cdf4ed7" source="id-ad2cf066e58747c483d92e774a506b10" target="id-3620bdd7a4da4af69d0593016e25fb36" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2dcc0b6443b246ed90f17f8720bea164" source="id-a37b3ee6f3cd4d4fadf7799c6809f3f8" target="id-3620bdd7a4da4af69d0593016e25fb36" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-92539789a8464a2384174f67331bcdc4" source="id-3ba17d83753d4914a0cf9098ff135952" target="id-3620bdd7a4da4af69d0593016e25fb36" directed="true"/>
   </folder>
   <folder name="Views" id="id-b18b989786a64a21b3a54fdbdbf20af8" type="diagrams">
     <folder name="Technical Processes" id="id-f906fddcc643444abd47bd0376877fb7">
@@ -670,6 +1512,7 @@ The purpose of the Quality Management process is to assure that products, servic
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-1ed063791f7f4144b7621256c9974f9c" targetConnections="id-534fabc4f53647fc908761259ff8e46b" archimateElement="id-e2b5514849f24664a80d9a5f94d6f23c">
             <bounds x="360" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-92b459e21ca4437da9791c9ab6242cc3" source="id-1ed063791f7f4144b7621256c9974f9c" target="id-564207e5391e4fc1a3ff794592bc6972" archimateRelationship="id-02a8a8ecd5f645efb4661cfa7ab2b84a"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f1963f2bb3924109abc67e60f71a1c9e" targetConnections="id-1d7a09965c1740e18fa282a0f4758175" archimateElement="id-fe00585692e8429b92baf2f3bd708941">
             <bounds x="12" y="48" width="120" height="55"/>
@@ -677,10 +1520,43 @@ The purpose of the Quality Management process is to assure that products, servic
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-f8499e48ba3448409114e7699c24369f" name="System Realization" textAlignment="1">
-          <bounds x="660" y="276" width="400" height="140"/>
+          <bounds x="660" y="276" width="400" height="205"/>
+          <child xsi:type="archimate:DiagramObject" id="id-564207e5391e4fc1a3ff794592bc6972" targetConnections="id-92b459e21ca4437da9791c9ab6242cc3" archimateElement="id-a2a787a1e17a4f9ba6f4fae4aeb19974">
+            <bounds x="84" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c79e5a3f9133430cac5fcbaad1f80785" source="id-564207e5391e4fc1a3ff794592bc6972" target="id-2f7d8ef89191454b9451f62f813a894b" archimateRelationship="id-133e6ecf329e4417b037ae85e97b881c"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8113d51e335e40208b9551f0ca80e6ef" targetConnections="id-698f6b60c5c64972b2a3bad5123ec34c" archimateElement="id-62df66fd5c054577b97050c66dfeadaa">
+            <bounds x="216" y="144" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-46fdae065d934d93832001985af7799f" source="id-8113d51e335e40208b9551f0ca80e6ef" target="id-18e064585d844eee8bc92597f24b89ac" archimateRelationship="id-0e010ff245344c25b239013b50140c35"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d02dbc80ba5d4dde8f4bec3ec40fcac3" targetConnections="id-564b0b3fb3f343b2ab52fe9b6fd46e46" archimateElement="id-3ae10bd6637245acb01256bd7112875f">
+            <bounds x="72" y="144" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-698f6b60c5c64972b2a3bad5123ec34c" source="id-d02dbc80ba5d4dde8f4bec3ec40fcac3" target="id-8113d51e335e40208b9551f0ca80e6ef" archimateRelationship="id-2953f83b34714bfbba1b5bc502fe5e36"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2f7d8ef89191454b9451f62f813a894b" targetConnections="id-c79e5a3f9133430cac5fcbaad1f80785" archimateElement="id-4b9d4b4eb36142feb75136212d446cff">
+            <bounds x="228" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-564b0b3fb3f343b2ab52fe9b6fd46e46" source="id-2f7d8ef89191454b9451f62f813a894b" target="id-d02dbc80ba5d4dde8f4bec3ec40fcac3" archimateRelationship="id-9eeae93ec38a4025b3dd06c61783b240"/>
+          </child>
         </child>
         <child xsi:type="archimate:Group" id="id-c71934874b6d432483c3ea79be83466f" name="System Deploymant and Use" textAlignment="1">
-          <bounds x="647" y="444" width="400" height="140"/>
+          <bounds x="648" y="504" width="493" height="193"/>
+          <child xsi:type="archimate:DiagramObject" id="id-7683900668704435bf03ef0d15e7cd3e" targetConnections="id-d6c92a20cd414c7b8a210c35b8361efc" archimateElement="id-a738c755e8f246d18ffbb06df2763cd3">
+            <bounds x="360" y="108" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b4935645a2fa4329a540568c98cac231" targetConnections="id-f9e6e4525b4b4132be3f8b00dcfc302f id-c4c6d099633046238970e184d92164e6" archimateElement="id-3d6e3dd6de2a4e7188b5a5924e2f9722">
+            <bounds x="216" y="36" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d6c92a20cd414c7b8a210c35b8361efc" source="id-b4935645a2fa4329a540568c98cac231" target="id-7683900668704435bf03ef0d15e7cd3e" archimateRelationship="id-2921a5480ffd459f904a4fa5dd68e710"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-16758fe35db84466bed03a39771b9408" source="id-b4935645a2fa4329a540568c98cac231" target="id-4c68362813c44f0ca42fa0ac2fa68197" archimateRelationship="id-d5ba95884623454d81a1c6298c5ea896"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-18e064585d844eee8bc92597f24b89ac" targetConnections="id-46fdae065d934d93832001985af7799f" archimateElement="id-42b4d868c90b4d6591e6105c63d0d568">
+            <bounds x="36" y="84" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f9e6e4525b4b4132be3f8b00dcfc302f" source="id-18e064585d844eee8bc92597f24b89ac" target="id-b4935645a2fa4329a540568c98cac231" archimateRelationship="id-d51b1d10f2d54a24a6417b7b5f0505e9"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-89e6173a0d4943b5af84a78d73e743e4" source="id-18e064585d844eee8bc92597f24b89ac" target="id-4c68362813c44f0ca42fa0ac2fa68197" archimateRelationship="id-ba945f9a9fc94a0680cd9926f2f83c68"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4c68362813c44f0ca42fa0ac2fa68197" targetConnections="id-89e6173a0d4943b5af84a78d73e743e4 id-16758fe35db84466bed03a39771b9408" archimateElement="id-7cc650c704cc47ce8d0f9b56b34e3e3d">
+            <bounds x="216" y="108" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c4c6d099633046238970e184d92164e6" source="id-4c68362813c44f0ca42fa0ac2fa68197" target="id-b4935645a2fa4329a540568c98cac231" archimateRelationship="id-cce86cd2626b49068d5663d2fbad09bf"/>
+          </child>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="01_Business or Mission Analysis Process" id="id-cb5683ec35ef414aba04e98a38f9aba5" connectionRouterType="2" viewpoint="business_process_cooperation">
@@ -756,6 +1632,9 @@ Description of the Input and Output Elements&#xD;
           <bounds x="215" y="-36" width="400" height="140"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-5ee37fe468c84bcb8846e8b8b6ef3fee" source="id-9560495724bb400481559e7cc60a341d" target="id-31d36dac3a80472a96588aad1e42a777" archimateRelationship="id-f19f2895f58943f5847da70aed54ea3c"/>
         </child>
+        <documentation>&#xD;
+Records from all applicable life cycle processes, including: acquisition records/artifacts, supply records/artifacts, life cycle model management records/artifacts, infrastructure management records/artifacts, portfolio management records/artifacts, human resource management records/artifacts, quality management records/artifacts, knowledge management records/artifacts, project planning records/artifacts, project assessment and control records/artifacts, decision management records/artifacts, risk management records/artifacts, configuration management records/artifacts, information management records/artifacts, measurement records/artifacts, quality assurance records/artifacts, business or mission analysis records/artifacts, stakeholder needs and requirements definition records/artifacts, system requirements definition records/artifacts, system architecture definition records/artifacts, design definition records/artifacts, system analysis records/artifacts, implementation records/artifacts, integration records/artifacts, verification records/artifacts, transition records/artifacts, validation records/artifacts, operation records/artifacts, maintenance and logistics records/artifacts, disposal records/artifacts, tailoring records/artifacts.&#xD;
+</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="05_Design Definition Process" id="id-c21e816f286b423c9bdd1487092cd566" viewpoint="business_process_cooperation">
         <child xsi:type="archimate:DiagramObject" id="id-90668e116a9f4aa4bbbbcf94acbe023f" targetConnections="id-ae998995e45c44e5a7b79fe2333c0ebf id-5555984713004c75b3c453d04b8bbf84 id-0fd35b273a5b49109b578afc7baa3393 id-b7b5f9c535c14c7785886dc78074bd96 id-133dabce21f84f66a63ad5e2b4069c52 id-50d77b052f4e4cd488bf7bdd4ff6c18a id-4cf084bc7a514038adbb7113cd40162c id-69140752986a42218ff67e8ad134b875 id-c7657e85981e4b58874dddcb686c050a" archimateElement="id-e2b5514849f24664a80d9a5f94d6f23c">
@@ -928,12 +1807,13 @@ Description of the Input and Output Elements&#xD;
           <bounds x="732" y="708" width="217" height="55"/>
         </child>
         <child xsi:type="archimate:Note" id="id-72e66575ef42415581498726fccba706" textAlignment="1">
-          <bounds x="1056" y="48" width="287" height="97"/>
+          <bounds x="948" y="36" width="287" height="97"/>
           <content>Version 1&#xD;
 Completed 20.06.24&#xD;
 &#xD;
-Open:&#xD;
-Description of the Input and Output Elements&#xD;
+Version 1.1&#xD;
+all Artifacts described&#xD;
+Completed 22.06.2024&#xD;
 </content>
         </child>
         <documentation>Purpose As stated in ISO/IEC/IEEE 15288, &#xD;
@@ -1058,13 +1938,14 @@ Prepare for implementation &#xD;
         <child xsi:type="archimate:DiagramObject" id="id-034f30e1a8ea46fd9be0c556c9cf5b6e" targetConnections="id-db92614fdc70425a930e9a199253e468" archimateElement="id-9a55cabb16654218bc6a90017d3404b4">
           <bounds x="888" y="636" width="120" height="55"/>
         </child>
-        <child xsi:type="archimate:Note" id="id-9de72d62effe4d62be645e0445cfc94e" textAlignment="1">
-          <bounds x="717" y="120" width="287" height="97"/>
+        <child xsi:type="archimate:Note" id="id-354df651a83943f190700efaaf2fe5b9" textAlignment="1">
+          <bounds x="936" y="157" width="287" height="97"/>
           <content>Version 1&#xD;
 Completed 20.06.24&#xD;
 &#xD;
-Open:&#xD;
-Description of the Input and Output Elements&#xD;
+Version 1.1&#xD;
+all Artifacts described&#xD;
+Completed 22.06.2024&#xD;
 </content>
         </child>
       </element>
@@ -1308,13 +2189,14 @@ Description of the Input and Output Elements&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-0c90cce4fb5b45e6b6d43b5daff7ee15" targetConnections="id-7a33728ff1044558a26fc18bb2268927" archimateElement="id-e1fe3dc2d555412ba2cc596fad5c6496">
           <bounds x="696" y="663" width="241" height="55"/>
         </child>
-        <child xsi:type="archimate:Note" id="id-acba5470b6f648f2acb6b91bc363b493" textAlignment="1">
-          <bounds x="667" y="12" width="287" height="97"/>
+        <child xsi:type="archimate:Note" id="id-8624013c0c254e799fc0b1a853f63467" textAlignment="1">
+          <bounds x="972" y="24" width="287" height="97"/>
           <content>Version 1&#xD;
 Completed 20.06.24&#xD;
 &#xD;
-Open:&#xD;
-Description of the Input and Output Elements&#xD;
+Version 1.1&#xD;
+all Artifacts described&#xD;
+Completed 22.06.2024&#xD;
 </content>
         </child>
         <documentation>Purpose As stated in ISO/IEC/IEEE 15288, &#xD;
@@ -1414,13 +2296,14 @@ Prepare for integration &#xD;
         <child xsi:type="archimate:DiagramObject" id="id-3b34cdc290cf42e7a13cdd761a8d545c" targetConnections="id-25cb8fd7764744c1b215ef2b06364200" archimateElement="id-bc60b60e1b28448c9a14588045e3ad95">
           <bounds x="720" y="900" width="120" height="55"/>
         </child>
-        <child xsi:type="archimate:Note" id="id-ddfcda6bb1254fc3b5f8bb8cd299b1df" textAlignment="1">
-          <bounds x="912" y="132" width="287" height="97"/>
+        <child xsi:type="archimate:Note" id="id-35febdc624ad4f7cb7e6b6f30259e51f" textAlignment="1">
+          <bounds x="948" y="153" width="287" height="97"/>
           <content>Version 1&#xD;
 Completed 20.06.24&#xD;
 &#xD;
-Open:&#xD;
-Description of the Input and Output Elements&#xD;
+Version 1.1&#xD;
+all Artifacts described&#xD;
+Completed 22.06.2024&#xD;
 </content>
         </child>
         <documentation>Purpose As stated in ISO/IEC/IEEE &#xD;
@@ -1434,8 +2317,415 @@ Prepare for verification &#xD;
 • Manage results of verification</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name=" Validation Process" id="id-55eedacccb36482691a02c7240d90b37">
-        <child xsi:type="archimate:DiagramObject" id="id-478785cf093549c6acad8adb21a44a31" archimateElement="id-62df66fd5c054577b97050c66dfeadaa">
-          <bounds x="20" y="20" width="120" height="55"/>
+        <child xsi:type="archimate:DiagramObject" id="id-478785cf093549c6acad8adb21a44a31" targetConnections="id-8d8cf47b93774849ab34086aa2ac6f6c id-27507ee23a9d4d8fa63d94a612cae50a id-65168fa03f3140b29860e248a418a2af id-422e438324fb4af3b88b69ae1c5352e3 id-b28d667996c0420fb90aa018b7fa2940 id-f7f60085e8524e17834c2b3681c4a1b3 id-1ca08851133b4e3180988ac8d5c1a2b9 id-8c802c0cad6d4d2b840ec396a4f83300 id-cf735366af69451d94cc9f8400a88b41 id-2029fac19ec34ac98bf97426bd11c299 id-b2630d904bd54517883a9aaec7ff5989 id-3a9b0ea297f14da5a256d7fb7e4e401a" archimateElement="id-62df66fd5c054577b97050c66dfeadaa">
+          <bounds x="396" y="24" width="120" height="1009"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b6b53342764d4bf8a53e3f46d4e42f2f" source="id-478785cf093549c6acad8adb21a44a31" target="id-d0b6665b4d71420c9d05a51a3da77227" archimateRelationship="id-5e8427cfc9c54a7ab42be91d9addbb4b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d7829d2f651941eb8486980e58d8a8d6" source="id-478785cf093549c6acad8adb21a44a31" target="id-cdb7d56c4208431ba016f2972e239896" archimateRelationship="id-5ec6ac985706443386d3b97682bab289"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a41dd154e0fe42c89822fa65f9ff3741" source="id-478785cf093549c6acad8adb21a44a31" target="id-03b4360f792742a1b03c12498ef712f9" archimateRelationship="id-775aa598e17b4ba2aca35db416e7929b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f001fe68ea5d4f0ab99b626376877933" source="id-478785cf093549c6acad8adb21a44a31" target="id-42ce5222bc414250b1d6eb94ff43f7a0" archimateRelationship="id-5879756ba7fb4d18a63fcc3c4b8b14a2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cd6b0a330fcb4d9b863192505c2ef115" source="id-478785cf093549c6acad8adb21a44a31" target="id-f1bb7d0b6cec42bfa3d3f064e2029c9b" archimateRelationship="id-24cc3a0e60e241cf84e203a6807caf21"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ee241e61daf8454d95afa07ab6bb234b" source="id-478785cf093549c6acad8adb21a44a31" target="id-4d2a36d2accf4ff5bfbcd2315808b357" archimateRelationship="id-7eda8dc83ca44964af33d734b223f7bd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-273303b62b7747a7bc9b0458ae4b1a8b" source="id-478785cf093549c6acad8adb21a44a31" target="id-b54ee007822647c69b10494b721ed5fe" archimateRelationship="id-6e012aa250b149caa252b24af42111f5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1a21aa0b526349f28bd5b2c530b45a41" source="id-478785cf093549c6acad8adb21a44a31" target="id-644ad0ba0bf44b33898ba073790828af" archimateRelationship="id-c583a38c576b4764ac9606ff5c5b7dac"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e7d6136262d946ac939700e7272cb1af" source="id-478785cf093549c6acad8adb21a44a31" target="id-47aec4b6e3174ad8acbedcb12278a1ab" archimateRelationship="id-b2dfea5f7623437d80984e3c0a322534"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-068f23f397d14221af034bc6950ab64d" source="id-478785cf093549c6acad8adb21a44a31" target="id-50ebef335e5547faa1e34d9fe1efbaeb" archimateRelationship="id-04918d18e4d74e4a9a0a4e98a0293c14"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a1b1021d61904854b354a438a1a3adf5" source="id-478785cf093549c6acad8adb21a44a31" target="id-63dfcf452d2b4fbc880cad271700c130" archimateRelationship="id-28ef25090b1b4e64a2c3a5b39da8a940"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-dec9d8abf0cb41df87048278286c047f" archimateElement="id-1f715c50add34dd48f6e85b5abc5864f">
+          <bounds x="204" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8d8cf47b93774849ab34086aa2ac6f6c" source="id-dec9d8abf0cb41df87048278286c047f" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-7b494ee51399407cadab189db99d198a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8d5ada21063c4e7b9bc062c555dad15f" archimateElement="id-5a11665598044f2db072db80bb15dcad">
+          <bounds x="192" y="144" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-27507ee23a9d4d8fa63d94a612cae50a" source="id-8d5ada21063c4e7b9bc062c555dad15f" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-f85751087d7446998e4338c619f2809d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bc22d0fb053f40cfb729b26c3924549d" archimateElement="id-13b2503160714349bb822b9a4f8eadc6">
+          <bounds x="204" y="240" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-65168fa03f3140b29860e248a418a2af" source="id-bc22d0fb053f40cfb729b26c3924549d" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-94b7cfc11c13409aa440e04400d001a6"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d7ab478f34d14c6599ad962427ba898a" archimateElement="id-d0befb6a8b744a07bfa748ff3e680888">
+          <bounds x="204" y="324" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-422e438324fb4af3b88b69ae1c5352e3" source="id-d7ab478f34d14c6599ad962427ba898a" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-9de98b9ca4294b97973fdae9fda76a98"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2f9b888044994359b916a79fec7b7774" archimateElement="id-3c75282c4f774ab8bab3b04d473e7974">
+          <bounds x="204" y="420" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b28d667996c0420fb90aa018b7fa2940" source="id-2f9b888044994359b916a79fec7b7774" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-dcb20277ee9f4c6b82294a4f89c6c034"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-137b8d802bab47d3aa738e66131fa372" archimateElement="id-de5c8be5094f488b95f216bb33e72c25">
+          <bounds x="216" y="504" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f7f60085e8524e17834c2b3681c4a1b3" source="id-137b8d802bab47d3aa738e66131fa372" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-bea3122cf82d4eaab8653505eba721fc"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4916cf410bd741099778bb5314c072d3" archimateElement="id-3201652acf25417287545a20e785675d">
+          <bounds x="216" y="588" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1ca08851133b4e3180988ac8d5c1a2b9" source="id-4916cf410bd741099778bb5314c072d3" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-fa90755dddad47b582f732b729784f6e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b6c2d88b891d473195466714a5d42a18" archimateElement="id-cc956002383842218b71cda5caf6f18d">
+          <bounds x="216" y="672" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8c802c0cad6d4d2b840ec396a4f83300" source="id-b6c2d88b891d473195466714a5d42a18" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-6ac02431fd814fa7aeeb16b1f0e3f614"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ba0886e1960e4343b70e396fe3eebce6" archimateElement="id-7bbb296d0f3843fa9787a9573506c668">
+          <bounds x="204" y="744" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cf735366af69451d94cc9f8400a88b41" source="id-ba0886e1960e4343b70e396fe3eebce6" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-c33ccb38c2024f8f97745109e808be1e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5beaec9e44bb428f995d9849861b25b5" archimateElement="id-b937b41eb95748ad90262ce2d8442e44">
+          <bounds x="216" y="816" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2029fac19ec34ac98bf97426bd11c299" source="id-5beaec9e44bb428f995d9849861b25b5" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-95bdc415e74747379519317c11a990b1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-22e425faeead4ab9b511b57b2c8b9d45" archimateElement="id-d873ba656fa847c6a5a81a7f298e0a66">
+          <bounds x="216" y="900" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b2630d904bd54517883a9aaec7ff5989" source="id-22e425faeead4ab9b511b57b2c8b9d45" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-27e112c6ba3c4220a62aa48fd1b35905"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c0742aedacba406dbe7db06c981a97e7" archimateElement="id-5487173f102148a08c5601ee89438dc3">
+          <bounds x="228" y="972" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3a9b0ea297f14da5a256d7fb7e4e401a" source="id-c0742aedacba406dbe7db06c981a97e7" target="id-478785cf093549c6acad8adb21a44a31" archimateRelationship="id-8241b7d5cbe24504bd3c8a4e69fdd01d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d0b6665b4d71420c9d05a51a3da77227" targetConnections="id-b6b53342764d4bf8a53e3f46d4e42f2f" archimateElement="id-ba8bde1aec4b4412bcf9531350ee89ce">
+          <bounds x="600" y="90" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cdb7d56c4208431ba016f2972e239896" targetConnections="id-d7829d2f651941eb8486980e58d8a8d6" archimateElement="id-0f2172891912408293160199ff660828">
+          <bounds x="612" y="168" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-03b4360f792742a1b03c12498ef712f9" targetConnections="id-a41dd154e0fe42c89822fa65f9ff3741" archimateElement="id-834569fa8ed04ca48b8b9f1412b74baa">
+          <bounds x="600" y="252" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f1bb7d0b6cec42bfa3d3f064e2029c9b" targetConnections="id-cd6b0a330fcb4d9b863192505c2ef115" archimateElement="id-c876c44edfea47e3990a6d6cd566c590">
+          <bounds x="600" y="432" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4d2a36d2accf4ff5bfbcd2315808b357" targetConnections="id-ee241e61daf8454d95afa07ab6bb234b" archimateElement="id-d29a13e0e0fb4aeea86575c35dc6d411">
+          <bounds x="612" y="516" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b54ee007822647c69b10494b721ed5fe" targetConnections="id-273303b62b7747a7bc9b0458ae4b1a8b" archimateElement="id-c364744869d146318db3ddfd92f6773c">
+          <bounds x="600" y="618" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-644ad0ba0bf44b33898ba073790828af" targetConnections="id-1a21aa0b526349f28bd5b2c530b45a41" archimateElement="id-53f9cebd8dc44bb0acfd1401a22300a8">
+          <bounds x="612" y="696" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-47aec4b6e3174ad8acbedcb12278a1ab" targetConnections="id-e7d6136262d946ac939700e7272cb1af" archimateElement="id-33b00e5b517349ba88c84eb043b52470">
+          <bounds x="612" y="780" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-50ebef335e5547faa1e34d9fe1efbaeb" targetConnections="id-068f23f397d14221af034bc6950ab64d" archimateElement="id-4d32ca490c8a415cac776205fca1b0c9">
+          <bounds x="612" y="864" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-63dfcf452d2b4fbc880cad271700c130" targetConnections="id-a1b1021d61904854b354a438a1a3adf5" archimateElement="id-5d5dac208533406aa72289935eb2b710">
+          <bounds x="624" y="936" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-42ce5222bc414250b1d6eb94ff43f7a0" targetConnections="id-f001fe68ea5d4f0ab99b626376877933" archimateElement="id-887577bdffb34d73aa761d71ac6fbddb">
+          <bounds x="600" y="348" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:Note" id="id-296d8689b4bf47caa7666b23801e8ff5" textAlignment="1">
+          <bounds x="780" y="240" width="287" height="97"/>
+          <content>Version 1&#xD;
+all Artifacts described&#xD;
+Completed 22.06.2024&#xD;
+</content>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Operation Process" id="id-609a35d0c7854911817ef52be3868714" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-2f5edf57aace45fdb3f8e03419f9d8e0" targetConnections="id-38b9e33fb4c64008b8d398d849dc85f3 id-7f016997b90a44ea9be398a05edd3f60 id-8c6b857371c74ce19b3b473a226536c4 id-106ba0dcdb2346b1b711d107f17d31d0 id-a78d53635c9845ceb64f030069e3ce47 id-01207ad274024028af8bee50edaf6f92 id-7cd6a9f1710e4337aafd20e761b6bb40 id-b9e85b283782420194818875d94c430a" archimateElement="id-3d6e3dd6de2a4e7188b5a5924e2f9722">
+          <bounds x="552" y="492" width="120" height="793"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0f4bcf2cd2ca48a0b45d75f8417054d4" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-b0762a4238804056addd57d7ead6f01a" archimateRelationship="id-2921a5480ffd459f904a4fa5dd68e710"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-409f40f279134f8cb30d9ac73da254a6" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-e9988c8426e942b6801868d72ecd91d0" archimateRelationship="id-d5ba95884623454d81a1c6298c5ea896"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9c695424a6f24fb1902766e77805b723" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-69f1c973123e43f895e2de8a342a725e" archimateRelationship="id-c87f874724b8416a9b23f85e43551b20"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5a2aaac433a9464b8e26676d35e26468" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-cd4708c0845841e2a1ae7186ddb6854d" archimateRelationship="id-ebdfe5d253fe43fcb9126054fe56e840"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-64f19cb4951f45338fce87620ecf3226" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-50478300cb184218a215e4df2a075c92" archimateRelationship="id-56873a4c0fe04cd6a539bb1912342029"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2ea0ee01391743959c42f3c24603c946" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-829f189d9eb1445fbbfe425b2cf61674" archimateRelationship="id-cdc8f752cd3e4f22b0abd3fddcff11a8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5bc754abb4674839ab88a202747e5eea" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-57fdb969e2834702a38c6be7770a1e94" archimateRelationship="id-489084b2487d42c59329cee8dfddb9ae"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ff74158520024a78935602b6f1b46f3d" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-185d9a75e64e4319a3c8b16ce9a626f4" archimateRelationship="id-4bf7e00b8edd4bf39b7459df9adb1a5e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ba3a8e07251640c6b1c30e35256121da" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-453304db99c34741bbd485846f9fad93" archimateRelationship="id-5278eae70f5f4521ae4acf3a93ca1da8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-879aa1764b5e411c8556b81cc7b46c48" source="id-2f5edf57aace45fdb3f8e03419f9d8e0" target="id-121e73d8829a401e9857eab3e2704646" archimateRelationship="id-90bc00043e674ae892163d0f52dbe736"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b0762a4238804056addd57d7ead6f01a" targetConnections="id-0f4bcf2cd2ca48a0b45d75f8417054d4" archimateElement="id-a738c755e8f246d18ffbb06df2763cd3">
+          <bounds x="744" y="192" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e9988c8426e942b6801868d72ecd91d0" targetConnections="id-409f40f279134f8cb30d9ac73da254a6" archimateElement="id-7cc650c704cc47ce8d0f9b56b34e3e3d">
+          <bounds x="948" y="360" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-38b9e33fb4c64008b8d398d849dc85f3" source="id-e9988c8426e942b6801868d72ecd91d0" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-cce86cd2626b49068d5663d2fbad09bf"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ee3cdb6877174486a40ec2af44a6d31e" textAlignment="1" archimateElement="id-a5a00a4ce2bc44cc89a233c4a9cbda87">
+          <bounds x="170" y="180" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7f016997b90a44ea9be398a05edd3f60" source="id-ee3cdb6877174486a40ec2af44a6d31e" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-0ba79a15689f4aa0a1421922ae63791d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0158971335a04d1184a15e60bb4a84d2" targetConnections="id-5401c00da42b4561888852ea97afd279" archimateElement="id-42b4d868c90b4d6591e6105c63d0d568">
+          <bounds x="12" y="456" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8c6b857371c74ce19b3b473a226536c4" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-d51b1d10f2d54a24a6417b7b5f0505e9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8fc6f1636d834bf48161e08823a61d5c" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-715085cc1e0a45c29ab2d5324f600fe9" archimateRelationship="id-c1c2c133bae844ef862061a48e43b8ec"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e4150741f158446d836f9bd6c256bd65" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-025e424ec32b42ce96ade856c5add701" archimateRelationship="id-955b4d57c2f349908aaeda8d84c0fcc8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7ad6becb77f7444999ba157b79951783" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-829f189d9eb1445fbbfe425b2cf61674" archimateRelationship="id-e86bda7f940d44ae9ae3326487dc07b1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-73998bc0265040dfacfbe672ca421258" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-57fdb969e2834702a38c6be7770a1e94" archimateRelationship="id-b780ef776158438b9ca1024e002227b2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c6e4b15bd4e8415984d2038a56bf863a" source="id-0158971335a04d1184a15e60bb4a84d2" target="id-185d9a75e64e4319a3c8b16ce9a626f4" archimateRelationship="id-438525c9dd844f089641873d02a14b9c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-008bb638e66e488781dad14c1bacc680" archimateElement="id-1f715c50add34dd48f6e85b5abc5864f">
+          <bounds x="336" y="528" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5401c00da42b4561888852ea97afd279" source="id-008bb638e66e488781dad14c1bacc680" target="id-0158971335a04d1184a15e60bb4a84d2" archimateRelationship="id-124fccfb9a184634881bfd634159ff2c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-106ba0dcdb2346b1b711d107f17d31d0" source="id-008bb638e66e488781dad14c1bacc680" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-d79e2a2c4a6549ef8cdde7352eca2ddc"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-715085cc1e0a45c29ab2d5324f600fe9" targetConnections="id-8fc6f1636d834bf48161e08823a61d5c" archimateElement="id-d873ba656fa847c6a5a81a7f298e0a66">
+          <bounds x="336" y="612" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a78d53635c9845ceb64f030069e3ce47" source="id-715085cc1e0a45c29ab2d5324f600fe9" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-eb18eb71df48478d986df91cdf723568"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-025e424ec32b42ce96ade856c5add701" targetConnections="id-e4150741f158446d836f9bd6c256bd65" archimateElement="id-dd0db487b7c2432e88c1f425ec0c1a0c">
+          <bounds x="336" y="708" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-01207ad274024028af8bee50edaf6f92" source="id-025e424ec32b42ce96ade856c5add701" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-f6a799d4315b4da890946d38c93d486b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-76f975155d53411a8aa7de063a4ca791" archimateElement="id-5487173f102148a08c5601ee89438dc3">
+          <bounds x="348" y="792" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7cd6a9f1710e4337aafd20e761b6bb40" source="id-76f975155d53411a8aa7de063a4ca791" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-900829a2267e40b78a619e43dcdc095b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-46112884497849008d942ad2cebfc755" archimateElement="id-29923888b87142128ac3305619519112">
+          <bounds x="348" y="876" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b9e85b283782420194818875d94c430a" source="id-46112884497849008d942ad2cebfc755" target="id-2f5edf57aace45fdb3f8e03419f9d8e0" archimateRelationship="id-49f7af0a11e34d688e0658e8ff23831a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-69f1c973123e43f895e2de8a342a725e" targetConnections="id-9c695424a6f24fb1902766e77805b723" archimateElement="id-dc64f214789e4470a7adcc47d574667c">
+          <bounds x="759" y="552" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cd4708c0845841e2a1ae7186ddb6854d" targetConnections="id-5a2aaac433a9464b8e26676d35e26468" archimateElement="id-d96ba93b1cee44988a4708daa49e432b">
+          <bounds x="759" y="624" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-50478300cb184218a215e4df2a075c92" targetConnections="id-64f19cb4951f45338fce87620ecf3226" archimateElement="id-10e2e0c2bb694e7e89736cfb3a1dfd46">
+          <bounds x="759" y="708" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-829f189d9eb1445fbbfe425b2cf61674" targetConnections="id-7ad6becb77f7444999ba157b79951783 id-2ea0ee01391743959c42f3c24603c946" archimateElement="id-c364744869d146318db3ddfd92f6773c">
+          <bounds x="768" y="792" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-57fdb969e2834702a38c6be7770a1e94" targetConnections="id-73998bc0265040dfacfbe672ca421258 id-5bc754abb4674839ab88a202747e5eea" archimateElement="id-53f9cebd8dc44bb0acfd1401a22300a8">
+          <bounds x="768" y="876" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-185d9a75e64e4319a3c8b16ce9a626f4" targetConnections="id-c6e4b15bd4e8415984d2038a56bf863a id-ff74158520024a78935602b6f1b46f3d" archimateElement="id-33b00e5b517349ba88c84eb043b52470">
+          <bounds x="768" y="948" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-453304db99c34741bbd485846f9fad93" targetConnections="id-ba3a8e07251640c6b1c30e35256121da" archimateElement="id-20eb54aa48c24a558801c56ff9d271de">
+          <bounds x="768" y="1020" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-121e73d8829a401e9857eab3e2704646" targetConnections="id-879aa1764b5e411c8556b81cc7b46c48" archimateElement="id-42f142d16f9d4cb3939a0f14be62ef13">
+          <bounds x="768" y="1092" width="120" height="55"/>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Transition Process" id="id-9028623c8cbc45a783505a0fce564b73" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-e887009f5e1b4afd9680d35615778e39" targetConnections="id-f4ea1497d4f5415cb80461b6ab0ae4d4 id-f1be648b406148cbb12912fcc3f01201 id-928853e40e604720b15f7e8dc95371db id-a6fbce74a7b143519dce335f5501fd42 id-da8e6f2872ff473582bf62f0db15dfa5 id-184c1362c6264a0686c3e75ceb8ea130 id-b9f33b3cc54f48b79d2962be116d60ad id-228a19728ead4244a80b393dcb6f1106" archimateElement="id-42b4d868c90b4d6591e6105c63d0d568">
+          <bounds x="336" y="264" width="145" height="793"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-eb1b559b5a34416282f085200e8ad204" source="id-e887009f5e1b4afd9680d35615778e39" target="id-3822a47e01314064871c73ff52dc9f19" archimateRelationship="id-69bca12b8ddf4e41baf00c84c5ee6b18"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-493643c690c143bf8301d928783d80c7" source="id-e887009f5e1b4afd9680d35615778e39" target="id-adf3b079cd6e4ffbb7854577aed1c518" archimateRelationship="id-92849544fdcc4d26b9b60a9489c3cee1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f3ce831514da4d67813c34f33adefd55" source="id-e887009f5e1b4afd9680d35615778e39" target="id-21710e938e164ae68a8a74f7498dea9e" archimateRelationship="id-c1c2c133bae844ef862061a48e43b8ec"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f53cb7ad001d4e119f407574a772230f" source="id-e887009f5e1b4afd9680d35615778e39" target="id-b635302d51b84eb8b1cfb13d6143096a" archimateRelationship="id-955b4d57c2f349908aaeda8d84c0fcc8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e0894f1931774cc89f986148d9800e70" source="id-e887009f5e1b4afd9680d35615778e39" target="id-d76fcd08263343929572c19daa8f3fc6" archimateRelationship="id-e86bda7f940d44ae9ae3326487dc07b1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c37e17894b4948c79da15e3703b0e7ac" source="id-e887009f5e1b4afd9680d35615778e39" target="id-3b0974027b3d468990ded7ac68224fb9" archimateRelationship="id-b780ef776158438b9ca1024e002227b2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2828cfdce12948ecb4c7a3e223f56c98" source="id-e887009f5e1b4afd9680d35615778e39" target="id-73f1319721204f46afa670093aaf0a46" archimateRelationship="id-438525c9dd844f089641873d02a14b9c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d08374b8bf55451cbcefc4c2c56eccc7" source="id-e887009f5e1b4afd9680d35615778e39" target="id-51acf66fb9e54030ad09c6fe69699a67" archimateRelationship="id-74d5da019c9240fa9cc32e16b6aee188"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ffb03feba09d4c0fbb0c2c1aae813f17" textAlignment="1" archimateElement="id-a5a00a4ce2bc44cc89a233c4a9cbda87">
+          <bounds x="170" y="20" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f4ea1497d4f5415cb80461b6ab0ae4d4" source="id-ffb03feba09d4c0fbb0c2c1aae813f17" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-9c93ab45a39d4086a9f18f543a06998c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-018420ae9a664af3904b9cc3ae597af3" archimateElement="id-1f715c50add34dd48f6e85b5abc5864f">
+          <bounds x="171" y="290" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f1be648b406148cbb12912fcc3f01201" source="id-018420ae9a664af3904b9cc3ae597af3" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-124fccfb9a184634881bfd634159ff2c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8e2c2cf0eb514796b24e18511f2354ec" archimateElement="id-cc956002383842218b71cda5caf6f18d">
+          <bounds x="170" y="384" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-928853e40e604720b15f7e8dc95371db" source="id-8e2c2cf0eb514796b24e18511f2354ec" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-b85cb041055240deb6f4798364dfb74a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5f23ac05fa4c46ba8761774cbf383aeb" archimateElement="id-7bbb296d0f3843fa9787a9573506c668">
+          <bounds x="168" y="468" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a6fbce74a7b143519dce335f5501fd42" source="id-5f23ac05fa4c46ba8761774cbf383aeb" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-2e501c55c3214edc81ce5a6d88386981"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cb1fb8f9c78a4dc29e8ad69dd1bcc486" archimateElement="id-b937b41eb95748ad90262ce2d8442e44">
+          <bounds x="168" y="564" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-da8e6f2872ff473582bf62f0db15dfa5" source="id-cb1fb8f9c78a4dc29e8ad69dd1bcc486" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-8cb8d8e1f02c4fc3bfef305740917646"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ba7ccad1d0c04983878fbd5078c80c8a" archimateElement="id-c876c44edfea47e3990a6d6cd566c590">
+          <bounds x="168" y="648" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-184c1362c6264a0686c3e75ceb8ea130" source="id-ba7ccad1d0c04983878fbd5078c80c8a" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-91836aac317647078b6a44d89772df61"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-65325cc175134c61a50b1aee3d976cf4" archimateElement="id-4d32ca490c8a415cac776205fca1b0c9">
+          <bounds x="168" y="738" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b9f33b3cc54f48b79d2962be116d60ad" source="id-65325cc175134c61a50b1aee3d976cf4" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-7451248ce8bb47598b6e609eb5a765d2"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b11483de6acf4f689a69f02d7db1f311" archimateElement="id-2d90f35902564acbb4e98cb64f88ba2d">
+          <bounds x="168" y="816" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-228a19728ead4244a80b393dcb6f1106" source="id-b11483de6acf4f689a69f02d7db1f311" target="id-e887009f5e1b4afd9680d35615778e39" archimateRelationship="id-1b436f641dfc4261b1847c18d8035e5b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3822a47e01314064871c73ff52dc9f19" targetConnections="id-eb1b559b5a34416282f085200e8ad204" archimateElement="id-c618079d714148bca1305a27371999c6">
+          <bounds x="636" y="300" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-adf3b079cd6e4ffbb7854577aed1c518" targetConnections="id-493643c690c143bf8301d928783d80c7" archimateElement="id-0eb98ef80f9e488394ff0fdf96d8451d">
+          <bounds x="636" y="384" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-21710e938e164ae68a8a74f7498dea9e" targetConnections="id-f3ce831514da4d67813c34f33adefd55" archimateElement="id-d873ba656fa847c6a5a81a7f298e0a66">
+          <bounds x="636" y="468" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b635302d51b84eb8b1cfb13d6143096a" targetConnections="id-f53cb7ad001d4e119f407574a772230f" archimateElement="id-dd0db487b7c2432e88c1f425ec0c1a0c">
+          <bounds x="636" y="564" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d76fcd08263343929572c19daa8f3fc6" targetConnections="id-e0894f1931774cc89f986148d9800e70" archimateElement="id-c364744869d146318db3ddfd92f6773c">
+          <bounds x="636" y="672" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3b0974027b3d468990ded7ac68224fb9" targetConnections="id-c37e17894b4948c79da15e3703b0e7ac" archimateElement="id-53f9cebd8dc44bb0acfd1401a22300a8">
+          <bounds x="636" y="762" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-73f1319721204f46afa670093aaf0a46" targetConnections="id-2828cfdce12948ecb4c7a3e223f56c98" archimateElement="id-33b00e5b517349ba88c84eb043b52470">
+          <bounds x="636" y="864" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-51acf66fb9e54030ad09c6fe69699a67" targetConnections="id-d08374b8bf55451cbcefc4c2c56eccc7" archimateElement="id-cdfc0593242c4cf69f0fb88e251bd2d8">
+          <bounds x="636" y="948" width="120" height="55"/>
+        </child>
+        <documentation>Purpose As stated in ISO/IEC/IEEE 15288,&#xD;
+&#xD;
+The purpose of the Transition process is to establish a capability for a system to provide services specified by stakeholder requirements in the operational environment.&#xD;
+&#xD;
+&#xD;
+Activities:&#xD;
+&#xD;
+Prepare for the transistion&#xD;
+Perform the transion&#xD;
+Manage results of transition&#xD;
+</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Disposal Process" id="id-87b52b8b4f2d4f74bd9e1a72c0d06ad8" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-f1d5d78b65354d629b9231e79fa70ffe" targetConnections="id-e4ca584eca6541fd844ead7ad2dfb400 id-44c977001b55461c8fea2715765fd627 id-4eef02476bdb458da5a585ab9d37f971 id-2052cb35ed9b4f48bdd662b0fe779367 id-66053ea0e67e4c70811a41273dbf8758 id-075691cb7f9f4e91a0a3eee9007da370 id-55fc896d6a2d45bfad5eddd634a676e5" archimateElement="id-a738c755e8f246d18ffbb06df2763cd3">
+          <bounds x="192" y="276" width="120" height="637"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ab4c094baf024d3ca6dc7c172e76b96b" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-002e37287ae247d390c1c0cafedb7f30" archimateRelationship="id-29a4ae6dd45c4a2b9b950fae2dbc976b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-69ed0335244a4a898f5176bcccb1dfad" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-e92648d1881f4e8b982395baaad3c812" archimateRelationship="id-2dd40d0e56774c4aa126d6a128422df6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-799c31d91c5e4aafb394f33447f7bc70" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-bf4dc4a8664f4316906af4a0e24b6aab" archimateRelationship="id-fd992705bfce426283dd3299cc9e5afa"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d44c445b9ad7457a88ce65685ebce41d" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-fa472b3089a24b07ad4b20cd6080bf7a" archimateRelationship="id-f19757fde079457e94acb8e27a5bdd50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d1109a37dd8547bfb6e73a850f4b4af5" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-9a7d0aa0f6104e908188120f56db78b3" archimateRelationship="id-220da8777c8a4a5aa91cc7a6572b74d3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7751117636f44d6496ded8b6390d2248" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-9f9430680e724614999363d06e834e8f" archimateRelationship="id-e4455427c58f4d80adce5f5e824db82e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-102fe4ec147545ddadce099999a41c33" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-84c8b41a7f08455ca63bd39e08cbe20a" archimateRelationship="id-a29a844d1dd242f2ab9f48ec89a84f9b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ea82ec822c7748769a83c2d5595f2067" source="id-f1d5d78b65354d629b9231e79fa70ffe" target="id-4044e130924f4f9f8777950db78234f7" archimateRelationship="id-716ef6d8e0814183b9b0a95212b9e5e9"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e6e30a7081c646c6aad495e0d13af723" textAlignment="1" archimateElement="id-a5a00a4ce2bc44cc89a233c4a9cbda87">
+          <bounds x="170" y="20" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e4ca584eca6541fd844ead7ad2dfb400" source="id-e6e30a7081c646c6aad495e0d13af723" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-e4a32b6633504fce91d1f1920b33254a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-45b66eb9c6b344319485c4b4b3f9897d" targetConnections="id-ffcc2ab271f140a0b0affc406a273c1d" archimateElement="id-3d6e3dd6de2a4e7188b5a5924e2f9722">
+          <bounds x="170" y="100" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-44c977001b55461c8fea2715765fd627" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-2921a5480ffd459f904a4fa5dd68e710"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5d458782ec4d43ff8df1c8bf24d87d32" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-b2faf5252ace40a5bb0d7bc00c66b993" archimateRelationship="id-56873a4c0fe04cd6a539bb1912342029"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-08adb5d9be824c838bc7ee6ad3f63658" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-588ea38bd91d4ef686cf0bdcf30d80fc" archimateRelationship="id-5278eae70f5f4521ae4acf3a93ca1da8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-187a30974b064ad68addf3c4839af4e3" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-fa472b3089a24b07ad4b20cd6080bf7a" archimateRelationship="id-cdc8f752cd3e4f22b0abd3fddcff11a8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-eba1e06582d8438a9b7b2812cfd9506f" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-9a7d0aa0f6104e908188120f56db78b3" archimateRelationship="id-489084b2487d42c59329cee8dfddb9ae"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-19f753a237ec4c93ae912a8d909c632d" source="id-45b66eb9c6b344319485c4b4b3f9897d" target="id-9f9430680e724614999363d06e834e8f" archimateRelationship="id-4bf7e00b8edd4bf39b7459df9adb1a5e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-50f5855899084140ba03dc312bc2b18f" archimateElement="id-b03f7dcffd964a4c88b609cc6466ea8f">
+          <bounds x="-36" y="288" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4eef02476bdb458da5a585ab9d37f971" source="id-50f5855899084140ba03dc312bc2b18f" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-9540f62d7d1d4d239dde09c6d9b1229b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b2faf5252ace40a5bb0d7bc00c66b993" targetConnections="id-5d458782ec4d43ff8df1c8bf24d87d32" archimateElement="id-10e2e0c2bb694e7e89736cfb3a1dfd46">
+          <bounds x="-24" y="384" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2052cb35ed9b4f48bdd662b0fe779367" source="id-b2faf5252ace40a5bb0d7bc00c66b993" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-433b15a1e11e46c58f01c537114d0c35"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6cb1bbdbe74247edad4930e6dec7ff5f" archimateElement="id-55b41f0ab7d5436a846d2225fb64addf">
+          <bounds x="-24" y="465" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-66053ea0e67e4c70811a41273dbf8758" source="id-6cb1bbdbe74247edad4930e6dec7ff5f" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-eeef1d9948984a809a0cb4657668092e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b5bfab911e0144c3bc168c8c74a0dd12" archimateElement="id-dd0db487b7c2432e88c1f425ec0c1a0c">
+          <bounds x="-24" y="540" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ffcc2ab271f140a0b0affc406a273c1d" source="id-b5bfab911e0144c3bc168c8c74a0dd12" target="id-45b66eb9c6b344319485c4b4b3f9897d" archimateRelationship="id-f6a799d4315b4da890946d38c93d486b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-075691cb7f9f4e91a0a3eee9007da370" source="id-b5bfab911e0144c3bc168c8c74a0dd12" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-435fdb5e1e6e49cfa19aa82832563a27"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-588ea38bd91d4ef686cf0bdcf30d80fc" targetConnections="id-08adb5d9be824c838bc7ee6ad3f63658" archimateElement="id-20eb54aa48c24a558801c56ff9d271de">
+          <bounds x="-12" y="624" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-55fc896d6a2d45bfad5eddd634a676e5" source="id-588ea38bd91d4ef686cf0bdcf30d80fc" target="id-f1d5d78b65354d629b9231e79fa70ffe" archimateRelationship="id-4af8de1471e840949a709e143801a46e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-002e37287ae247d390c1c0cafedb7f30" targetConnections="id-ab4c094baf024d3ca6dc7c172e76b96b" archimateElement="id-78a45ba4abd6438a9e9a4b29c9ec7927">
+          <bounds x="360" y="300" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e92648d1881f4e8b982395baaad3c812" targetConnections="id-69ed0335244a4a898f5176bcccb1dfad" archimateElement="id-cfc873a0f6344185b01ad59523216493">
+          <bounds x="360" y="384" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bf4dc4a8664f4316906af4a0e24b6aab" targetConnections="id-799c31d91c5e4aafb394f33447f7bc70" archimateElement="id-8cc6660c6cfb4422997784e787cf255e">
+          <bounds x="360" y="456" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fa472b3089a24b07ad4b20cd6080bf7a" targetConnections="id-187a30974b064ad68addf3c4839af4e3 id-d44c445b9ad7457a88ce65685ebce41d" archimateElement="id-c364744869d146318db3ddfd92f6773c">
+          <bounds x="372" y="528" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9a7d0aa0f6104e908188120f56db78b3" targetConnections="id-eba1e06582d8438a9b7b2812cfd9506f id-d1109a37dd8547bfb6e73a850f4b4af5" archimateElement="id-53f9cebd8dc44bb0acfd1401a22300a8">
+          <bounds x="372" y="600" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9f9430680e724614999363d06e834e8f" targetConnections="id-19f753a237ec4c93ae912a8d909c632d id-7751117636f44d6496ded8b6390d2248" archimateElement="id-33b00e5b517349ba88c84eb043b52470">
+          <bounds x="372" y="678" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-84c8b41a7f08455ca63bd39e08cbe20a" targetConnections="id-102fe4ec147545ddadce099999a41c33" archimateElement="id-98d36d72decb4ccd8824b157e56b89f5">
+          <bounds x="372" y="756" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4044e130924f4f9f8777950db78234f7" targetConnections="id-ea82ec822c7748769a83c2d5595f2067" archimateElement="id-5054239f166046d3bf27777d80c1e2a0">
+          <bounds x="372" y="828" width="120" height="55"/>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Maintenance Process" id="id-62b6a0eee9d44093a5f3df7fd3221a0b" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-25cf00d894524d5d8d3edf57b495df01" targetConnections="id-9d1a4a34e6a74295809fc7625b3eabc2 id-f482ced9665d4efa94e13e4f8083da8f id-3b5515268abd4b07bd32ef99c0734c51 id-30eeca5a15314823a20c586f94d42a02 id-afa53650c7d5484393000c06e307779e id-8086f25d51294f0cbfb2515b640c95e3 id-224308a818b6456c9795aeb5129c8c3c" archimateElement="id-7cc650c704cc47ce8d0f9b56b34e3e3d">
+          <bounds x="420" y="288" width="120" height="697"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d3882887c7ff44499e469b866637e6ed" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-6e497a7b521d4bc293c6dc2c19b01c42" archimateRelationship="id-cce86cd2626b49068d5663d2fbad09bf"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8e46a123657c493ea84cdbb39f0a533e" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-681c2f1c99f346ec93095cd316a41c13" archimateRelationship="id-1bec1a72d477486a8332269fe4b49c08"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-73a997021d6e4eacbb8807941f4f7626" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-1bdd6f00a0ae4b07b29cf6fb746b9229" archimateRelationship="id-18a21b3979d74223a768f54453bfdd45"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a10f8bdafae54b17a044722a5d4a19e1" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-ec4da703a5cb4c44950693f7c71565f2" archimateRelationship="id-4c85d6b0a1c745e2bd8cea05ca67699c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e6cfe6872f98486199fbc0b0003a6a5e" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-4bca7faf5e4f4a6e8eb5eee83df24513" archimateRelationship="id-77e9f9fe110c4e5cbd2576633e77b433"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9c737282624a4377aeb9560834c07620" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-478f9af528c54097941f343607290062" archimateRelationship="id-7362867fd28c45c9b95720d7be0a6849"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a7d28c1af1ca4848a98425e8ac4ea092" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-0878c1d8c6a943eeb84b190b88ef45a3" archimateRelationship="id-04eda75d02474264a4b562d95c7b1d0d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8e9caf5fe9234e4d9a06dbb79e5265a7" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-11eb48e0e81a4739b20e46c4c33256ef" archimateRelationship="id-4a6aa8d6966b4a01ba475fc038d371f5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a1d9bc3580b341f3b70154acd5c177f0" source="id-25cf00d894524d5d8d3edf57b495df01" target="id-47256cfe59464852a81611fe70a4fb25" archimateRelationship="id-9dfe61b74d624a889754809b38f5ed93"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6e497a7b521d4bc293c6dc2c19b01c42" targetConnections="id-d3882887c7ff44499e469b866637e6ed id-415057104c6c4fc19483c1e41fbb8973 id-0e92b47f446d4576ad6871cfa7cee4e0" archimateElement="id-3d6e3dd6de2a4e7188b5a5924e2f9722">
+          <bounds x="-24" y="372" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9d1a4a34e6a74295809fc7625b3eabc2" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-d5ba95884623454d81a1c6298c5ea896"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-920d458e6b9d428ab86777001d8fd894" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-a16070a10d334398bc327955f4221442" archimateRelationship="id-56873a4c0fe04cd6a539bb1912342029"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ca0071a47d6f47dd8232057c4a6ac991" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-917e47f0128a49319a801a35079af824" archimateRelationship="id-5278eae70f5f4521ae4acf3a93ca1da8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b3262a0db8504931932f6d5260fbf2b2" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-4bca7faf5e4f4a6e8eb5eee83df24513" archimateRelationship="id-cdc8f752cd3e4f22b0abd3fddcff11a8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ac1f42f4898d431e9ff6c4fa3a9dd778" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-478f9af528c54097941f343607290062" archimateRelationship="id-489084b2487d42c59329cee8dfddb9ae"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e9893c113c684073a587ebb0499aeea8" source="id-6e497a7b521d4bc293c6dc2c19b01c42" target="id-0878c1d8c6a943eeb84b190b88ef45a3" archimateRelationship="id-4bf7e00b8edd4bf39b7459df9adb1a5e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e6ef0599821947d286c3db412889550d" textAlignment="1" archimateElement="id-a5a00a4ce2bc44cc89a233c4a9cbda87">
+          <bounds x="170" y="100" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f482ced9665d4efa94e13e4f8083da8f" source="id-e6ef0599821947d286c3db412889550d" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-7788d2070c5a41dfb66122a9637cb6e1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-14737bc45ae348e28c5fb1fdd679b4ec" archimateElement="id-42b4d868c90b4d6591e6105c63d0d568">
+          <bounds x="-12" y="456" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3b5515268abd4b07bd32ef99c0734c51" source="id-14737bc45ae348e28c5fb1fdd679b4ec" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-ba945f9a9fc94a0680cd9926f2f83c68"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0a07afe27d9a471a956f2533dfe1793d" source="id-14737bc45ae348e28c5fb1fdd679b4ec" target="id-058d5f8029fe4fee8b601ba737a6665d" archimateRelationship="id-955b4d57c2f349908aaeda8d84c0fcc8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d572c6cd4ae6451c80ceb58347121b55" source="id-14737bc45ae348e28c5fb1fdd679b4ec" target="id-4bca7faf5e4f4a6e8eb5eee83df24513" archimateRelationship="id-e86bda7f940d44ae9ae3326487dc07b1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5d07ab62641f46a3933460fe7126cbfb" source="id-14737bc45ae348e28c5fb1fdd679b4ec" target="id-478f9af528c54097941f343607290062" archimateRelationship="id-b780ef776158438b9ca1024e002227b2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0a030f61a3324a65a33f12c790094727" source="id-14737bc45ae348e28c5fb1fdd679b4ec" target="id-0878c1d8c6a943eeb84b190b88ef45a3" archimateRelationship="id-438525c9dd844f089641873d02a14b9c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7ad4f49fe6254b73a023df362d9bc1c0" archimateElement="id-b03f7dcffd964a4c88b609cc6466ea8f">
+          <bounds x="192" y="312" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-30eeca5a15314823a20c586f94d42a02" source="id-7ad4f49fe6254b73a023df362d9bc1c0" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-9017de32700a420f8ff44c8d8d505151"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a16070a10d334398bc327955f4221442" targetConnections="id-920d458e6b9d428ab86777001d8fd894" archimateElement="id-10e2e0c2bb694e7e89736cfb3a1dfd46">
+          <bounds x="204" y="420" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-afa53650c7d5484393000c06e307779e" source="id-a16070a10d334398bc327955f4221442" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-b9a50303543e4d11a9cb98545e81c986"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-058d5f8029fe4fee8b601ba737a6665d" targetConnections="id-0a07afe27d9a471a956f2533dfe1793d" archimateElement="id-dd0db487b7c2432e88c1f425ec0c1a0c">
+          <bounds x="204" y="504" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-415057104c6c4fc19483c1e41fbb8973" source="id-058d5f8029fe4fee8b601ba737a6665d" target="id-6e497a7b521d4bc293c6dc2c19b01c42" archimateRelationship="id-f6a799d4315b4da890946d38c93d486b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8086f25d51294f0cbfb2515b640c95e3" source="id-058d5f8029fe4fee8b601ba737a6665d" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-59b2ecd5dd164b97841c15a07267c2fb"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-917e47f0128a49319a801a35079af824" targetConnections="id-ca0071a47d6f47dd8232057c4a6ac991" archimateElement="id-20eb54aa48c24a558801c56ff9d271de">
+          <bounds x="204" y="588" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-224308a818b6456c9795aeb5129c8c3c" source="id-917e47f0128a49319a801a35079af824" target="id-25cf00d894524d5d8d3edf57b495df01" archimateRelationship="id-0ff8a4526ce244c9a2cc544167b81989"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-681c2f1c99f346ec93095cd316a41c13" targetConnections="id-8e46a123657c493ea84cdbb39f0a533e" archimateElement="id-bd636961b6924f56905cf7ef86b3d91f">
+          <bounds x="600" y="336" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1bdd6f00a0ae4b07b29cf6fb746b9229" targetConnections="id-73a997021d6e4eacbb8807941f4f7626" archimateElement="id-60137e839fa942529c30d0b3f8f03b63">
+          <bounds x="600" y="420" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ec4da703a5cb4c44950693f7c71565f2" targetConnections="id-a10f8bdafae54b17a044722a5d4a19e1" archimateElement="id-55b41f0ab7d5436a846d2225fb64addf">
+          <bounds x="600" y="504" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4bca7faf5e4f4a6e8eb5eee83df24513" targetConnections="id-d572c6cd4ae6451c80ceb58347121b55 id-b3262a0db8504931932f6d5260fbf2b2 id-e6cfe6872f98486199fbc0b0003a6a5e" archimateElement="id-c364744869d146318db3ddfd92f6773c">
+          <bounds x="600" y="576" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-478f9af528c54097941f343607290062" targetConnections="id-5d07ab62641f46a3933460fe7126cbfb id-ac1f42f4898d431e9ff6c4fa3a9dd778 id-9c737282624a4377aeb9560834c07620" archimateElement="id-53f9cebd8dc44bb0acfd1401a22300a8">
+          <bounds x="600" y="660" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0878c1d8c6a943eeb84b190b88ef45a3" targetConnections="id-e9893c113c684073a587ebb0499aeea8 id-0a030f61a3324a65a33f12c790094727 id-a7d28c1af1ca4848a98425e8ac4ea092" archimateElement="id-33b00e5b517349ba88c84eb043b52470">
+          <bounds x="600" y="744" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-11eb48e0e81a4739b20e46c4c33256ef" targetConnections="id-8e9caf5fe9234e4d9a06dbb79e5265a7" archimateElement="id-29923888b87142128ac3305619519112">
+          <bounds x="600" y="816" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0e92b47f446d4576ad6871cfa7cee4e0" source="id-11eb48e0e81a4739b20e46c4c33256ef" target="id-6e497a7b521d4bc293c6dc2c19b01c42" archimateRelationship="id-49f7af0a11e34d688e0658e8ff23831a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-47256cfe59464852a81611fe70a4fb25" targetConnections="id-a1d9bc3580b341f3b70154acd5c177f0" archimateElement="id-02c602184778430fb3209c98eace2d03">
+          <bounds x="600" y="912" width="120" height="55"/>
         </child>
       </element>
     </folder>
@@ -1502,7 +2792,7 @@ Perform configuration status accounting.&#xD;
 Perform configuration verification and audit.</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Project Planning Process" id="id-fcc1977c1fde4aca991f0b5f27313af4" viewpoint="business_process_cooperation">
-        <child xsi:type="archimate:DiagramObject" id="id-49f030b97e1241c0ad746bcc57223c20" targetConnections="id-efc48ec24b6c4890a89d6cd1fd3977df id-cc3d85d9e3294e4498e3aa6ffbf503a8 id-de2727b4d94e4b81bbfef9a1d078401d id-bbbe384e6c0f4e449090c8ca46b398a1 id-d42ef7c0238a4135ad8ae4a94e27605f id-5b068c4c484b4ec3a71d4c928a0aa025 id-50b48b7e807a484e8555199f4f77ca09 id-a5ecadb0af8342c284f1b8ed11686d20 id-9e407e32d5e64706bea418b982b8e808 id-34e5ada4377d4967bbfa2cf926d9174d" archimateElement="id-8f4c234eeccd466cbff6c596b27d6f09">
+        <child xsi:type="archimate:DiagramObject" id="id-49f030b97e1241c0ad746bcc57223c20" targetConnections="id-cc3d85d9e3294e4498e3aa6ffbf503a8 id-de2727b4d94e4b81bbfef9a1d078401d id-bbbe384e6c0f4e449090c8ca46b398a1 id-d42ef7c0238a4135ad8ae4a94e27605f id-5b068c4c484b4ec3a71d4c928a0aa025 id-50b48b7e807a484e8555199f4f77ca09 id-a5ecadb0af8342c284f1b8ed11686d20 id-9e407e32d5e64706bea418b982b8e808 id-34e5ada4377d4967bbfa2cf926d9174d" archimateElement="id-8f4c234eeccd466cbff6c596b27d6f09">
           <bounds x="456" y="24" width="120" height="757"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-406f5b81ac6041ce93aea8bcb5139a97" source="id-49f030b97e1241c0ad746bcc57223c20" target="id-29f109d0b38843eabc544f8582ba021a" archimateRelationship="id-ad74d220cd1a4d6c8b4d6dd411c05d1d"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-41ea689f278e4f488fef61bd5276ad6f" source="id-49f030b97e1241c0ad746bcc57223c20" target="id-74c353852ff244f7958262dea492f9a0" archimateRelationship="id-a33071093ca4441a91a360df1f2e849d"/>
@@ -1515,10 +2805,6 @@ Perform configuration verification and audit.</documentation>
           <sourceConnection xsi:type="archimate:Connection" id="id-88bf4858fd224266a31b1c0c0a8a6e69" source="id-49f030b97e1241c0ad746bcc57223c20" target="id-79ec3e2ef5fe4b189008f200b381fd75" archimateRelationship="id-64f97b41a867492ab114390dfbc8756f"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-cf343d26d88a404c9e988b3fa53118ca" source="id-49f030b97e1241c0ad746bcc57223c20" target="id-b2c8f9cd5d49454da8e39d7a3324778d" archimateRelationship="id-2f21e9ce7fbf421ea2b2e55ca7b7aad7"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-ffc3aec892e945eabca88d9e9e7c491e" source="id-49f030b97e1241c0ad746bcc57223c20" target="id-1f35f38457b84a2882ce79a2895d1db0" archimateRelationship="id-7fcd24d97bcb434db4fc20a150b8c5fd"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-9e28d9387a214fed8ad08ce1a9b0617b" archimateElement="id-0ddafdafec734621bb9cb00f12dfe46f">
-          <bounds x="216" y="12" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-efc48ec24b6c4890a89d6cd1fd3977df" source="id-9e28d9387a214fed8ad08ce1a9b0617b" target="id-49f030b97e1241c0ad746bcc57223c20" archimateRelationship="id-632a93241cab4e539784e7c13e6a36a3"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-2290f58b34714b15b378c6dfe38f824f" archimateElement="id-736a748d59664da09c8160528e8c758d">
           <bounds x="216" y="84" width="120" height="55"/>
@@ -1602,16 +2888,12 @@ Description of the Input and Output Elements&#xD;
     </folder>
     <folder name="Organization Project Enabling Processes" id="id-6c92b0cff8574c75a643301ee3e0f845">
       <element xsi:type="archimate:ArchimateDiagramModel" name="Life Cycle Model Management Process" id="id-af2b145efa8c4a5c8611276d68a23d5c" viewpoint="business_process_cooperation">
-        <child xsi:type="archimate:DiagramObject" id="id-879991420af84bc492252a44c343c83a" targetConnections="id-fe8c4d734483439e988c7aa9163a530c id-3c11e55e1447409483d95cf9ed403318 id-c5014bd14f87490fb8b156644fdc2032 id-7a171d263b3547b4858bdd93d5dcc5a0 id-48d6d98ed81943f2a2f4dfe2086c1b5d id-94cf94f61a314782856937c6d2154447" archimateElement="id-da146668b5034f2985b357797db4c7cb">
+        <child xsi:type="archimate:DiagramObject" id="id-879991420af84bc492252a44c343c83a" targetConnections="id-fe8c4d734483439e988c7aa9163a530c id-c5014bd14f87490fb8b156644fdc2032 id-7a171d263b3547b4858bdd93d5dcc5a0 id-48d6d98ed81943f2a2f4dfe2086c1b5d id-94cf94f61a314782856937c6d2154447" archimateElement="id-da146668b5034f2985b357797db4c7cb">
           <bounds x="324" y="288" width="120" height="469"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-3e433b14ca0b437a85924df05a20b54e" textAlignment="1" archimateElement="id-6241940b5a9f4121b2c56bd3d6b5f983">
           <bounds x="170" y="20" width="400" height="140"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-fe8c4d734483439e988c7aa9163a530c" source="id-3e433b14ca0b437a85924df05a20b54e" target="id-879991420af84bc492252a44c343c83a" archimateRelationship="id-d27cd6769d1c4fb3a9c253fcdf18945a"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-46299c0291ee490f8c897ef3acd34516" archimateElement="id-24b7350e8b86445bac09e7617222f072">
-          <bounds x="120" y="288" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-3c11e55e1447409483d95cf9ed403318" source="id-46299c0291ee490f8c897ef3acd34516" target="id-879991420af84bc492252a44c343c83a" archimateRelationship="id-bc3aff7f2a61463c840b2962ab9b013d"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-38b6a855cec549bdbff43c96374ae40f" archimateElement="id-1d360354ffc74ea0a00ff3c48a930a3f">
           <bounds x="120" y="360" width="120" height="55"/>
@@ -1631,6 +2913,7 @@ Description of the Input and Output Elements&#xD;
         </child>
       </element>
     </folder>
+    <folder name="Agreement Processes" id="id-9f6c90ad7611442c8e99630bb698c9c3"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Overallview" id="id-ae50e0c32e5542d3bfa31ec402f39edb">
       <child xsi:type="archimate:DiagramObject" id="id-51a4823cfba149008c9492bb241fcadb" textAlignment="1" archimateElement="id-d3b6bde373d94c508b5557a6167592d3">
         <bounds x="360" y="387" width="1585" height="573"/>
@@ -1644,7 +2927,7 @@ Description of the Input and Output Elements&#xD;
           <sourceConnection xsi:type="archimate:Connection" id="id-cd4ba818820c4b289aa37be481f74d5a" source="id-6b14f80e2af14b9eaabfd9960405ecf1" target="id-35a6cd806a574ca090bbe84b976b6489" archimateRelationship="id-f19f2895f58943f5847da70aed54ea3c"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-0f918dca821348b5a94c07fe515e7887" source="id-6b14f80e2af14b9eaabfd9960405ecf1" target="id-0a0a4055b34845c88721e3683822cb8b" archimateRelationship="id-8efefc4d39e4469eb08bf48b4a5250f0"/>
           <child xsi:type="archimate:DiagramObject" id="id-35a6cd806a574ca090bbe84b976b6489" targetConnections="id-cd4ba818820c4b289aa37be481f74d5a id-380204b446944504bca94fbe86416f8c" archimateElement="id-3446520345e34771bbca29a5327a55c4">
-            <bounds x="12" y="24" width="120" height="55"/>
+            <bounds x="12" y="60" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-08689e9a9fae431ab41df8ff5f6503c3" source="id-35a6cd806a574ca090bbe84b976b6489" target="id-0a0a4055b34845c88721e3683822cb8b" archimateRelationship="id-cdbc433be472454ead4f9b84e1c6e6d2"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-0a0a4055b34845c88721e3683822cb8b" targetConnections="id-08689e9a9fae431ab41df8ff5f6503c3 id-0f918dca821348b5a94c07fe515e7887" archimateElement="id-32ab6a7d246e4c2db95199dfb6ada8b1">
@@ -1781,6 +3064,35 @@ Description of the Input and Output Elements&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-fbf976f373574b90af883afd6ddf7098" targetConnections="id-51fc00a086a54a8ba2813fee0e92ef33" archimateElement="id-d9d5ae63f9ef49adb3b6fcc8b1864c74">
           <bounds x="35" y="288" width="120" height="55"/>
         </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Acquistion Process" id="id-4cc46e1a1bf7429ebcc3ca8117ac2caa" viewpoint="business_process_cooperation">
+      <child xsi:type="archimate:DiagramObject" id="id-66b55210dea84355bb3685191b02d2b5" targetConnections="id-ee667491c1d2401794a12e18699b1763 id-cdc4e1ff6fe7409fbeb78eb3ee305c5d id-e7f955fe4402425aafcc1f0efb5ca010 id-5d0858411ece4ae1bf61d7e95dd8a5eb id-9d546598a0d04b3a9ffab143aebfb6ca id-b0b79de643284184a2444ee5dd9dedd2" archimateElement="id-3620bdd7a4da4af69d0593016e25fb36">
+        <bounds x="132" y="252" width="120" height="493"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-44c7efa480f34afc8d952664f053995a" textAlignment="1" archimateElement="id-f80adb637b644ca0afe1bc3566492043">
+        <bounds x="170" y="20" width="400" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ee667491c1d2401794a12e18699b1763" source="id-44c7efa480f34afc8d952664f053995a" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-b692afafa24f4512acd20e829c8836e8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2522a1ea8a574b34b90d698afb8f76b2" archimateElement="id-25dab47c068a403b85ee2c3b2ae3899d">
+        <bounds x="-36" y="288" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cdc4e1ff6fe7409fbeb78eb3ee305c5d" source="id-2522a1ea8a574b34b90d698afb8f76b2" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-765ea459fc5b4855b50f7fd511304fad"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b1696adc5ab948e4a4e346427af1158f" archimateElement="id-94cc1405cb2d438fbb64e34ac852b2c5">
+        <bounds x="-48" y="384" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e7f955fe4402425aafcc1f0efb5ca010" source="id-b1696adc5ab948e4a4e346427af1158f" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-7038bbef01ba4d838ffc241cc6bf70e1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c5de5ef3e8404d46ab9d3a2d0beb47d9" archimateElement="id-ad2cf066e58747c483d92e774a506b10">
+        <bounds x="-48" y="492" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5d0858411ece4ae1bf61d7e95dd8a5eb" source="id-c5de5ef3e8404d46ab9d3a2d0beb47d9" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-3d2b9ededd6e47008442b0401cdf4ed7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a9ec9932809648ebb53772dc8ce7187a" archimateElement="id-a37b3ee6f3cd4d4fadf7799c6809f3f8">
+        <bounds x="-48" y="576" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9d546598a0d04b3a9ffab143aebfb6ca" source="id-a9ec9932809648ebb53772dc8ce7187a" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-2dcc0b6443b246ed90f17f8720bea164"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-acc517c70e7c4615aef2a54bfb97815b" archimateElement="id-3ba17d83753d4914a0cf9098ff135952">
+        <bounds x="-48" y="660" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b0b79de643284184a2444ee5dd9dedd2" source="id-acc517c70e7c4615aef2a54bfb97815b" target="id-66b55210dea84355bb3685191b02d2b5" archimateRelationship="id-92539789a8464a2384174f67331bcdc4"/>
       </child>
     </element>
   </folder>
