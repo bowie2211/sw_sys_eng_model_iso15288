@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>06_Implementation process.</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>06_Implementation process.</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-business_process_cooperation"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_business_process_cooperation" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-2b80158520bd403cbed445096aed2117.png" alt="06_Implementation process." usemap="#id-2b80158520bd403cbed445096aed2117map"/>
+			   <map name="id-2b80158520bd403cbed445096aed2117map">
+				          <area shape="rect" coords="874,10,1161,107" href="../objects/id-72e66575ef42415581498726fccba706.html" target="element" >
+				  		<area shape="rect" coords="658,682,875,737" href="../elements/id-cac3fa558fa44cb89cced1a87eab724f.html"  target="element">
+				  		<area shape="rect" coords="658,598,875,653" href="../elements/id-4b026f471cf846519b6d9bc956ac9320.html"  target="element">
+				  		<area shape="rect" coords="658,532,875,587" href="../elements/id-33b00e5b517349ba88c84eb043b52470.html"  target="element">
+				  		<area shape="rect" coords="658,460,875,515" href="../elements/id-53f9cebd8dc44bb0acfd1401a22300a8.html"  target="element">
+				  		<area shape="rect" coords="658,382,875,437" href="../elements/id-c364744869d146318db3ddfd92f6773c.html"  target="element">
+				  		<area shape="rect" coords="658,298,875,353" href="../elements/id-2d90f35902564acbb4e98cb64f88ba2d.html"  target="element">
+				  		<area shape="rect" coords="658,226,875,281" href="../elements/id-0253359305bd4c77bb6744cf21b4ea54.html"  target="element">
+				  		<area shape="rect" coords="658,154,875,209" href="../elements/id-a09dae276e7d423d87c821b11f8c5252.html"  target="element">
+				  		<area shape="rect" coords="10,682,130,737" href="../elements/id-f61ecd5007c94f20b0e74e1ae0a4a044.html"  target="element">
+				  		<area shape="rect" coords="10,622,130,677" href="../elements/id-e7b13d7b81b140dbbe2f0c2d4da6de26.html"  target="element">
+				  		<area shape="rect" coords="10,550,130,605" href="../elements/id-cc956002383842218b71cda5caf6f18d.html"  target="element">
+				  		<area shape="rect" coords="10,478,130,533" href="../elements/id-3201652acf25417287545a20e785675d.html"  target="element">
+				  		<area shape="rect" coords="10,406,130,461" href="../elements/id-de5c8be5094f488b95f216bb33e72c25.html"  target="element">
+				  		<area shape="rect" coords="10,334,130,389" href="../elements/id-3c75282c4f774ab8bab3b04d473e7974.html"  target="element">
+				  		<area shape="rect" coords="10,262,130,317" href="../elements/id-d0befb6a8b744a07bfa748ff3e680888.html"  target="element">
+				  		<area shape="rect" coords="10,190,130,245" href="../elements/id-7f6dadbc51ae48448b08e403a2a0972f.html"  target="element">
+				  		<area shape="rect" coords="10,118,130,173" href="../elements/id-1f715c50add34dd48f6e85b5abc5864f.html"  target="element">
+				  		<area shape="rect" coords="274,118,575,755" href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Purpose As stated in ISO/IEC/IEEE 15288, 
+
+ The purpose of the Implementation process is to realize a specified system element.
+
+Actvities
+
+Prepare for implementation 
+&#8226; Perform implementation 
+&#8226; Manage results of implementation</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+											    <td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element" class="i18n-elementtype-BusinessProcess">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-1f715c50add34dd48f6e85b5abc5864f.html" target="element"> Life cycle concepts </a> </td>
+											    <td> <a href="../elements/id-1f715c50add34dd48f6e85b5abc5864f.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-7f6dadbc51ae48448b08e403a2a0972f.html" target="element"> System viewpoints, views, and models </a> </td>
+											    <td> <a href="../elements/id-7f6dadbc51ae48448b08e403a2a0972f.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-d0befb6a8b744a07bfa748ff3e680888.html" target="element"> System architecture description </a> </td>
+											    <td> <a href="../elements/id-d0befb6a8b744a07bfa748ff3e680888.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3c75282c4f774ab8bab3b04d473e7974.html" target="element"> System architecture rationale </a> </td>
+											    <td> <a href="../elements/id-3c75282c4f774ab8bab3b04d473e7974.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-de5c8be5094f488b95f216bb33e72c25.html" target="element"> System design description </a> </td>
+											    <td> <a href="../elements/id-de5c8be5094f488b95f216bb33e72c25.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3201652acf25417287545a20e785675d.html" target="element"> System design rationale </a> </td>
+											    <td> <a href="../elements/id-3201652acf25417287545a20e785675d.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cc956002383842218b71cda5caf6f18d.html" target="element"> System interface definition </a> </td>
+											    <td> <a href="../elements/id-cc956002383842218b71cda5caf6f18d.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e7b13d7b81b140dbbe2f0c2d4da6de26.html" target="element"> System design characteristics </a> </td>
+											    <td> <a href="../elements/id-e7b13d7b81b140dbbe2f0c2d4da6de26.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f61ecd5007c94f20b0e74e1ae0a4a044.html" target="element"> System element description </a> </td>
+											    <td> <a href="../elements/id-f61ecd5007c94f20b0e74e1ae0a4a044.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-a09dae276e7d423d87c821b11f8c5252.html" target="element"> Implementation strategy/approach </a> </td>
+											    <td> <a href="../elements/id-a09dae276e7d423d87c821b11f8c5252.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-0253359305bd4c77bb6744cf21b4ea54.html" target="element"> System element </a> </td>
+											    <td> <a href="../elements/id-0253359305bd4c77bb6744cf21b4ea54.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-2d90f35902564acbb4e98cb64f88ba2d.html" target="element"> Training materials </a> </td>
+											    <td> <a href="../elements/id-2d90f35902564acbb4e98cb64f88ba2d.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-c364744869d146318db3ddfd92f6773c.html" target="element"> Constraints on solution </a> </td>
+											    <td> <a href="../elements/id-c364744869d146318db3ddfd92f6773c.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-53f9cebd8dc44bb0acfd1401a22300a8.html" target="element"> Requirements imposed on enabling systems </a> </td>
+											    <td> <a href="../elements/id-53f9cebd8dc44bb0acfd1401a22300a8.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-33b00e5b517349ba88c84eb043b52470.html" target="element"> Traceability mapping </a> </td>
+											    <td> <a href="../elements/id-33b00e5b517349ba88c84eb043b52470.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4b026f471cf846519b6d9bc956ac9320.html" target="element"> Implementation report </a> </td>
+											    <td> <a href="../elements/id-4b026f471cf846519b6d9bc956ac9320.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cac3fa558fa44cb89cced1a87eab724f.html" target="element"> Implementation records/artifacts </a> </td>
+											    <td> <a href="../elements/id-cac3fa558fa44cb89cced1a87eab724f.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-72e66575ef42415581498726fccba706.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-72e66575ef42415581498726fccba706.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-599ce7ea994042c2993ee72d05784a39.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-599ce7ea994042c2993ee72d05784a39.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-2d90f35902564acbb4e98cb64f88ba2d.html" target="element"> Training materials </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9d2c0fac203a4f919f183d20f442d3b9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9d2c0fac203a4f919f183d20f442d3b9.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-0253359305bd4c77bb6744cf21b4ea54.html" target="element"> System element </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6751a004fc2e467da6cc45ec77466578.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6751a004fc2e467da6cc45ec77466578.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-a09dae276e7d423d87c821b11f8c5252.html" target="element"> Implementation strategy/approach </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4642780473064c5ba25584c7176276cd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4642780473064c5ba25584c7176276cd.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-c364744869d146318db3ddfd92f6773c.html" target="element"> Constraints on solution </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9442b00f14d844adaaff61b8234b1449.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9442b00f14d844adaaff61b8234b1449.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-53f9cebd8dc44bb0acfd1401a22300a8.html" target="element"> Requirements imposed on enabling systems </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-55c8c647581a4cd6aa2e66c82d924a7d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-55c8c647581a4cd6aa2e66c82d924a7d.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-33b00e5b517349ba88c84eb043b52470.html" target="element"> Traceability mapping </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6dd0953237814e2f828c714a4b224f68.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6dd0953237814e2f828c714a4b224f68.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-4b026f471cf846519b6d9bc956ac9320.html" target="element"> Implementation report </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ea6d004640834c5ca383ec9e5547b610.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ea6d004640834c5ca383ec9e5547b610.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																		<td> <a href="../elements/id-cac3fa558fa44cb89cced1a87eab724f.html" target="element"> Implementation records/artifacts </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-655347abb3294f139eae4e060d46faa7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-655347abb3294f139eae4e060d46faa7.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1f715c50add34dd48f6e85b5abc5864f.html" target="element"> Life cycle concepts </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-8ec3dffea2384a60873fb23aaafe2372.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8ec3dffea2384a60873fb23aaafe2372.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7f6dadbc51ae48448b08e403a2a0972f.html" target="element"> System viewpoints, views, and models </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-bc224becaf164f58bff69a8975b060da.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-bc224becaf164f58bff69a8975b060da.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-d0befb6a8b744a07bfa748ff3e680888.html" target="element"> System architecture description </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-98430157a4f04a91bc2db998e714a131.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-98430157a4f04a91bc2db998e714a131.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3c75282c4f774ab8bab3b04d473e7974.html" target="element"> System architecture rationale </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d52bdee57d374264a9d1628ec85a9fb8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d52bdee57d374264a9d1628ec85a9fb8.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-de5c8be5094f488b95f216bb33e72c25.html" target="element"> System design description </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-5538f8a6674644e3b7cc19af6070255f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5538f8a6674644e3b7cc19af6070255f.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3201652acf25417287545a20e785675d.html" target="element"> System design rationale </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-0315e74242f543088c55d9fca44d2bc8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0315e74242f543088c55d9fca44d2bc8.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cc956002383842218b71cda5caf6f18d.html" target="element"> System interface definition </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-66f42badcc164d3ea5b414d7d4d2d37e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-66f42badcc164d3ea5b414d7d4d2d37e.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e7b13d7b81b140dbbe2f0c2d4da6de26.html" target="element"> System design characteristics </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-168880295fa5497eac597403f58d5c2d.html" target="element"> in_out </a> </td>
+																		<td> <a href="../elements/id-168880295fa5497eac597403f58d5c2d.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																	    	(in_out)
+																		</a> </td>
+																		<td> <a href="../elements/id-f61ecd5007c94f20b0e74e1ae0a4a044.html" target="element"> System element description </a> </td>
+																		<td> <a href="../elements/id-a2a787a1e17a4f9ba6f4fae4aeb19974.html" target="element"> Implementation Process </a> </td>
+																	</tr>
+
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

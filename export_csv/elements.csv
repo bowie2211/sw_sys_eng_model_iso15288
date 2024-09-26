@@ -1,0 +1,777 @@
+"ID","Type","Name","Documentation","Specialization"
+"id-f6a9987bd9234adcafcc836049921003","ArchimateModel","systems_sw_engineering_iso15288","",""
+"id-2725f688a62848f38c5ca6168b77d259","BusinessObject","Accepted system or system element","System or system element (product or service) accepted by an acquirer from a supplier consistent with the delivery conditions of the supply agreement.",""
+"id-3ba17d83753d4914a0cf9098ff135952","BusinessObject","Acquired system or system element","System or system element (product or service) delivered to the acquirer from a supplier consistent with the delivery conditions of the acquisition agreement.
+",""
+"id-ba963431190b46c2bb39677b60feff50","BusinessObject","Acquisition agreement","Mutual acknowledgment of terms and conditions under which a working relationship is conducted between an acquirer and a supplier. (Adapted from ISO/IEC/IEEE 15288, 2023).
+
+",""
+"id-94cc1405cb2d438fbb64e34ac852b2c5","BusinessObject","Acquisition need","Identified need that cannot be met within the organization encountering the need or a need that can be met in a more economical way by a supplier.
+
+",""
+"id-2e9c1ba82e7a453f800e9af9901d29f3","BusinessObject","Acquisition payment","Payments or other compensations for an acquired system.
+",""
+"id-863a4f919c30451d877d6fb998129886","BusinessObject","Acquisition records/artifacts","Permanent, readable form of data, information, or knowledge related to acquisition.
+",""
+"id-cb0ab066171a486f8595dddf542f07fc","BusinessObject","Acquisition report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the acquisition activities.
+",""
+"id-dd304d03cd6a44b9b12b9650ce3fc6d6","BusinessObject","Acquisition strategy/approach","Approaches, schedules, resources, and specific considerations required to perform acquisition.
+",""
+"id-32f671919ed746d3858409d5fce3a937","BusinessObject","Agreements","Agreements from all applicable life cycle processes, including: acquisition agreement and supply agreement.
+",""
+"id-2320a9c8af7c41978f7f5f65793c1cc5","BusinessObject","Alternative solution classes","Identifies and describes the classes of solutions that may address the problem or opportunity.
+
+
+",""
+"id-2f93aafd10bb499f8a5b94935c81c89b","BusinessObject","Analysis Situation","Analyses that arise from any stakeholder. Can originate from any life cycle process.
+",""
+"id-3298738c9fc546de86d2c0258b3bbb94","BusinessObject","Applicable laws and regulations","International, national, or local laws or regulations.
+",""
+"id-1d2ec952b5a04f38a111636008bba23c","BusinessObject","Breakdown structures","Hierarchical representations of project aspects into smaller components providing the necessary frameworks to accomplish the project objectives and create the required deliverables.
+",""
+"id-702e0cce6a3d4fd2a224f25818171f11","BusinessObject","Business or mission analysis  report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the business or mission analysis activities.
+",""
+"id-84aaf64d06b44bb6b9c9490d1e75cb05","BusinessObject","Business or mission analysis records/artifacts","Permanent, readable form of data, information, or knowledge related to business or mission analysis.
+",""
+"id-93099e1f67cc4d1e9ffda8c0c99834a6","BusinessObject","Business or mission analysis strategy/approach","Approaches, schedules, resources, and specific considerations required to perform business or mission analysis.
+",""
+"id-b0a5b110350b4eb3a13cd0c162b89119","BusinessObject","Business plan","The overall organization business plan, including the business objectives.",""
+"id-3ae0672d20244494be12729c17f5acd6","BusinessObject","Candidate Items for configuration management","Items for configuration control. Can originate from any life cycle process.",""
+"id-78a4392bca544ea2a8954eef4e34a1d7","BusinessObject","Candidate items for information management","Items for information control. Can originate from any life cycle process.
+",""
+"id-86598239d80d4fa8afae7a341ceee720","BusinessObject","Candidate risks and opportunities","Risks and opportunities that arise from any stakeholder. Can originate from any life cycle process.",""
+"id-a37b3ee6f3cd4d4fadf7799c6809f3f8","BusinessObject","Change request","Identified anomaly, required, or recommended enhancement to a project, from the time an idea is recorded until the disposition by a designated change authority. (Adapted from ISO/IEC/IEEE 24765, 2017).
+",""
+"id-9b4168c2e16b4abc816a96e0370f4629","BusinessObject","Concept of operations (ConOps)","At the organization level, addresses the leadership’s intended way of operating the organization (ISO/IEC/IEEE 29148, 2018).",""
+"id-5be7e85db9a14933add51edeeeafa32d","BusinessObject","Configuration baseline","Configuration information formally designated at a specific time during the life of a product, product component, service, or service component. (Adapted from ISO/IEC/IEEE 24765, 2017).
+",""
+"id-b46814b90812492f85d76c3011de99cf","BusinessObject","Configuration management records/artifacts","Permanent, readable form of data, information, or knowledge related to configuration management.
+",""
+"id-38af16de7e8d495fad1c2457ac770263","BusinessObject","Configuration management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the configuration management activities.
+",""
+"id-cbba009d753e47d1b7a7c8fc74784981","BusinessObject","Configuration management system","System used to support and enable configuration management.",""
+"id-e3d8367b0a6d4edb9c9b1c89d33973b1","BusinessObject","Configuration managemnt strategy/approach","Approaches, schedules, resources, and specific considerations required to perform configuration management.",""
+"id-22a9a5060a5e48cfb88ac007b04651b0","BusinessObject","Configuration managment records/artifacts","",""
+"id-5c055b4173e44dd082da1766f349ef39","BusinessObject","Configuration verification and audit report","Provides results of configuration management verifications and audits to ensure adequate traceability, control, and visibility. It includes evaluation criteria.
+",""
+"id-c364744869d146318db3ddfd92f6773c","BusinessObject","Constraints on solution","Externally imposed limitation on the system, its design, or implementation or on the process used to develop or modify a system. (ISO/IEC/IEEE 29148, 2018).
+",""
+"id-3e857e3ea916419382d5f7b7e831f55b","BusinessObject","Critical performance measurement data","Data provided for the identified system-of-interest measurement needs.",""
+"id-0ff782b7b254452cb14d7eca2677c8df","BusinessObject","Critical performance measurement needs","Identified information needs of the decision makers with respect to system-of-interest expectations.
+",""
+"id-41ca205ed1a8458795565c3387762ace","BusinessObject","Customer satisfaction inputs","Responses to customer satisfaction surveys or other instruments.",""
+"id-b9d11a0a957d42c297ec98a6c60385ce","BusinessObject","Decision management records/artifacts","An account prepared for interested parties in order to communicate the status, results, and outcomes of the decision management activities.
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central
+",""
+"id-20551c025d9b40dea08ed1754a048ffc","BusinessObject","Decision management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the decision management activities.
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bosch/detail.action?docID=7260875.
+",""
+"id-1307704b656146d6a43361f251a8df87","BusinessObject","Decision management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform decision management.",""
+"id-234f2afb68a844d6873e4834a0fb056c","BusinessObject","Decision register","A repository that supports the availability for use and communication of all relevant decision information in a timely, complete, valid, and, if required, confidential manner.",""
+"id-0e427a724d354b8a838351b56d8ddc4a","BusinessObject","Decision situations","Decisions that arise from any stakeholder. Can originate from any life cycle process.
+",""
+"id-868a51d79c66458d960be94b1035ac29","BusinessObject","Design definition records/artifacts","Permanent, readable form of data, information, or knowledge related to design definition.
+",""
+"id-64f786456d2b49b1b67224fcc713754d","BusinessObject","Design definition report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the design definition activities.",""
+"id-1b318c0a9fd74b6e93d0b6d3db53c128","BusinessObject","Design definition strategy/approach","Approaches, schedules, resources, and specific considerations required to perform design definition.
+",""
+"id-cfc873a0f6344185b01ad59523216493","BusinessObject","Disposal procedure","Presents an ordered series of steps to perform disposal.
+",""
+"id-5054239f166046d3bf27777d80c1e2a0","BusinessObject","Disposal records/artifacts","Permanent, readable form of data, information, or knowledge related to disposal.
+",""
+"id-98d36d72decb4ccd8824b157e56b89f5","BusinessObject","Disposal report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the disposal activities.
+",""
+"id-fb261bcdfea0403b9be1b001c9f5024d","BusinessObject","Disposal strategy/approach","Approaches, schedules, resources, and specific considerations required to perform disposal.
+",""
+"id-8cc6660c6cfb4422997784e787cf255e","BusinessObject","Disposed system","System (product or service) that has been deactivated, disassembled, and removed from operations and been properly disposed.
+",""
+"id-fd2accbdd6444e72945937d2eb5dbf40","BusinessObject","Enabling systems","External systems that facilitate the life cycle activities of the SoI but are not a direct element of the operational environment.
+",""
+"id-b92111ab22954f389f66a540cf851352","BusinessObject","Human resource management records/artifacts","Permanent, readable form of data, information, or knowledge related to human resource management.
+",""
+"id-16031e49abb249609f13156d7d6312a7","BusinessObject","Human resource management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the human resource management activities.
+",""
+"id-78a45ba4abd6438a9e9a4b29c9ec7927","BusinessObject","Human resource management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform human resource management.",""
+"id-cac3fa558fa44cb89cced1a87eab724f","BusinessObject","Implementation records/artifacts","Permanent, readable form of data, information, or knowledge related to implementation.",""
+"id-4b026f471cf846519b6d9bc956ac9320","BusinessObject","Implementation report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the implementation activities.",""
+"id-a09dae276e7d423d87c821b11f8c5252","BusinessObject","Implementation strategy/approach","Approaches, schedules, resources, and specific considerations required to perform implementation.",""
+"id-65d68f4d1ad04a1fb6509bed0f51f721","BusinessObject","Information management records/artifacts","Permanent, readable form of data, information, or knowledge related to information management.",""
+"id-a95cda47e3a44fee9bbfc6666e8092b8","BusinessObject","Information management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the information management activities.
+",""
+"id-c61de39abd604ad1833a632aac6fc030","BusinessObject","Information management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform information management.
+",""
+"id-31033d50c3d34ac2b3d3d7ba5ffa64d5","BusinessObject","Information register","A repository that supports the availability for use and communication of all relevant project information artifacts in a timely, complete, valid, and, if required, restricted manner.
+",""
+"id-8895806247d2424ea151b98d2d4cb812","BusinessObject","Infrastructure management records/artifacts","Permanent, readable form of data, information, or knowledge related to infrastructure management.
+",""
+"id-97226da0c82b4a7b9489a4eba0c7fd54","BusinessObject","Infrastructure management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the infrastructure management activities.",""
+"id-b5a27d6dc2b842c790a2f982f97c19da","BusinessObject","Infrastructure management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform infrastructure management.",""
+"id-0eb98ef80f9e488394ff0fdf96d8451d","BusinessObject","Installation procedure","Presents an ordered series of steps to perform transition.",""
+"id-d873ba656fa847c6a5a81a7f298e0a66","BusinessObject","Installed system","System (product or service) that has been installed in its operational environment.",""
+"id-5a5ece49f6784b088ff73df8e0376d44","BusinessObject","Integrated system or system element","System or system element (product or service) that has been aggregated from system elements.",""
+"id-30b3681b1a1e4dbfb5a86858c6481bde","BusinessObject"," Integration procedure ","Presents an ordered series of steps to perform integration.",""
+"id-e1fe3dc2d555412ba2cc596fad5c6496","BusinessObject"," Integration records/artifacts","Permanent, readable form of data, information, or knowledge related to integration.",""
+"id-5cb5755ab9ce478bb661b1793e09acff","BusinessObject"," Integration report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the integration activities.",""
+"id-c6cec0418b5e4769b6cb7133c072080a","BusinessObject","Integration strategy/approach","Approaches, schedules, resources, and specific considerations required to perform integration.",""
+"id-dcc238ce62f7435697bb9ee88258e61e","BusinessObject","Knowledge management records/artifacts","Permanent, readable form of data, information, or knowledge related to knowledge management.",""
+"id-fcfb32eb47ee4599bc3cd6349b76c89c","BusinessObject","Knowledge management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the knowledge management activities.
+",""
+"id-9ad12b8cf1b648dcaafde58d2d935d83","BusinessObject","Knowledge management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform knowledge management.",""
+"id-33ba894e87794e4da5c9706bd0ad11d4","BusinessObject","Knowledge management system","System used to support and enable knowledge management.",""
+"id-1f715c50add34dd48f6e85b5abc5864f","BusinessObject","Life cycle concepts","Articulation and refinement of the various life cycle concepts consistent with the stakeholder needs. Typical concepts include: acquisition concept; deployment concept; operational concept (OpsCon); support concept; retirement conce",""
+"id-3f88c331955747f9a82ad23ff4823692","BusinessObject","Life cycle model management records/artifacts","
+
+
+Permanent, readable form of data, information, or knowledge related to life cycle model management.",""
+"id-e7476091c189486a9ed270dab3dcbb58","BusinessObject","Life cycle model management report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the life cycle model management activities.
+",""
+"id-b79bfd2993c646f589c1b62504e1109d","BusinessObject","Life cycle model management strategy/approach","Approaches, schedules, resources, and specific considerations required to perform life cycle model management.",""
+"id-b03f7dcffd964a4c88b609cc6466ea8f","BusinessObject","Life cycle models ","Framework of processes and activities concerned with the life cycle that can be organized into stages, acting as a common reference for communication and understanding. (ISO/IEC/IEEE 15288, 2023)",""
+"id-55b41f0ab7d5436a846d2225fb64addf","BusinessObject","Maintained and sustained system","System (product or service) that has been maintained for use in its operational environment.",""
+"id-60137e839fa942529c30d0b3f8f03b63","BusinessObject","Maintenance and logistics procedure","
+Presents an ordered series of steps to perform maintenance.",""
+"id-02c602184778430fb3209c98eace2d03","BusinessObject","Maintenance and logistics records/artifacts","
+Permanent, readable form of data, information, or knowledge related to maintenance.",""
+"id-29923888b87142128ac3305619519112","BusinessObject","Maintenance and logistics report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the maintenance activities.",""
+"id-bd636961b6924f56905cf7ef86b3d91f","BusinessObject","Maintenance and logistics strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform maintenance.",""
+"id-f218e2da4eec449d80a30fbb3a717d44","BusinessObject","Measurement data","
+Measurement data from all applicable life cycle processes, including: critical performance measurement data, organizational measurement data, and project measurement data.
+",""
+"id-ae2b6ad911d341aebb56a139588a913e","BusinessObject","Measurement needs","
+Measurement needs from all applicable life cycle processes, including: critical performance measurement needs, organizational measurement needs, and project measurement needs.
+
+",""
+"id-5d507ae55b674c8dafc42d2eae81d495","BusinessObject","Measurement records/artifacts","Permanent, readable form of data, information, or knowledge related to measurement.",""
+"id-2fdaf6b8776f40bf9deb2989735e4f8c","BusinessObject","Measurement register","
+A repository that supports the availability for use and communication of all relevant measures in a timely, complete, valid, and, if required, confidential manner.
+",""
+"id-69017c275fd342abb566ce5eaf22325e","BusinessObject","Measurement report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the measurement activities.
+",""
+"id-4a13ebf2f8af49b780736701d72e8d23","BusinessObject","Measurement strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform measurement.",""
+"id-d96ba93b1cee44988a4708daa49e432b","BusinessObject","Operation procedure","
+Presents an ordered series of steps to perform operation.",""
+"id-42f142d16f9d4cb3939a0f14be62ef13","BusinessObject","Operation records/artifacts","
+Permanent, readable form of data, information, or knowledge related to operation.",""
+"id-20eb54aa48c24a558801c56ff9d271de","BusinessObject","Operation report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the operation activities.
+",""
+"id-dc64f214789e4470a7adcc47d574667c","BusinessObject","Operation strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform operation.
+",""
+"id-10e2e0c2bb694e7e89736cfb3a1dfd46","BusinessObject","Operational system","
+System (product or service) being used in its operational environment.",""
+"id-3743a6400ccf4252baed7d15288f7395","BusinessObject","Organization infrastructure","Resources, facilities, personnel, and/or services that support the organization.",""
+"id-857a6df88cff460f9468418f701f33a0","BusinessObject","Organization infrastructure needs","
+Identified organizational infrastructure needs.",""
+"id-df600d44506142ed9852a9d3238f5b5e","BusinessObject","Organization lessons learned","
+Organizational-related lessons learned. Results from an evaluation or observation of an implemented corrective action that contributed to improved performance or increased capability. A lesson learned also results from an evaluation or observation of a positive finding that did not necessarily require corrective action other than sustainment.
+",""
+"id-09423f9f72b34108b89b821591c06a3e","BusinessObject","Organization policies","
+High-level direction at the organizational level consistent with the organization’s strategies. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-b45d59277464441f9f56b974071e1cce","BusinessObject","Organization portfolio direction and constraints","
+Organization direction and constraints related to the project portfolio.",""
+"id-b487a75c640244a2bc62170c491e6468","BusinessObject","Organization procedures","
+Presents an ordered series of steps to perform a process, activity, or task for an organization. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-b4bd4ccf737b4933a5f68ee1bfa5a52d","BusinessObject","Organization processes","
+Set of interrelated or interacting activities that transform inputs into outputs for an organization. (Adapted from ISO/IEC/IEEE 15288, 2023)
+",""
+"id-fa929da541f64a23a52b300f88176373","BusinessObject","Organization reports","
+Reports from all applicable organization life cycle processes, including: life cycle model management report, infrastructure management report, portfolio management report, human resource management report, quality management report, and knowledge management report.
+",""
+"id-25dab47c068a403b85ee2c3b2ae3899d","BusinessObject","Organization strategic plan","
+The overall organization strategy, including the business mission or vision and strategic goals and objectives.
+",""
+"id-8023689c6ec34d45bb479e5d10791e58","BusinessObject","Organization strategies/approaches","
+Strategies/approaches for all applicable organization life processes, including: life cycle model management strategy/approach, infrastructure management strategy/approach, portfolio management strategy/approach, human resource management strategy/approach, quality management strategy/approach, and knowledge management strategy/approach.
+",""
+"id-1d360354ffc74ea0a00ff3c48a930a3f","BusinessObject","Organization tailoring strategy/approach","Organization’s specific strategy and approach to tailoring required to incorporate new or updated external standards.",""
+"id-ed884a159cc3431d831680bf357572e8","BusinessObject","Organizational measurement data","
+Data provided for the identified organizational measurement needs.",""
+"id-f3aaf3347f3045bdb471b19a97e1ef6d","BusinessObject","Organizational measurement needs","Identified information needs of the decision makers with respect to organizational expectations.
+",""
+"id-d29a13e0e0fb4aeea86575c35dc6d411","BusinessObject","Other validated artifacts","
+Artifacts that are validated",""
+"id-e14508f0e4124e0782dc464b4ed65f2b","BusinessObject","Other verified artifacts","Artifacts that are verified
+",""
+"id-32616aa7d1d1458cbf7d551227b949fc","BusinessObject","Portfolio management records/artifacts","
+
+Permanent, readable form of data, information, or knowledge related to portfolio management.",""
+"id-216e2dce74054334b01de870c3ec2684","BusinessObject","Portfolio management report","
+
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the portfolio management activities.",""
+"id-34017589584249dc8937e890b8f447a7","BusinessObject","Portfolio management strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform portfolio management.",""
+"id-f981ac603ec949799e7818163925bdd0","BusinessObject","Problem or opportunity statement","Description of the problem or opportunity. Should be derived from the organization strategy and provide enough detail to understand the gap or new capability that is being considered
+",""
+"id-6e6c602aa28e4c53a59b040cc3388c10","BusinessObject","Problem or opportunity statement","
+Description of the problem or opportunity. Should be derived from the organization strategy and provide enough detail to understand the gap or new capability that is being considered
+",""
+"id-73c577f09d6347a99de832467bc550b0","BusinessObject","Problem or opportuniy statement","",""
+"id-a09de1a058fb47c7a0ff78ea03f1eb00","BusinessObject","Project assessment and control records/artifacts","
+Permanent, readable form of data, information, or knowledge related to project assessment and control.
+",""
+"id-9acc5aa107e54631aa81ee9c33bc707e","BusinessObject","Project assessment and control strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform project assessment and control.
+",""
+"id-6160b83f0c514404b495ec7088fea940","BusinessObject","Project authorization","
+Authorization from the organization to proceed per the agreed-to project plan.
+",""
+"id-c3be2eea07a14fb7b7b9001b43a711c4","BusinessObject","Project authorization request","
+Request from the project to the organization to authorize the project.",""
+"id-622f11e9fe1d45a98c6607a140b403de","BusinessObject","Project budget","
+Estimate of the costs associated with a particular project. Includes labor, infrastructure, acquisition, and enabling system costs along with reserves for risk management.
+",""
+"id-535be19768424cd5b2f2ae21dd063577","BusinessObject","Project constraints","
+Externally imposed limitation on the project developing or modifying a system. (ISO/IEC/IEEE 29148, 2018)
+",""
+"id-10dc72c3ec4d4d8a8002528bbf404dbd","BusinessObject","Project control request","
+Project directives based on action required due to deviations from the project plan. If assessments are associated with a decision gate, a decision to proceed or not to proceed, is taken.
+",""
+"id-be3e5014ad0448e0bdc32582044f83a1","BusinessObject","Project decision gate/review result","
+Decision gate and review artifacts that are expected through conduct of the decision gate or technical review and that can be considered elements of exit criteria. (Adapted from ISO/IEC/IEEE 24748–8, 2019)
+",""
+"id-4169c6fa6c2d48afb227650a0505abd6","BusinessObject","Project direction","
+Organizational direction to the project. Includes sustainment of projects meeting objectives and redirection or termination of projects not meeting objectives.
+",""
+"id-72807c90cb414bfdbb22e1633ebb1fa3","BusinessObject","Project human resource needs","
+Identified human resource needs of the project.
+",""
+"id-dfc463047e1a4ec5b41fb9e7389b0640","BusinessObject","Project infrastructure","
+Resources, facilities, personnel, and/or services that support the project.",""
+"id-12ba502972b04901892806c60d024af3","BusinessObject","Project infrastructure needs","
+Identified infrastructure needs of the project.",""
+"id-794eacf0696c436f93c3ea5a52ec479a","BusinessObject","Project lessons learned","
+Project-related lessons learned. Results from an evaluation or observation of an implemented corrective action that contributed to improved performance or increased capability. A lesson learned also results from an evaluation or observation of a positive finding that did not necessarily require corrective action other than sustainment.
+",""
+"id-82bf0c20cec0410b804e432c877c1873","BusinessObject","Project measurement data","
+Data provided for the identified project measurement needs.",""
+"id-ddbd3915154e42ffb84069ff54b70cea","BusinessObject","Project measurement needs","
+Identified information needs of the decision makers with respect to project expectations.
+",""
+"id-100432dff91d4ff5aa6030141fee6ccb","BusinessObject","Project objectives","
+The objectives or goals for the project.",""
+"id-49faab91e49b4e7091d0e4c00ea35b76","BusinessObject","Project planning records/artifacts","
+Permanent, readable form of data, information, or knowledge related to project planning.",""
+"id-7205cee1f17340158150eea23405b82a","BusinessObject","Project portfolio","
+Collection of projects that addresses the strategic objectives of the organization. (ISO/IEC/IEEE 12207, 2017)",""
+"id-5cbdb4dc3b7943fa8a1011445c1f3504","BusinessObject","Project procedures","
+Procedures from all applicable life cycle processes, including: integration procedure, verification procedure, installation procedure, validation procedure, operation procedure, maintenance and logistics procedure, and disposal procedure.
+",""
+"id-c01a1f1b35c24c788368f5668dfe2347","BusinessObject","Project reports","
+Reports from all applicable project life cycle processes, including: acquisition report, supply report, decision management report, risk management report, configuration management report, configuration verification and audit report, information management report, measurement report, quality assurance report, quality assurance evaluation report, business or mission analysis report, stakeholder needs and requirements definition report, system requirements definition report, system architecture definition report, system architecture assessment report, design definition report, system design assessment report, system analysis report, implementation report, integration report, verification report, transition report, validation report, operation report, maintenance and logistics report, and disposal report.
+",""
+"id-45ba588dbf2d41c19572901b15249833","BusinessObject","Project schedule","
+A linked list of a project’s milestones, activities, and deliverables with intended start and finish dates May include a top-level milestone schedule and multiple levels (also called tiers) of schedules of increasing detail and task descriptions with completion criteria and work authorizations.
+",""
+"id-fb1e454c2e894a378ed97b37eb70ac3f","BusinessObject","Project status report/dashboard","
+Provides results of monitoring the execution of the defined plan or processes for internal or external distribution. It includes a summary of decisions, monitoring results, action items, process or performance data, and recorded process improvements. It assesses the degree of adherence to the plans. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-6e705b094e9b460e8f04955b04627909","BusinessObject"," Project strategies/approaches","",""
+"id-39a00976014e4411ae103a4da848a66c","BusinessObject","Project strategies/approaches","
+Strategies/approaches for all applicable project life processes, including: acquisition strategy/approach, supply strategy & approach, project assessment and control strategy/approach, decision management strategy/approach, risk management strategy/approach, configuration management strategy/approach, information management strategy/approach, measurement strategy/approach, quality assurance strategy/approach, business or mission analysis strategy/approach, stakeholder needs and requirements definition strategy/approach, system requirements definition strategy/approach, system architecture definition strategy/approach, design definition strategy/approach, system analysis strategy/approach, implementation strategy/approach, integration strategy/approach, verification strategy/approach, transition strategy/approach, validation strategy/approach, operation strategy/approach, maintenance and logistics strategy/approach, and disposal strategy/approach.
+",""
+"id-3b29ee2dd8e44653b73a95703593607f","BusinessObject","Project tailoring strategy/approach","
+Project’s specific strategy and approach to tailoring required to incorporate new or updated life cycle models.
+",""
+"id-9c11d47b951544f7934ffec1074892a4","BusinessObject","Qualified personnel","
+Individuals equipped to perform duties on behalf of the organization, including officers, employees, and contractors. (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-2adbd712dbdd4e41ae519ad04ae3c1f1","BusinessObject","Quality assurance corrective action","
+Action to eliminate the cause or reduce the likelihood of recurrence of a detected project nonconformity or other undesirable situation. (Adapted from ISO/IEC 19770–1, 2017)
+",""
+"id-5b4f07e6383540dbbfb03dec1d8cde21","BusinessObject","Quality assurance evaluation report","
+Provides results of quality assurance evaluations. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-439ae8d3421749379d357f53d5fb6105","BusinessObject","Quality assurance records/artifacts","
+Permanent, readable form of data, information, or knowledge related to quality assurance.",""
+"id-c271789d9e8a480aa5b04053e0c88c69","BusinessObject","Quality assurance report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the quality assurance activities.
+",""
+"id-f0b21ed7f0a94213b1f672fec6daca5d","BusinessObject","Quality assurance strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform quality assurance.",""
+"id-272121b5009a4a4e9d9b74fd4cc3c789","BusinessObject","Quality assurance system","
+System used to support and enable quality assurance.",""
+"id-4fed58ab78da4b6eaccc86d428e95241","BusinessObject","Quality management corrective action","
+Action to eliminate the cause or reduce the likelihood of recurrence of a detected organizational nonconformity or other undesirable situation. (Adapted from ISO/IEC 19770–1, 2017)
+",""
+"id-836872682dcd4f36bc59b8e8b02e7a56","BusinessObject","Quality management criteria and methods","
+Rules on which a judgment or decision can be based, or by which an organization can be evaluated. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-915418d44af24a3da36171d084f31eaa","BusinessObject","Quality management evaluation report","
+Provides results of quality management evaluations. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-a738dbebbe164d4fa6e99c6468816883","BusinessObject","Quality management records/artifacts","
+Permanent, readable form of data, information, or knowledge related to quality management.",""
+"id-08d68149321e4644a4a0c56705bd5cf4","BusinessObject","Quality management report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the quality management activities.",""
+"id-10aa54c21d334e189db100dabdafafc1","BusinessObject","Quality management strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform quality management",""
+"id-3cd4c1de419c4ff0a23719e70daa8966","BusinessObject","Quality management system","
+System used to support and enable quality management.
+",""
+"id-654ab0aed7a647afb9016063e8fd9ad4","BusinessObject","Records/artifacts","
+Records from all applicable life cycle processes, including: acquisition records/artifacts, supply records/artifacts, life cycle model management records/artifacts, infrastructure management records/artifacts, portfolio management records/artifacts, human resource management records/artifacts, quality management records/artifacts, knowledge management records/artifacts, project planning records/artifacts, project assessment and control records/artifacts, decision management records/artifacts, risk management records/artifacts, configuration management records/artifacts, information management records/artifacts, measurement records/artifacts, quality assurance records/artifacts, business or mission analysis records/artifacts, stakeholder needs and requirements definition records/artifacts, system requirements definition records/artifacts, system architecture definition records/artifacts, design definition records/artifacts, system analysis records/artifacts, implementation records/artifacts, integration records/artifacts, verification records/artifacts, transition records/artifacts, validation records/artifacts, operation records/artifacts, maintenance and logistics records/artifacts, disposal records/artifacts, tailoring records/artifacts.
+",""
+"id-ec31359a19064b88a09bef505f2c7afc","BusinessObject","Request for supply","
+Acquirer’s request for information and commitments needed from the supplier that are required to be included in the potential supplier’s proposal. It announces the acquirer’s intention to potential bidders to acquire a specified system or system element (product or service). (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-53f9cebd8dc44bb0acfd1401a22300a8","BusinessObject","Requirements imposed on enabling systems","
+Identified requirements for enabling systems of the system-of-interest.
+",""
+"id-4a92f012e31b4eeeba27f2410c9dfdfe","BusinessObject","Reused system or system element","
+System or system element (product or service) reused by an organization consistent with its system element requirements.
+",""
+"id-c64ff46ca314402695f7f53fd1faa030","BusinessObject","Risk management records/artifacts","
+Permanent, readable form of data, information, or knowledge related to risk management.",""
+"id-00fbee220f364657ba6bf0723b651c86","BusinessObject","Risk management report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the risk management activities.
+",""
+"id-c8249c531538429fb4fa5f17efe0e93b","BusinessObject","Risk management strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform risk management.
+",""
+"id-16a8b352d7f74ff18f1bbc8ce4dcaa5d","BusinessObject","Risk register","
+A repository that supports the availability for use and communication of all relevant risk information in a timely, complete, valid, and, if required, confidential manner.
+",""
+"id-736a748d59664da09c8160528e8c758d","BusinessObject","Source documents","
+External documents relevant to the particular stage of the system of interest.
+",""
+"id-d360311ec0d147c480a0ace2f1d2d3c3","BusinessObject","Stakeholder identification","
+List of individuals or organizations having a right, share, claim, or interest in a system or in its possession of characteristics that meet their needs and expectations. (Adapted from ISO/IEC/IEEE 15288, 2023)
+",""
+"id-13b2503160714349bb822b9a4f8eadc6","BusinessObject","Stakeholder needs and requirements","
+Structured collection of the requirements [characteristics, context, concepts, constraints and priorities] of the stakeholder and the relationship to the external environment. (ISO/IEC/IEEE 29148, 2018)
+",""
+"id-39fce091b2aa4961821491be12ac6005","BusinessObject","Stakeholder needs and requirements definition records/artifacts","
+Permanent, readable form of data, information, or knowledge related to stakeholder needs and requirements definition.
+",""
+"id-993d26d5ce5441af9169cd48989dbfcf","BusinessObject","Stakeholder needs and requirements definition report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the stakeholder needs and requirements definition activities.
+",""
+"id-89e88de295a74ce993eeca86f6e229b0","BusinessObject","Stakeholder needs and requirements definition strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform stakeholder needs and requirements definition.
+",""
+"id-87c22e2f579c4e03af8331269f433b8b","BusinessObject","Standards","
+This handbook and relevant industry, country, military, acquirer, and other specifications and standards. Includes new knowledge from industry sponsored knowledge networks.
+",""
+"id-e9309e6b354f4829861ac5ed671eac6e","BusinessObject","Supplied system or system element","
+System or system element (product or service) delivered from a supplier to an acquirer consistent with the delivery conditions of the supply agreement.
+",""
+"id-4f909fb05d674de980c88c72623be292","BusinessObject","Supply agreement","
+Mutual acknowledgment of terms and conditions under which a working relationship is conducted between a supplier and an acquirer. (Adapted from ISO/IEC/IEEE 15288, 2023)
+",""
+"id-2c100772e611476fb786d2443865546f","BusinessObject","Supply payment","
+Payments or other compensations for the supplied system.",""
+"id-a6fa87cf0aff4bb7a384c91a4a157a97","BusinessObject","Supply records/artifacts","
+Permanent, readable form of data, information, or knowledge related to supply.",""
+"id-1ac826487e80427ea97df0dda693e9bc","BusinessObject","Supply report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the supply activities.
+",""
+"id-ad2cf066e58747c483d92e774a506b10","BusinessObject","Supply response","
+Prepared by a potential supplier to support the offer of a contract bid, including cost, schedule, risk statements, methodology to satisfy the request for supply, experiences and capabilities, any recommendations to tailor the request for supply or contract, and the signature of the supplier’s approving authority. Informally, may be prepared within an organization. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-fd1a768ac03f451e85cd5f7de1d1d605","BusinessObject","Supply strategy/ approach","
+Approaches, schedules, resources, and specific considerations required to perform supply.",""
+"id-9a55cabb16654218bc6a90017d3404b4","BusinessObject","System analysis records/artifacts","
+Permanent, readable form of data, information, or knowledge related to system analysis.",""
+"id-d4c820adfc22408a98967bd85e6c8000","BusinessObject","System analysis report","An account prepared for interested parties in order to communicate the status, results, and outcomes of the system analysis activities.
+",""
+"id-b925b3fb3f164d6187a5f480c31e30e3","BusinessObject","System analysis request","A request to conduct a system analysis.
+",""
+"id-6f51a776df414049942644017c59a3f6","BusinessObject","System analysis strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform system analysis.
+",""
+"id-c9846cb7a6a24287a67336c30ff899ee","BusinessObject","System architecture assessment report","
+Provides results of system architecture assessments. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-ad5188e39c1c443ca2de9097ce669ff7","BusinessObject","System architecture definition records/artifacts","
+Permanent, readable form of data, information, or knowledge related to system architecture definition.
+",""
+"id-d396914334724741811895e87f110211","BusinessObject","System architecture definition report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the system architecture definition activities.
+",""
+"id-6b78c15ac3c54d348238abd3ef9474a2","BusinessObject","System architecture definition strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform system architecture definition.
+",""
+"id-d0befb6a8b744a07bfa748ff3e680888","BusinessObject","System architecture description","
+The fundamental conception of a system-of-interest in terms of its purpose, system qualities (such as feasibility, performance, safety, and interoperability), constraints, and design decisions and rationale. Identification of the architecture’s stakeholders and the stakeholders’ architecture-related concerns. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-3c75282c4f774ab8bab3b04d473e7974","BusinessObject","System architecture rationale","
+Rationale for architecture selection, technological/technical system element selection, and allocation between system requirements and architectural entities.
+",""
+"id-cb8a5e4034954e6f80a23dbc1cf506ef","BusinessObject","System design assessment report","Provides results of system design assessments. It includes evaluation criteria. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-e7b13d7b81b140dbbe2f0c2d4da6de26","BusinessObject","System design characteristics","
+Design attributes or distinguishing features that pertain to a measurable description of a product or service. (ISO/IEC/IEEE 15288, 2023)
+",""
+"id-de5c8be5094f488b95f216bb33e72c25","BusinessObject","System design description","
+Describes the design of a system or element. (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-3201652acf25417287545a20e785675d","BusinessObject","System design rationale","
+Rationale for design selection, system element selection, and allocation between system requirements and system elements. Includes rationale of major selected implementation options and enablers.
+",""
+"id-0253359305bd4c77bb6744cf21b4ea54","BusinessObject","System element","
+System element (product or service) implemented consistent with its system element requirements.
+",""
+"id-f61ecd5007c94f20b0e74e1ae0a4a044","BusinessObject","System element description","
+Applies the system architecture description to the low-level system configuration items and elements. It is at a level of detail to permit design, implementation, and test. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-cc956002383842218b71cda5caf6f18d","BusinessObject","System interface definition","
+Description of the interfaces between systems and system elements. (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-aa80a3f829964c2896c0b932a2812eb5","BusinessObject","System requirements","
+Structured collection of the requirements [functions, performance, design constraints, and other attributes] for the system and its operational environments and external interfaces. (ISO/IEC/IEEE 29148, 2018)
+",""
+"id-c5d71c45518f48d5a1f7dd8621506d58","BusinessObject","System requirements definition records/artifacts","
+Permanent, readable form of data, information, or knowledge related to system requirements definition.
+",""
+"id-1ef16a07f1194aec9d22b687b28f510c","BusinessObject","System requirements definition report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the system requirements definition activities.
+",""
+"id-0bcc0b11db5841039c3edf6a558c2015","BusinessObject","System requirements definition strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform system requirements definition.
+",""
+"id-7f6dadbc51ae48448b08e403a2a0972f","BusinessObject","System viewpoints, views, and models","
+Definitions of viewpoints to document the procedures for creating, interpreting, analyzing, and evaluating architectural data. One or more views of the system. Each architectural view is a representation of the complete system from the perspective of one or more system concerns, for its stakeholders. (Adapted from ISO/IEC/IEEE 15289, 2019)
+",""
+"id-f5b52cd6acd84dde99221399355bbfea","BusinessObject","System viewpoints, views, and models","",""
+"id-0c1e2dd4cf4a4849a5f8d41a809787ca","BusinessObject","Systems engineering management plan (SEMP)","Presents how the project processes and activities are executed to assure the project’s successful completion, and the quality of the deliverable product or service. (Adapted from ISO/IEC/IEEE 15289, 2019)",""
+"id-61bf59e37c7d40d3aa5e2949a6c84d42","BusinessObject","Tailoring records/artifacts","
+Permanent, readable form of data, information, or knowledge related to tailoring.",""
+"id-33b00e5b517349ba88c84eb043b52470","BusinessObject","Traceability mapping","
+Records the relationship between two or more artifacts of the development process (e.g., requirements, functions, system elements, verifications, and validations, tasks). (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-dd0db487b7c2432e88c1f425ec0c1a0c","BusinessObject","Trained personnel","
+Trained individuals or organizations that perform the operation, maintenance, or other functions of or for a system.",""
+"id-2d90f35902564acbb4e98cb64f88ba2d","BusinessObject","Training materials","
+Materials for the provision of formal and informal learning activities. (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-cdfc0593242c4cf69f0fb88e251bd2d8","BusinessObject","Transition records/artifacts","
+Permanent, readable form of data, information, or knowledge related to transition.",""
+"id-5487173f102148a08c5601ee89438dc3","BusinessObject","Transition report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the transition activities.
+",""
+"id-c618079d714148bca1305a27371999c6","BusinessObject","Transition strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform transition.",""
+"id-834569fa8ed04ca48b8b9f1412b74baa","BusinessObject","Validated stakeholder needs and requirements","
+Set of stakeholder needs and requirements that have been validated.",""
+"id-c876c44edfea47e3990a6d6cd566c590","BusinessObject","Validated system","
+System (product or service) that has been validated.",""
+"id-887577bdffb34d73aa761d71ac6fbddb","BusinessObject","Validated system architecture and design","
+System architecture and design that has been validated.",""
+"id-0f2172891912408293160199ff660828","BusinessObject","Validation criteria","
+The validation criteria (the measures to be assessed), who will perform validation activities, and the validation environments of the system-of-interest.
+",""
+"id-587607fc76de4d7391d057a206e43754","BusinessObject","Validation procedure","
+Presents an ordered series of steps to perform validation.",""
+"id-5d5dac208533406aa72289935eb2b710","BusinessObject","Validation records/artifacts","
+Permanent, readable form of data, information, or knowledge related to validation.",""
+"id-4d32ca490c8a415cac776205fca1b0c9","BusinessObject","Validation report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the validation activities.",""
+"id-ba8bde1aec4b4412bcf9531350ee89ce","BusinessObject","Validation strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform validation.",""
+"id-c0c36ba53d3a47b88905c8534c0807be","BusinessObject","Variance/deviation/waiver request","
+Request, temporary or permanent, to accept a configuration item or other designated item which, during production or after having been submitted for inspection, is found to depart from specified requirements, but is nevertheless considered suitable for use as is or after rework by an approved method. (Adapted from ISO/IEC/IEEE 24765, 2017)
+",""
+"id-5a11665598044f2db072db80bb15dcad","BusinessObject","Verification criteria","
+The verification criteria (the measures to be assessed), who will perform verification activities, and the verification environments of the system-of-interest.
+",""
+"id-bc4c68e999634bc08dfcd69695df1e08","BusinessObject","Verification procedure","
+Presents an ordered series of steps to perform verification.
+",""
+"id-bc60b60e1b28448c9a14588045e3ad95","BusinessObject","Verification records/artifacts","
+Permanent, readable form of data, information, or knowledge related to verification.
+",""
+"id-b937b41eb95748ad90262ce2d8442e44","BusinessObject","Verification report","
+An account prepared for interested parties in order to communicate the status, results, and outcomes of the verification activities.
+",""
+"id-42c073eb55d44be28726d797fa954b4c","BusinessObject","Verification strategy/approach","
+Approaches, schedules, resources, and specific considerations required to perform verification.",""
+"id-7bbb296d0f3843fa9787a9573506c668","BusinessObject","Verified system","
+System (product or service) that has been verified.
+",""
+"id-af0f523978154d90844af2b3e7259ebc","BusinessObject","Verified system architecture and design","
+System architecture and design that has been verified.",""
+"id-ab116540d777435a8fc22a6eb558c1b6","BusinessObject","Verified system requirements","Set of system requirements that have been verified.
+",""
+"id-3620bdd7a4da4af69d0593016e25fb36","BusinessProcess","Acquistion Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Acquisition process is to obtain a product or service in accordance with the acquirer’s requirements.
+
+Activities
+Prepare for the acquisition.
+Advertise the acquisition and select the supplier.
+Establish and maintain an agreement.
+Monitor the agreement.
+Accept the product or service.",""
+"id-3446520345e34771bbca29a5327a55c4","BusinessProcess","Business or Mission Analysis Process","Purpose As stated in ISO/IEC/IEEE 15288:
+
+The purpose of the Business or Mission Analysis process is to define the overall strategic problem or opportunity, characterize the solution space, and determine potential solution class(es) that can address a problem or take advantage of an opportunity.
+
+Actvities:
+
+Prepare for business or mission analysis.
+Define the problem or opportunity space.
+Characterize the solution space.
+Evaluate alternative solution classes that span the potential solution space.
+Manage the Business or Mission Analysis.",""
+"id-41227716c5214cc29a6faad59154e2ac","BusinessProcess","Configuration Management Process","",""
+"id-7688d8ba5911479c8d4ffe8ed64ada4f","BusinessProcess","Decision Management Process","Purpose As defined by ISO/IEC/IEEE 15288
+
+The purpose of the Decision Management process is to provide a structured, analytical framework for objectively identifying, characterizing and evaluating a set of alternatives for a decision at any point in the life cycle and select the most beneficial course of action.
+
+Activities
+
+Prepare for decisions
+Analyze the decison information
+Make and manage decisions
+
+Taken from
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central
+
+",""
+"id-e2b5514849f24664a80d9a5f94d6f23c","BusinessProcess","Design Definition Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.
+
+Activities
+
+Prepare for design definition 
+• Create the system design 
+• Evaluate the system design 
+• Manage results of design definition",""
+"id-a738c755e8f246d18ffbb06df2763cd3","BusinessProcess","Disposal Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical disposal needs.
+
+Acvtities
+Prepare for disposal
+Perfrom disposal
+Finalize the disposal",""
+"id-d9d5ae63f9ef49adb3b6fcc8b1864c74","BusinessProcess","Human Resource Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Human Resource Management process is to provide the organization with necessary human resources and to maintain their competencies, consistent with strategic needs.
+
+Actvities:
+
+Identify skills
+Develop skills
+Acquie and provide skills
+",""
+"id-a2a787a1e17a4f9ba6f4fae4aeb19974","BusinessProcess","Implementation Process","Purpose As stated in ISO/IEC/IEEE 15288, 
+
+The purpose of the Implementation process is to realize a specified system element.
+
+Actvities
+
+Prepare for implementation 
+• Perform implementation 
+• Manage results of implementation",""
+"id-2d509d9118f34be8b92347524221b7e9","BusinessProcess","Information Management Process","Purpose As stated in ISO/IEC/IEEE 15288, 
+
+The purpose of the Information Management process is to generate, obtain, confirm, transform, retain, retrieve, disseminate, and dispose of information to designated stakeholders.
+
+
+Activities 
+• Prepare for information management 
+• Perform information management
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central",""
+"id-eb3ffd66a08041ffadc727b61f817186","BusinessProcess","Infrastructure Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Infrastructure Management process is to provide the infrastructure and services to projects to support organization and project objectives throughout the life cycle.",""
+"id-4b9d4b4eb36142feb75136212d446cff","BusinessProcess","Integration Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.",""
+"id-25e30adad8ae44f4a8c1041bc8011d6b","BusinessProcess","Knowledge Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Knowledge Management process is to create the capability and assets that enable the organization to exploit opportunities to re-apply existing knowledge.
+
+Actvities:
+
+Plan knowledge management
+Share knowledge and skills throuout organziation
+Share knowledge assets throuout the organization
+Managne knowledge, skills and knowledge assets
+",""
+"id-da146668b5034f2985b357797db4c7cb","BusinessProcess","Life Cycle Model Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Life Cycle Model Management process is to define, maintain, and help ensure availability of policies, life cycle processes, life cycle models, and procedures for use by the organization with respect to the scope of ISO/IEC/IEEE 15288.
+
+Activities:
+
+Establish the life cycle processes
+Assess the life cycle processes
+Imrove the process",""
+"id-7cc650c704cc47ce8d0f9b56b34e3e3d","BusinessProcess","Maintenance Process","As stated in ISO/IEC/IEEE 15288,
+
+[6.4.13] The purpose of the Maintenance process is to sustain the capability of the system to provide a service.
+
+Activities
+
+Prepare for maintenance and logistics
+Perform maintenance
+Perform logistics support
+Manage results of maintenance and logistics
+
+",""
+"id-44a6ddd394034b8aacebf095822675f7","BusinessProcess","Measurement process","Purpose As stated in ISO/IEC/IEEE 15288 (and ISO/IEC/IEEE 15939), 
+
+The purpose of the Measurement process is to collect, analyze, and report objective data and information to support effective management and address information needs about the products, services, and processes.
+
+Activities 
+• Prepare for measurement 
+• Perform measurement
+
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central",""
+"id-3d6e3dd6de2a4e7188b5a5924e2f9722","BusinessProcess","Operation Process","As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Operation process is to use the system to deliver its services.
+
+Activities:
+Prepare for operation
+Perform operation
+Manage results of operation
+support stakeholders",""
+"id-80f55a560b2f4dbdbcb63550889ec200","BusinessProcess","Portfolio Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Portfolio Management process is to initiate and sustain necessary, sufficient, and suitable projects to meet the strategic objectives of the organization.
+
+Activities
+
+Define and authorize projects
+Evaluate the portfolio of projects
+Terminate projects",""
+"id-853d7342dea14a7e8ea81f5c1c32b8b0","BusinessProcess","Project Assessment and Control Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Project Assessment and Control process is to assess if the plans are aligned and feasible; determine the status of the project, technical and process performance; and direct execution to help ensure that the performance is according to plans and schedules, within projected budgets, to satisfy technical objectives.
+
+Actvities:
+
+Plan for project assessment and control
+Assess the project
+Control the project
+ ",""
+"id-8f4c234eeccd466cbff6c596b27d6f09","BusinessProcess","Project Planning Process","Purpose As stated in ISO/IEC/IEEE 15288, 
+
+The purpose of the Project Planning process is to produce and coordinate effective and workable plans.
+
+
+Activities 
+• Define the project 
+• Plan project and technical management 
+• Activate the project",""
+"id-3418318de4634ed3b82ed08d1e3cdfec","BusinessProcess","Quality Assurance process","Purpose As stated in ISO/IEC/IEEE 15288, 
+
+The purpose of the Quality Assurance process is to help ensure the effective application of the organization’s Quality Management process to the project.
+
+
+Typical Inputs 
+• Quality management strategy/approach 
+• Quality management criteria and methods 
+• Quality management report 
+• Quality management corrective action Activities 
+• Prepare for quality assurance 
+• Perform product or service evaluations 
+• Perform process evaluations 
+• Manage quality assurance records and reports 
+• Treat incidents and problems
+
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central",""
+"id-0479b2608c3c44a698f2a58780f67314","BusinessProcess","Quality Management Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Quality Management process is to assure that products, services, and implementations of the Quality Management process meet organizational and project quality objectives and achieve customer satisfaction.
+
+Activities
+
+Plan quality management
+Assess quality management 
+Perform quality management corrective and preventive action",""
+"id-9e3f81600aeb4c658929144c1544764c","BusinessProcess","Risk Management Process","Purpose As stated in ISO/IEC/IEEE 15288, [6.3.4.1] The purpose of the Risk Management process is to identify, analyze, treat and monitor the risks continually.
+
+Activties
+
+Plan risk management
+Maintain the risk profile
+Analyze risks
+Treat risks that exceed their riks threshold
+Monitore risks
+
+
+INCOSE Systems Engineering Handbook, John Wiley & Sons, Incorporated, 2023. ProQuest Ebook Central
+
+",""
+"id-32ab6a7d246e4c2db95199dfb6ada8b1","BusinessProcess","Stakeholder Needs and Requirements Definition","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Stakeholder Needs and Requirements Definition process is to define the stakeholder needs and requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment.",""
+"id-bb662eeda087422ab8e9908c4f4450d2","BusinessProcess","Supply Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Supply process is to provide an acquirer with a product or service that meets agreed requirements.
+
+Activities:
+
+Prepare for the supply.
+Respond to a request for supply of products or services.
+Establish and maintain an agreement.
+Execute the agreement.
+Deliver and support the product or service.",""
+"id-76f2c56aeba347f5b97789b558ac9b06","BusinessProcess","System Analysis Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Transition process is to establish a capability for a system to provide services specified by stakeholder requirements in the operational environment.
+
+Actvities
+Prepare for system analysis 
+• Perform system analysis 
+• Manage system analysis",""
+"id-5847f36a59aa403d99201ab669553d4a","BusinessProcess","System Architecture Definition Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the System Architecture Definition process is to generate system architecture alternatives, select one or more alternative(s) that address stakeholder concerns and system requirements, and express this in consistent views and models.
+
+Activities
+
+• Prepare for system architecture definition 
+• Conceptualize the system architecture 
+• Evaluate the system architecture 
+• Elaborate the system architecture 
+• Manage results of system architecture definition",""
+"id-fe00585692e8429b92baf2f3bd708941","BusinessProcess","System Requierments Definition Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the System Requirements Definition process is to transform the stakeholder, user-oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user.
+Activities:
+
+Prepare for system requirements definition
+Define system requirements.
+Define system requirements.
+Manage system requirements",""
+"id-42b4d868c90b4d6591e6105c63d0d568","BusinessProcess","Transition Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Transition process is to establish a capability for a system to provide services specified by stakeholder requirements in the operational environment.",""
+"id-62df66fd5c054577b97050c66dfeadaa","BusinessProcess","Validation Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.
+
+Actvities:
+
+Prepare for validation
+Perform validation
+Manage results of validation",""
+"id-3ae10bd6637245acb01256bd7112875f","BusinessProcess","Verification Process","Purpose As stated in ISO/IEC/IEEE 15288,
+
+The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to realize the solution in accordance with the system requirements and architecture.",""
+"id-f80adb637b644ca0afe1bc3566492043","Grouping","Agreement Processes","",""
+"id-7312fee6da5f4ab9b19655f7c887aa92","Grouping","Concept Definition","",""
+"id-6241940b5a9f4121b2c56bd3d6b5f983","Grouping","Organization Project Enabling Processes","",""
+"id-ec6f7538d85e486fbac3523d90da2477","Grouping","System Defintion","",""
+"id-a5a00a4ce2bc44cc89a233c4a9cbda87","Grouping","System Deployment and Use","",""
+"id-79416880f3b14dc38b8492fbc3633f6f","Grouping","System Realization","",""
+"id-d3b6bde373d94c508b5557a6167592d3","Grouping","Techincal Processes","",""
+"id-8a0797c0a36c41cd86aac1daa98fa515","Grouping","Technical Management Processes","",""
